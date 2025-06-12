@@ -1,7 +1,6 @@
+'use client'
 
-"use client"
-
-import { useState, useEffect, useCallback } from "react"
+import { useState, useEffect, useCallback } from 'react'
 
 export function useLocalStorage<T>(key: string, initialValue: T) {
   const [storedValue, setStoredValue] = useState<T>(initialValue)
@@ -27,7 +26,7 @@ export function useLocalStorage<T>(key: string, initialValue: T) {
         console.error(`Error setting localStorage key "${key}":`, error)
       }
     },
-    [key, storedValue],
+    [key, storedValue]
   )
 
   return [storedValue, setValue] as const

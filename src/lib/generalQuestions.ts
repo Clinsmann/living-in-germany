@@ -6,9 +6,9 @@ const questions = [
       A: `hier Religionsfreiheit gilt. :: religious freedom applies here.`,
       B: `die Menschen Steuern zahlen. :: people pay taxes.`,
       C: `die Menschen das Wahlrecht haben. :: people have the right to vote.`,
-      D: `hier Meinungsfreiheit gilt. :: freedom of opinion applies here.`
+      D: `hier Meinungsfreiheit gilt. :: freedom of opinion applies here.`,
     },
-    correctAnswer: "D"
+    correctAnswer: 'D',
   },
   {
     id: 2,
@@ -17,9 +17,9 @@ const questions = [
       A: `Geschichtsunterricht teilnimmt. :: history lessons.`,
       B: `Religionsunterricht teilnimmt. :: religious education.`,
       C: `Politikunterricht teilnimmt. :: politics lessons.`,
-      D: `Sprachunterricht teilnimmt. :: language lessons.`
+      D: `Sprachunterricht teilnimmt. :: language lessons.`,
     },
-    correctAnswer: "B"
+    correctAnswer: 'B',
   },
   {
     id: 3,
@@ -28,9 +28,9 @@ const questions = [
       A: `Alle Einwohner / Einwohnerinnen und der Staat müssen sich an die Gesetze halten. :: All residents and the state must abide by the laws.`,
       B: `Der Staat macht die Gesetze. :: The state makes the laws.`,
       C: `Nur Deutsche müssen die Gesetze befolgen. :: Only Germans must obey the laws.`,
-      D: `Die Gerichte machen die Gesetze. :: The courts make the laws.`
+      D: `Die Gerichte machen die Gesetze. :: The courts make the laws.`,
     },
-    correctAnswer: "A"
+    correctAnswer: 'A',
   },
   {
     id: 4,
@@ -39,9 +39,9 @@ const questions = [
       A: `Waffenbesitz :: Gun ownership`,
       B: `Faustrecht :: Vigilante justice`,
       C: `Meinungsfreiheit :: Freedom of opinion`,
-      D: `Selbstjustiz :: Self-justice`
+      D: `Selbstjustiz :: Self-justice`,
     },
-    correctAnswer: "C"
+    correctAnswer: 'C',
   },
   {
     id: 5,
@@ -50,9 +50,9 @@ const questions = [
       A: `Alle wahlberechtigten Bürger und Bürgerinnen können ohne Zwang entscheiden, wen sie wählen. :: All eligible citizens can decide without coercion whom they vote for.`,
       B: `Man kann online wählen. :: You can vote online.`,
       C: `Wahlen kosten nichts. :: Elections cost nothing.`,
-      D: `Jeder kann ohne Personalausweis wählen. :: Anyone can vote without an ID card.`
+      D: `Jeder kann ohne Personalausweis wählen. :: Anyone can vote without an ID card.`,
     },
-    correctAnswer: "A"
+    correctAnswer: 'A',
   },
   {
     id: 6,
@@ -61,9 +61,9 @@ const questions = [
       A: `Volksgesetz :: People's Law`,
       B: `Bundesgesetz :: Federal Law`,
       C: `Deutsches Gesetz :: German Law`,
-      D: `Grundgesetz :: Basic Law`
+      D: `Grundgesetz :: Basic Law`,
     },
-    correctAnswer: "D"
+    correctAnswer: 'D',
   },
   {
     id: 7,
@@ -72,9 +72,9 @@ const questions = [
       A: `sind Staat und Religionsgemeinschaften voneinander getrennt. :: state and religious communities are separated.`,
       B: `bilden die Religionsgemeinschaften den Staat. :: religious communities form the state.`,
       C: `ist der Staat abhängig von den Religionsgemeinschaften. :: the state depends on religious communities.`,
-      D: `bilden Staat und Religionsgemeinschaften eine Einheit. :: state and religious communities form a unity.`
+      D: `bilden Staat und Religionsgemeinschaften eine Einheit. :: state and religious communities form a unity.`,
     },
-    correctAnswer: "A"
+    correctAnswer: 'A',
   },
   {
     id: 8,
@@ -83,9 +83,9 @@ const questions = [
       A: `Die Würde des Menschen ist unantastbar. :: Human dignity is inviolable.`,
       B: `Alle sollen gleich viel Geld haben. :: Everyone should have the same amount of money.`,
       C: `Jeder hat das Recht auf freie Entfaltung der Persönlichkeit. :: Everyone has the right to free development of personality.`,
-      D: `Alle sind vor dem Gesetz gleich. :: All are equal before the law.`
+      D: `Alle sind vor dem Gesetz gleich. :: All are equal before the law.`,
     },
-    correctAnswer: "B"
+    correctAnswer: 'B',
   },
   {
     id: 9,
@@ -94,9 +94,9 @@ const questions = [
       A: `Versammlungsfreiheit :: Freedom of assembly`,
       B: `Berufsfreiheit :: Freedom of occupation`,
       C: `Asylrecht :: Right to asylum`,
-      D: `Meinungsfreiheit :: Freedom of opinion`
+      D: `Meinungsfreiheit :: Freedom of opinion`,
     },
-    correctAnswer: "C"
+    correctAnswer: 'C',
   },
   {
     id: 10,
@@ -105,9 +105,9 @@ const questions = [
       A: `die Prügelstrafe :: corporal punishment`,
       B: `die Folter :: torture`,
       C: `die Todesstrafe :: death penalty`,
-      D: `die Geldstrafe :: monetary fine`
+      D: `die Geldstrafe :: monetary fine`,
     },
-    correctAnswer: "D"
+    correctAnswer: 'D',
   },
   {
     id: 11,
@@ -116,9 +116,9 @@ const questions = [
       A: `Grundgesetz :: Basic Law`,
       B: `Bundesverfassung :: Federal Constitution`,
       C: `Gesetzbuch :: Law Book`,
-      D: `Verfassungsgesetz :: Constitutional Law`
+      D: `Verfassungsgesetz :: Constitutional Law`,
     },
-    correctAnswer: "A"
+    correctAnswer: 'A',
   },
   {
     id: 12,
@@ -127,9 +127,9 @@ const questions = [
       A: `Ja, wenn mehr als die Hälfte der Abgeordneten im Bundestag dafür sind. :: Yes, if more than half of the members of parliament are in favor.`,
       B: `Ja, aber nur, wenn zwei Drittel der Abgeordneten im Bundestag dafür sind. :: Yes, but only if two-thirds of parliament members are in favor.`,
       C: `Nein, denn die Pressefreiheit ist ein Grundrecht. Sie kann nicht abgeschafft werden. :: No, because press freedom is a basic right. It cannot be abolished.`,
-      D: `Ja, wenn der Bundespräsident zustimmt. :: Yes, if the Federal President agrees.`
+      D: `Ja, wenn der Bundespräsident zustimmt. :: Yes, if the Federal President agrees.`,
     },
-    correctAnswer: "C"
+    correctAnswer: 'C',
   },
   {
     id: 13,
@@ -138,9 +138,9 @@ const questions = [
       A: `die regierenden Parteien. :: the governing parties.`,
       B: `die Fraktion mit den meisten Abgeordneten. :: the faction with the most representatives.`,
       C: `alle Parteien, die bei der letzten Wahl die 5%-Hürde erreichen konnten. :: all parties that reached the 5% threshold in the last election.`,
-      D: `alle Abgeordneten, die nicht zu der Regierungspartei/den Regierungsparteien gehören. :: all representatives who do not belong to the governing party/parties.`
+      D: `alle Abgeordneten, die nicht zu der Regierungspartei/den Regierungsparteien gehören. :: all representatives who do not belong to the governing party/parties.`,
     },
-    correctAnswer: "D"
+    correctAnswer: 'D',
   },
   {
     id: 14,
@@ -149,9 +149,9 @@ const questions = [
       A: `auf Flugblättern falsche Tatsachen behaupten darf. :: may claim false facts on leaflets.`,
       B: `meine Meinung in Leserbriefen äußern darf. :: may express my opinion in letters to the editor.`,
       C: `Nazi-Symbole tragen darf. :: may wear Nazi symbols.`,
-      D: `andere Personen beschimpfen darf. :: may insult other people.`
+      D: `andere Personen beschimpfen darf. :: may insult other people.`,
     },
-    correctAnswer: "B"
+    correctAnswer: 'B',
   },
   {
     id: 15,
@@ -160,9 +160,9 @@ const questions = [
       A: `Man darf seine Religion wechseln oder keine Religion haben. :: One may change religion or have no religion.`,
       B: `Man darf nur einer Religion angehören. :: One may only belong to one religion.`,
       C: `Man darf nicht an Gott glauben. :: One may not believe in God.`,
-      D: `Man darf nur der christlichen Religion angehören. :: One may only belong to the Christian religion.`
+      D: `Man darf nur der christlichen Religion angehören. :: One may only belong to the Christian religion.`,
     },
-    correctAnswer: "A"
+    correctAnswer: 'A',
   },
   {
     id: 16,
@@ -171,9 +171,9 @@ const questions = [
       A: `Kürbisse in die Fenster stellen :: putting pumpkins in windows`,
       B: `einen Tannenbaum schmücken :: decorating a Christmas tree`,
       C: `Eier bemalen :: painting eggs`,
-      D: `Raketen in die Luft schießen :: shooting rockets into the air`
+      D: `Raketen in die Luft schießen :: shooting rockets into the air`,
     },
-    correctAnswer: "C"
+    correctAnswer: 'C',
   },
   {
     id: 17,
@@ -182,9 +182,9 @@ const questions = [
       A: `der Tag der Deutschen Einheit :: Day of German Unity`,
       B: `der Reformationstag :: Reformation Day`,
       C: `der Tag der Arbeit :: Labor Day`,
-      D: `der Buß- und Bettag :: Day of Repentance and Prayer`
+      D: `der Buß- und Bettag :: Day of Repentance and Prayer`,
     },
-    correctAnswer: "A"
+    correctAnswer: 'A',
   },
   {
     id: 18,
@@ -193,9 +193,9 @@ const questions = [
       A: `Elsass-Lothringen :: Alsace-Lorraine`,
       B: `Nordrhein-Westfalen :: North Rhine-Westphalia`,
       C: `Mecklenburg-Vorpommern :: Mecklenburg-Western Pomerania`,
-      D: `Sachsen-Anhalt :: Saxony-Anhalt`
+      D: `Sachsen-Anhalt :: Saxony-Anhalt`,
     },
-    correctAnswer: "A"
+    correctAnswer: 'A',
   },
   {
     id: 19,
@@ -204,9 +204,9 @@ const questions = [
       A: `Mecklenburg-Vorpommern :: Mecklenburg-Western Pomerania`,
       B: `Lothringen :: Lorraine`,
       C: `Elsass :: Alsace`,
-      D: `Normandie :: Normandy`
+      D: `Normandie :: Normandy`,
     },
-    correctAnswer: "A"
+    correctAnswer: 'A',
   },
   {
     id: 20,
@@ -215,9 +215,9 @@ const questions = [
       A: `Völker, hört die Signale... :: Peoples, hear the signals...`,
       B: `Einigkeit und Recht und Freiheit... :: Unity and justice and freedom...`,
       C: `Freude schöner Götterfunken... :: Joy, beautiful spark of divinity...`,
-      D: `Deutschland einig Vaterland... :: Germany united fatherland...`
+      D: `Deutschland einig Vaterland... :: Germany united fatherland...`,
     },
-    correctAnswer: "B"
+    correctAnswer: 'B',
   },
   {
     id: 21,
@@ -226,9 +226,9 @@ const questions = [
       A: `weil dadurch die unterschiedlichen Meinungen der Bürger und Bürgerinnen vertreten werden :: because this represents the different opinions of citizens`,
       B: `damit Bestechung in der Politik begrenzt wird :: so that corruption in politics is limited`,
       C: `um politische Demonstrationen zu verhindern :: to prevent political demonstrations`,
-      D: `um wirtschaftliche Krisen zu vermeiden :: to avoid economic crises`
+      D: `um wirtschaftliche Krisen zu vermeiden :: to avoid economic crises`,
     },
-    correctAnswer: "A"
+    correctAnswer: 'A',
   },
   {
     id: 22,
@@ -237,9 +237,9 @@ const questions = [
       A: `Volke :: people`,
       B: `Bundestag :: Federal Parliament`,
       C: `Kaiser :: Emperor`,
-      D: `Bundespräsidenten :: Federal President`
+      D: `Bundespräsidenten :: Federal President`,
     },
-    correctAnswer: "A"
+    correctAnswer: 'A',
   },
   {
     id: 23,
@@ -248,9 +248,9 @@ const questions = [
       A: `eine Demokratie :: a democracy`,
       B: `ein Rechtsstaat :: a constitutional state`,
       C: `eine Monarchie :: a monarchy`,
-      D: `ein Sozialstaat :: a welfare state`
+      D: `ein Sozialstaat :: a welfare state`,
     },
-    correctAnswer: "C"
+    correctAnswer: 'C',
   },
   {
     id: 24,
@@ -259,9 +259,9 @@ const questions = [
       A: `Monarchie :: Monarchy`,
       B: `Diktatur :: Dictatorship`,
       C: `Republik :: Republic`,
-      D: `Fürstentum :: Principality`
+      D: `Fürstentum :: Principality`,
     },
-    correctAnswer: "C"
+    correctAnswer: 'C',
   },
   {
     id: 25,
@@ -270,9 +270,9 @@ const questions = [
       A: `Christen :: Christians`,
       B: `Muslime :: Muslims`,
       C: `Juden :: Jews`,
-      D: `Buddhisten :: Buddhists`
+      D: `Buddhisten :: Buddhists`,
     },
-    correctAnswer: "A"
+    correctAnswer: 'A',
   },
   {
     id: 26,
@@ -281,9 +281,9 @@ const questions = [
       A: `der Tannenbaum :: the fir tree`,
       B: `der Lebkuchen :: the gingerbread`,
       C: `der Stollen :: the stollen`,
-      D: `die Gans :: the goose`
+      D: `die Gans :: the goose`,
     },
-    correctAnswer: "A"
+    correctAnswer: 'A',
   },
   {
     id: 27,
@@ -292,9 +292,9 @@ const questions = [
       A: `Abgeordnete :: representatives`,
       B: `Kanzler :: chancellors`,
       C: `Botschafter :: ambassadors`,
-      D: `Ministerpräsidenten :: minister presidents`
+      D: `Ministerpräsidenten :: minister presidents`,
     },
-    correctAnswer: "A"
+    correctAnswer: 'A',
   },
   {
     id: 28,
@@ -303,9 +303,9 @@ const questions = [
       A: `der Bundesrat :: the Federal Council`,
       B: `der Bundespräsident :: the Federal President`,
       C: `die Bürgerversammlung :: the citizens' assembly`,
-      D: `die Bundesregierung :: the Federal Government`
+      D: `die Bundesregierung :: the Federal Government`,
     },
-    correctAnswer: "C"
+    correctAnswer: 'C',
   },
   {
     id: 29,
@@ -314,9 +314,9 @@ const questions = [
       A: `das Militär :: the military`,
       B: `die Wirtschaft :: the economy`,
       C: `das wahlberechtigte Volk :: the eligible voters`,
-      D: `die Verwaltung :: the administration`
+      D: `die Verwaltung :: the administration`,
     },
-    correctAnswer: "C"
+    correctAnswer: 'C',
   },
   {
     id: 30,
@@ -325,9 +325,9 @@ const questions = [
       A: `der Löwe :: the lion`,
       B: `der Adler :: the eagle`,
       C: `der Bär :: the bear`,
-      D: `der Hirsch :: the stag`
+      D: `der Hirsch :: the stag`,
     },
-    correctAnswer: "B"
+    correctAnswer: 'B',
   },
   {
     id: 31,
@@ -336,9 +336,9 @@ const questions = [
       A: `regelmäßige Wahlen :: regular elections`,
       B: `Pressezensur :: press censorship`,
       C: `Meinungsfreiheit :: freedom of opinion`,
-      D: `verschiedene Parteien :: different parties`
+      D: `verschiedene Parteien :: different parties`,
     },
-    correctAnswer: "B"
+    correctAnswer: 'B',
   },
   {
     id: 32,
@@ -347,9 +347,9 @@ const questions = [
       A: `Versammlung :: assembly`,
       B: `Sitzung :: session`,
       C: `Einberufung :: convocation`,
-      D: `Tagung :: meeting`
+      D: `Tagung :: meeting`,
     },
-    correctAnswer: "B"
+    correctAnswer: 'B',
   },
   {
     id: 33,
@@ -358,9 +358,9 @@ const questions = [
       A: `Verband :: association`,
       B: `Ältestenrat :: council of elders`,
       C: `Fraktion :: parliamentary group`,
-      D: `Opposition :: opposition`
+      D: `Opposition :: opposition`,
     },
-    correctAnswer: "C"
+    correctAnswer: 'C',
   },
   {
     id: 34,
@@ -369,9 +369,9 @@ const questions = [
       A: `Meinungsfreiheit der Einwohner und Einwohnerinnen :: freedom of opinion of residents`,
       B: `Petitionen der Bürger und Bürgerinnen :: petitions from citizens`,
       C: `Versammlungsfreiheit der Einwohner und Einwohnerinnen :: freedom of assembly of residents`,
-      D: `Volksverhetzung :: incitement to hatred`
+      D: `Volksverhetzung :: incitement to hatred`,
     },
-    correctAnswer: "D"
+    correctAnswer: 'D',
   },
   {
     id: 35,
@@ -380,9 +380,9 @@ const questions = [
       A: `der Bundesadler :: the federal eagle`,
       B: `die Deutschlandfahne :: the German flag`,
       C: `der Berliner Bär :: the Berlin bear`,
-      D: `die Nationalflagge :: the national flag`
+      D: `die Nationalflagge :: the national flag`,
     },
-    correctAnswer: "A"
+    correctAnswer: 'A',
   },
   {
     id: 36,
@@ -391,9 +391,9 @@ const questions = [
       A: `Monarchie :: Monarchy`,
       B: `Demokratie :: Democracy`,
       C: `Diktatur :: Dictatorship`,
-      D: `Fürstentum :: Principality`
+      D: `Fürstentum :: Principality`,
     },
-    correctAnswer: "B"
+    correctAnswer: 'B',
   },
   {
     id: 37,
@@ -402,9 +402,9 @@ const questions = [
       A: `1987`,
       B: `1989`,
       C: `1992`,
-      D: `1995`
+      D: `1995`,
     },
-    correctAnswer: "B"
+    correctAnswer: 'B',
   },
   {
     id: 38,
@@ -413,9 +413,9 @@ const questions = [
       A: `1944`,
       B: `1945`,
       C: `1946`,
-      D: `1947`
+      D: `1947`,
     },
-    correctAnswer: "B"
+    correctAnswer: 'B',
   },
   {
     id: 39,
@@ -424,9 +424,9 @@ const questions = [
       A: `1918 bis 1923 :: 1918 to 1923`,
       B: `1932 bis 1950 :: 1932 to 1950`,
       C: `1933 bis 1945 :: 1933 to 1945`,
-      D: `1945 bis 1989 :: 1945 to 1989`
+      D: `1945 bis 1989 :: 1945 to 1989`,
     },
-    correctAnswer: "C"
+    correctAnswer: 'C',
   },
   {
     id: 40,
@@ -435,9 +435,9 @@ const questions = [
       A: `Tod Adolf Hitlers :: Death of Adolf Hitler`,
       B: `Beginn des Berliner Mauerbaus :: Beginning of Berlin Wall construction`,
       C: `Wahl von Konrad Adenauer zum Bundeskanzler :: Election of Konrad Adenauer as Chancellor`,
-      D: `Ende des Zweiten Weltkriegs in Europa :: End of World War II in Europe`
+      D: `Ende des Zweiten Weltkriegs in Europa :: End of World War II in Europe`,
     },
-    correctAnswer: "D"
+    correctAnswer: 'D',
   },
   {
     id: 41,
@@ -446,9 +446,9 @@ const questions = [
       A: `Demokratie :: Democracy`,
       B: `Deutschland :: Germany`,
       C: `Deutscher :: German`,
-      D: `Demokratisch :: Democratic`
+      D: `Demokratisch :: Democratic`,
     },
-    correctAnswer: "A"
+    correctAnswer: 'A',
   },
   {
     id: 42,
@@ -457,9 +457,9 @@ const questions = [
       A: `der Geheimdienst im "Dritten Reich" :: the secret service in the "Third Reich"`,
       B: `eine berühmte deutsche Gedenkstätte :: a famous German memorial`,
       C: `der Geheimdienst der DDR :: the secret service of the GDR`,
-      D: `ein deutscher TV-Sender :: a German TV channel`
+      D: `ein deutscher TV-Sender :: a German TV channel`,
     },
-    correctAnswer: "C"
+    correctAnswer: 'C',
   },
   {
     id: 43,
@@ -468,9 +468,9 @@ const questions = [
       A: `Rumänien :: Romania`,
       B: `Bulgarien :: Bulgaria`,
       C: `Polen :: Poland`,
-      D: `Griechenland :: Greece`
+      D: `Griechenland :: Greece`,
     },
-    correctAnswer: "C"
+    correctAnswer: 'C',
   },
   {
     id: 44,
@@ -479,9 +479,9 @@ const questions = [
       A: `14`,
       B: `15`,
       C: `16`,
-      D: `17`
+      D: `17`,
     },
-    correctAnswer: "C"
+    correctAnswer: 'C',
   },
   {
     id: 45,
@@ -490,9 +490,9 @@ const questions = [
       A: `schwarz-rot-gold :: black-red-gold`,
       B: `rot-weiß-schwarz :: red-white-black`,
       C: `schwarz-gelb-rot :: black-yellow-red`,
-      D: `schwarz-rot-grün :: black-red-green`
+      D: `schwarz-rot-grün :: black-red-green`,
     },
-    correctAnswer: "A"
+    correctAnswer: 'A',
   },
   {
     id: 46,
@@ -501,9 +501,9 @@ const questions = [
       A: `Bonn`,
       B: `Berlin`,
       C: `Hamburg`,
-      D: `München :: Munich`
+      D: `München :: Munich`,
     },
-    correctAnswer: "B"
+    correctAnswer: 'B',
   },
   {
     id: 47,
@@ -512,9 +512,9 @@ const questions = [
       A: `Hamburg`,
       B: `Sachsen :: Saxony`,
       C: `Bayern :: Bavaria`,
-      D: `Thüringen :: Thuringia`
+      D: `Thüringen :: Thuringia`,
     },
-    correctAnswer: "A"
+    correctAnswer: 'A',
   },
   {
     id: 48,
@@ -523,9 +523,9 @@ const questions = [
       A: `die Elbe :: the Elbe`,
       B: `die Weser :: the Weser`,
       C: `der Rhein :: the Rhine`,
-      D: `die Oder :: the Oder`
+      D: `die Oder :: the Oder`,
     },
-    correctAnswer: "A"
+    correctAnswer: 'A',
   },
   {
     id: 49,
@@ -534,9 +534,9 @@ const questions = [
       A: `Hamburg`,
       B: `München :: Munich`,
       C: `Berlin`,
-      D: `Köln :: Cologne`
+      D: `Köln :: Cologne`,
     },
-    correctAnswer: "C"
+    correctAnswer: 'C',
   },
   {
     id: 50,
@@ -545,9 +545,9 @@ const questions = [
       A: `München :: Munich`,
       B: `Hamburg`,
       C: `Stuttgart`,
-      D: `Frankfurt am Main`
+      D: `Frankfurt am Main`,
     },
-    correctAnswer: "B"
+    correctAnswer: 'B',
   },
   {
     id: 51,
@@ -556,9 +556,9 @@ const questions = [
       A: `Hessen :: Hesse`,
       B: `Nordrhein-Westfalen :: North Rhine-Westphalia`,
       C: `Bayern :: Bavaria`,
-      D: `Baden-Württemberg :: Baden-Württemberg`
+      D: `Baden-Württemberg :: Baden-Württemberg`,
     },
-    correctAnswer: "A"
+    correctAnswer: 'A',
   },
   {
     id: 52,
@@ -567,9 +567,9 @@ const questions = [
       A: `die Elbe :: the Elbe`,
       B: `die Weser :: the Weser`,
       C: `der Rhein :: the Rhine`,
-      D: `die Spree :: the Spree`
+      D: `die Spree :: the Spree`,
     },
-    correctAnswer: "B"
+    correctAnswer: 'B',
   },
   {
     id: 53,
@@ -578,9 +578,9 @@ const questions = [
       A: `ohne Regierung :: without government`,
       B: `geteilt :: divided`,
       C: `nur Weststadt :: only western city`,
-      D: `nur Oststadt :: only eastern city`
+      D: `nur Oststadt :: only eastern city`,
     },
-    correctAnswer: "B"
+    correctAnswer: 'B',
   },
   {
     id: 54,
@@ -589,9 +589,9 @@ const questions = [
       A: `17 Bundesländer :: 17 federal states`,
       B: `18 Bundesländer :: 18 federal states`,
       C: `19 Bundesländer :: 19 federal states`,
-      D: `16 Bundesländer :: 16 federal states`
+      D: `16 Bundesländer :: 16 federal states`,
     },
-    correctAnswer: "D"
+    correctAnswer: 'D',
   },
   {
     id: 55,
@@ -600,9 +600,9 @@ const questions = [
       A: `ist der Bundestag das Parlament :: the Bundestag is the parliament`,
       B: `wird der Bundeskanzler vom Volk gewählt :: the chancellor is elected by the people`,
       C: `ist der Bundespräsident der Regierungschef :: the federal president is the head of government`,
-      D: `hat der Bundeskanzler das Amt für 8 Jahre :: the chancellor serves for 8 years`
+      D: `hat der Bundeskanzler das Amt für 8 Jahre :: the chancellor serves for 8 years`,
     },
-    correctAnswer: "A"
+    correctAnswer: 'A',
   },
   {
     id: 56,
@@ -611,9 +611,9 @@ const questions = [
       A: `Pfarrer / Pfarrerin :: priest`,
       B: `Bürgermeister / Bürgermeisterin :: mayor`,
       C: `Bundestagsabgeordneter / Bundestagsabgeordnete :: member of parliament`,
-      D: `Bundeskanzler / Bundeskanzlerin :: federal chancellor`
+      D: `Bundeskanzler / Bundeskanzlerin :: federal chancellor`,
     },
-    correctAnswer: "B"
+    correctAnswer: 'B',
   },
   {
     id: 57,
@@ -622,9 +622,9 @@ const questions = [
       A: `vier Besatzungszonen :: four occupation zones`,
       B: `einen Oststaat und einen Weststaat :: an eastern state and a western state`,
       C: `16 Kantone :: 16 cantons`,
-      D: `Bund, Länder und Kommunen :: federation, states and municipalities`
+      D: `Bund, Länder und Kommunen :: federation, states and municipalities`,
     },
-    correctAnswer: "D"
+    correctAnswer: 'D',
   },
   {
     id: 58,
@@ -633,9 +633,9 @@ const questions = [
       A: `Friedliche Demonstrative Partei :: Peaceful Demonstrative Party`,
       B: `Freie Demokratische Partei :: Free Democratic Party`,
       C: `Führende Demokratische Partei :: Leading Democratic Party`,
-      D: `Freie Deutsche Partei :: Free German Party`
+      D: `Freie Deutsche Partei :: Free German Party`,
     },
-    correctAnswer: "B"
+    correctAnswer: 'B',
   },
   {
     id: 59,
@@ -644,9 +644,9 @@ const questions = [
       A: `KPD und SPD :: KPD and SPD`,
       B: `CDU und FDP :: CDU and FDP`,
       C: `SPD und CDU :: SPD and CDU`,
-      D: `SPD und FDP :: SPD and FDP`
+      D: `SPD und FDP :: SPD and FDP`,
     },
-    correctAnswer: "A"
+    correctAnswer: 'A',
   },
   {
     id: 60,
@@ -655,9 +655,9 @@ const questions = [
       A: `1989`,
       B: `1999`,
       C: `2000`,
-      D: `1990`
+      D: `1990`,
     },
-    correctAnswer: "B"
+    correctAnswer: 'B',
   },
   {
     id: 61,
@@ -666,9 +666,9 @@ const questions = [
       A: `Christlich Sichere Union :: Christian Secure Union`,
       B: `Christlich Süddeutsche Union :: Christian South German Union`,
       C: `Christlich Soziale Union :: Christian Social Union`,
-      D: `Christlich Sächsische Union :: Christian Saxon Union`
+      D: `Christlich Sächsische Union :: Christian Saxon Union`,
     },
-    correctAnswer: "C"
+    correctAnswer: 'C',
   },
   {
     id: 62,
@@ -677,9 +677,9 @@ const questions = [
       A: `freie Zentralwirtschaft :: free central economy`,
       B: `soziale Marktwirtschaft :: social market economy`,
       C: `gelenkte Zentralwirtschaft :: controlled central economy`,
-      D: `Planwirtschaft :: planned economy`
+      D: `Planwirtschaft :: planned economy`,
     },
-    correctAnswer: "B"
+    correctAnswer: 'B',
   },
   {
     id: 63,
@@ -688,9 +688,9 @@ const questions = [
       A: `Sozialversicherung :: social insurance`,
       B: `Unfallversicherung :: accident insurance`,
       C: `Hausratversicherung :: household insurance`,
-      D: `Haftpflichtversicherung :: liability insurance`
+      D: `Haftpflichtversicherung :: liability insurance`,
     },
-    correctAnswer: "A"
+    correctAnswer: 'A',
   },
   {
     id: 64,
@@ -699,9 +699,9 @@ const questions = [
       A: `1968 Studentenrevolte in Berlin, 1989 Fall der Berliner Mauer :: 1968 Student revolt in Berlin, 1989 Fall of Berlin Wall`,
       B: `1923 Hitler-Putsch in München, 1989 Fall der Berliner Mauer :: 1923 Hitler putsch in Munich, 1989 Fall of Berlin Wall`,
       C: `1933 Bücherverbrennung, 1989 Fall der Berliner Mauer :: 1933 Book burning, 1989 Fall of Berlin Wall`,
-      D: `1932 Preußenschlag, 1989 Fall der Berliner Mauer :: 1932 Prussian coup, 1989 Fall of Berlin Wall`
+      D: `1932 Preußenschlag, 1989 Fall der Berliner Mauer :: 1932 Prussian coup, 1989 Fall of Berlin Wall`,
     },
-    correctAnswer: "B"
+    correctAnswer: 'B',
   },
   {
     id: 65,
@@ -710,9 +710,9 @@ const questions = [
       A: `Pressezensur, Versammlungsverbot, Meinungsfreiheit :: Press censorship, assembly ban, freedom of opinion`,
       B: `Meinungsfreiheit, Pressezensur, Versammlungsverbot :: Freedom of opinion, press censorship, assembly ban`,
       C: `Meinungsfreiheit, Versammlungsfreiheit, Pressefreiheit :: Freedom of opinion, freedom of assembly, press freedom`,
-      D: `Versammlungsverbot, Pressezensur, Meinungsverbot :: Assembly ban, press censorship, opinion ban`
+      D: `Versammlungsverbot, Pressezensur, Meinungsverbot :: Assembly ban, press censorship, opinion ban`,
     },
-    correctAnswer: "C"
+    correctAnswer: 'C',
   },
   {
     id: 66,
@@ -721,9 +721,9 @@ const questions = [
       A: `drei :: three`,
       B: `vier :: four`,
       C: `fünf :: five`,
-      D: `sechs :: six`
+      D: `sechs :: six`,
     },
-    correctAnswer: "B"
+    correctAnswer: 'B',
   },
   {
     id: 67,
@@ -732,9 +732,9 @@ const questions = [
       A: `Sie muss in den neuen Bundesländern antreten :: It must run in the new federal states`,
       B: `Sie muss mindestens 5% der Stimmen erhalten :: It must receive at least 5% of the votes`,
       C: `Sie muss mindestens 10% der Stimmen erhalten :: It must receive at least 10% of the votes`,
-      D: `Sie muss in allen Bundesländern antreten :: It must run in all federal states`
+      D: `Sie muss in allen Bundesländern antreten :: It must run in all federal states`,
     },
-    correctAnswer: "B"
+    correctAnswer: 'B',
   },
   {
     id: 68,
@@ -743,9 +743,9 @@ const questions = [
       A: `die Geschäftsordnung des Bundestages :: the rules of procedure of the Bundestag`,
       B: `den Staatsaufbau und die Grundrechte :: the structure of the state and basic rights`,
       C: `die Regierungszeit des Bundeskanzlers :: the term of office of the federal chancellor`,
-      D: `das Verhältnis zwischen Bund und Kommunen :: the relationship between federation and municipalities`
+      D: `das Verhältnis zwischen Bund und Kommunen :: the relationship between federation and municipalities`,
     },
-    correctAnswer: "B"
+    correctAnswer: 'B',
   },
   {
     id: 69,
@@ -754,9 +754,9 @@ const questions = [
       A: `Kirchensteuer :: church tax`,
       B: `Sozialabgaben der Beschäftigten und Arbeitgeber :: social contributions from employees and employers`,
       C: `Spendengeldern :: donations`,
-      D: `Vereinsbeiträgen :: club fees`
+      D: `Vereinsbeiträgen :: club fees`,
     },
-    correctAnswer: "B"
+    correctAnswer: 'B',
   },
   {
     id: 70,
@@ -765,9 +765,9 @@ const questions = [
       A: `Die Bundeswehr kontrolliert die Regierung :: The military controls the government`,
       B: `Das Bundesverfassungsgericht gehört zur Regierung :: The Federal Constitutional Court belongs to the government`,
       C: `Bundestag und Bundesrat sind Organe der Gesetzgebung :: Bundestag and Bundesrat are organs of legislation`,
-      D: `Die Bundesregierung kontrolliert das Bundesverfassungsgericht :: The federal government controls the Federal Constitutional Court`
+      D: `Die Bundesregierung kontrolliert das Bundesverfassungsgericht :: The federal government controls the Federal Constitutional Court`,
     },
-    correctAnswer: "C"
+    correctAnswer: 'C',
   },
   {
     id: 71,
@@ -776,9 +776,9 @@ const questions = [
       A: `Sie helfen alten Menschen beim Wählen :: They help elderly people vote`,
       B: `Sie schreiben die Wahlprogramme :: They write election programs`,
       C: `Sie geben Tipps für die Wahl ab :: They give voting tips`,
-      D: `Sie zählen die Stimmen nach der Wahl :: They count votes after the election`
+      D: `Sie zählen die Stimmen nach der Wahl :: They count votes after the election`,
     },
-    correctAnswer: "D"
+    correctAnswer: 'D',
   },
   {
     id: 72,
@@ -787,9 +787,9 @@ const questions = [
       A: `Verfassungsschutz :: constitutional protection`,
       B: `Justizvollzug :: execution of justice`,
       C: `Rechtsprechung :: jurisdiction`,
-      D: `richterliche Unabhängigkeit :: judicial independence`
+      D: `richterliche Unabhängigkeit :: judicial independence`,
     },
-    correctAnswer: "D"
+    correctAnswer: 'D',
   },
   {
     id: 73,
@@ -798,9 +798,9 @@ const questions = [
       A: `das Verteidigen des Landes :: defending the country`,
       B: `das Kontrollieren der Bürger und Bürgerinnen :: controlling the citizens`,
       C: `das Beschützen von Demonstrationen :: protecting demonstrations`,
-      D: `das Bewachen der Gefängnisse :: guarding prisons`
+      D: `das Bewachen der Gefängnisse :: guarding prisons`,
     },
-    correctAnswer: "C"
+    correctAnswer: 'C',
   },
   {
     id: 74,
@@ -809,9 +809,9 @@ const questions = [
       A: `die Bundesregierung :: the federal government`,
       B: `alle Bürger und Bürgerinnen :: all citizens`,
       C: `die Gewerkschaften :: the trade unions`,
-      D: `die Kirchen :: the churches`
+      D: `die Kirchen :: the churches`,
     },
-    correctAnswer: "A"
+    correctAnswer: 'A',
   },
   {
     id: 75,
@@ -820,9 +820,9 @@ const questions = [
       A: `die Bundesbank :: the Federal Bank`,
       B: `die Bundesregierung :: the federal government`,
       C: `die Bundesdruckerei :: the Federal Printing Office`,
-      D: `die Bundesfinanzagentur :: the Federal Finance Agency`
+      D: `die Bundesfinanzagentur :: the Federal Finance Agency`,
     },
-    correctAnswer: "D"
+    correctAnswer: 'D',
   },
   {
     id: 76,
@@ -831,9 +831,9 @@ const questions = [
       A: `alle 3 Jahre :: every 3 years`,
       B: `alle 4 Jahre :: every 4 years`,
       C: `alle 5 Jahre :: every 5 years`,
-      D: `alle 6 Jahre :: every 6 years`
+      D: `alle 6 Jahre :: every 6 years`,
     },
-    correctAnswer: "B"
+    correctAnswer: 'B',
   },
   {
     id: 77,
@@ -842,9 +842,9 @@ const questions = [
       A: `die Bundesversammlung :: the Federal Assembly`,
       B: `der Bundestag :: the Bundestag`,
       C: `das Bundesvolk :: the federal people`,
-      D: `die Bundesregierung :: the federal government`
+      D: `die Bundesregierung :: the federal government`,
     },
-    correctAnswer: "A"
+    correctAnswer: 'A',
   },
   {
     id: 78,
@@ -853,9 +853,9 @@ const questions = [
       A: `der Präsident / die Präsidentin des Bundesverfassungsgerichtes :: the President of the Federal Constitutional Court`,
       B: `der Bundespräsident / die Bundespräsidentin :: the Federal President`,
       C: `der Bundesratspräsident / die Bundesratspräsidentin :: the President of the Federal Council`,
-      D: `der Bundestagspräsident / die Bundestagspräsidentin :: the President of the Bundestag`
+      D: `der Bundestagspräsident / die Bundestagspräsidentin :: the President of the Bundestag`,
     },
-    correctAnswer: "B"
+    correctAnswer: 'B',
   },
   {
     id: 79,
@@ -864,9 +864,9 @@ const questions = [
       A: `die Abgeordneten des Bundestages :: the representatives of the Bundestag`,
       B: `die Minister und Ministerinnen der Länder :: the ministers of the states`,
       C: `die Regierungschefs der Länder :: the heads of government of the states`,
-      D: `die Vertreter und Vertreterinnen der Länder :: the representatives of the states`
+      D: `die Vertreter und Vertreterinnen der Länder :: the representatives of the states`,
     },
-    correctAnswer: "D"
+    correctAnswer: 'D',
   },
   {
     id: 80,
@@ -875,9 +875,9 @@ const questions = [
       A: `regiert das Land :: governs the country`,
       B: `entwirft die Gesetze :: drafts the laws`,
       C: `repräsentiert das Land :: represents the country`,
-      D: `überwacht die Gerichte :: supervises the courts`
+      D: `überwacht die Gerichte :: supervises the courts`,
     },
-    correctAnswer: "C"
+    correctAnswer: 'C',
   },
   {
     id: 81,
@@ -886,9 +886,9 @@ const questions = [
       A: `der Bundestag :: the Bundestag`,
       B: `der Bundesrat :: the Federal Council`,
       C: `das Volk :: the people`,
-      D: `die Bundesversammlung :: the Federal Assembly`
+      D: `die Bundesversammlung :: the Federal Assembly`,
     },
-    correctAnswer: "A"
+    correctAnswer: 'A',
   },
   {
     id: 82,
@@ -897,9 +897,9 @@ const questions = [
       A: `Volk :: people`,
       B: `Bundestag :: Bundestag`,
       C: `Bundesrat :: Federal Council`,
-      D: `Bundespräsidenten :: Federal President`
+      D: `Bundespräsidenten :: Federal President`,
     },
-    correctAnswer: "B"
+    correctAnswer: 'B',
   },
   {
     id: 83,
@@ -908,9 +908,9 @@ const questions = [
       A: `die deutsche Polizei :: the German police`,
       B: `ein deutscher Hafen :: a German port`,
       C: `eine deutsche Bürgerinitiative :: a German citizens' initiative`,
-      D: `die deutsche Armee :: the German army`
+      D: `die deutsche Armee :: the German army`,
     },
-    correctAnswer: "D"
+    correctAnswer: 'D',
   },
   {
     id: 84,
@@ -919,9 +919,9 @@ const questions = [
       A: `Man darf nicht wählen :: One may not vote`,
       B: `Man kann gewählt werden :: One can be elected`,
       C: `Man darf nur in der Gemeinde wählen :: One may only vote in the municipality`,
-      D: `Man kann andere zum Wählen auffordern :: One can encourage others to vote`
+      D: `Man kann andere zum Wählen auffordern :: One can encourage others to vote`,
     },
-    correctAnswer: "B"
+    correctAnswer: 'B',
   },
   {
     id: 85,
@@ -930,9 +930,9 @@ const questions = [
       A: `die Polizei :: the police`,
       B: `der Bundestag :: the Bundestag`,
       C: `das Bundesverfassungsgericht :: the Federal Constitutional Court`,
-      D: `die Gerichte :: the courts`
+      D: `die Gerichte :: the courts`,
     },
-    correctAnswer: "A"
+    correctAnswer: 'A',
   },
   {
     id: 86,
@@ -941,9 +941,9 @@ const questions = [
       A: `Staatenverbund :: confederation of states`,
       B: `Bundesstaat :: federal state`,
       C: `Staatenbund :: confederation`,
-      D: `Zentralstaat :: central state`
+      D: `Zentralstaat :: central state`,
     },
-    correctAnswer: "B"
+    correctAnswer: 'B',
   },
   {
     id: 87,
@@ -952,9 +952,9 @@ const questions = [
       A: `der Bundesrat :: the Federal Council`,
       B: `der Bundespräsident :: the Federal President`,
       C: `die Bürgerversammlung :: the citizens' assembly`,
-      D: `das Bundesverfassungsgericht :: the Federal Constitutional Court`
+      D: `das Bundesverfassungsgericht :: the Federal Constitutional Court`,
     },
-    correctAnswer: "C"
+    correctAnswer: 'C',
   },
   {
     id: 88,
@@ -963,9 +963,9 @@ const questions = [
       A: `Er kontrolliert die Bundesregierung :: It controls the federal government`,
       B: `Er wählt den Bundeskanzler / die Bundeskanzlerin :: It elects the Chancellor`,
       C: `Er macht die Gesetze :: It makes the laws`,
-      D: `Er vertritt die Interessen der Bundesländer :: It represents the interests of the federal states`
+      D: `Er vertritt die Interessen der Bundesländer :: It represents the interests of the federal states`,
     },
-    correctAnswer: "D"
+    correctAnswer: 'D',
   },
   {
     id: 89,
@@ -974,9 +974,9 @@ const questions = [
       A: `wenn der Bundespräsident es will :: when the Federal President wants it`,
       B: `wenn die Regierung es will :: when the government wants it`,
       C: `wenn er nicht mehr legitimiert ist :: when it is no longer legitimated`,
-      D: `wenn der Bundeskanzler die Vertrauensfrage verliert :: when the Chancellor loses the vote of confidence`
+      D: `wenn der Bundeskanzler die Vertrauensfrage verliert :: when the Chancellor loses the vote of confidence`,
     },
-    correctAnswer: "D"
+    correctAnswer: 'D',
   },
   {
     id: 90,
@@ -985,9 +985,9 @@ const questions = [
       A: `Man darf wählen :: One may vote`,
       B: `Man muss wählen :: One must vote`,
       C: `Man darf sich zur Wahl aufstellen :: One may stand for election`,
-      D: `Man darf andere zum Wählen auffordern :: One may encourage others to vote`
+      D: `Man darf andere zum Wählen auffordern :: One may encourage others to vote`,
     },
-    correctAnswer: "A"
+    correctAnswer: 'A',
   },
   {
     id: 91,
@@ -996,9 +996,9 @@ const questions = [
       A: `Kommunalwahl :: municipal election`,
       B: `Landtagswahl :: state parliament election`,
       C: `Europawahl :: European election`,
-      D: `Bundestagswahl :: federal election`
+      D: `Bundestagswahl :: federal election`,
     },
-    correctAnswer: "B"
+    correctAnswer: 'B',
   },
   {
     id: 92,
@@ -1007,9 +1007,9 @@ const questions = [
       A: `die Bundesregierung :: the federal government`,
       B: `der Bundestag :: the Bundestag`,
       C: `der Bundesgerichtshof :: the Federal Court of Justice`,
-      D: `die Bundeswehr :: the military`
+      D: `die Bundeswehr :: the military`,
     },
-    correctAnswer: "B"
+    correctAnswer: 'B',
   },
   {
     id: 93,
@@ -1018,9 +1018,9 @@ const questions = [
       A: `mit der Kontrolle der Bürger und Bürgerinnen :: with the control of citizens`,
       B: `mit der Ernennung der Richter und Richterinnen :: with the appointment of judges`,
       C: `mit dem Erlass von Gesetzen :: with the enactment of laws`,
-      D: `mit der Wirtschaftspolitik :: with economic policy`
+      D: `mit der Wirtschaftspolitik :: with economic policy`,
     },
-    correctAnswer: "C"
+    correctAnswer: 'C',
   },
   {
     id: 94,
@@ -1029,9 +1029,9 @@ const questions = [
       A: `die Einhaltung von Gesetzen zu kontrollieren :: to control compliance with laws`,
       B: `Gesetze zu entwerfen :: to draft laws`,
       C: `Regierungspolitik zu gestalten :: to shape government policy`,
-      D: `das Volk zu vertreten :: to represent the people`
+      D: `das Volk zu vertreten :: to represent the people`,
     },
-    correctAnswer: "A"
+    correctAnswer: 'A',
   },
   {
     id: 95,
@@ -1040,9 +1040,9 @@ const questions = [
       A: `SPD, SED :: SPD, SED`,
       B: `CDU, DSU, DA :: CDU, DSU, DA`,
       C: `PDS, CDU :: PDS, CDU`,
-      D: `SED, DSU :: SED, DSU`
+      D: `SED, DSU :: SED, DSU`,
     },
-    correctAnswer: "B"
+    correctAnswer: 'B',
   },
   {
     id: 96,
@@ -1051,9 +1051,9 @@ const questions = [
       A: `ein deutscher Plan zum Wiederaufbau nach dem Zweiten Weltkrieg :: a German plan for reconstruction after World War II`,
       B: `ein amerikanisches Wirtschaftshilfeprogramm für den Wiederaufbau Europas nach dem Zweiten Weltkrieg :: an American economic aid program for the reconstruction of Europe after World War II`,
       C: `ein sowjetisches Programm zur Wiedereingliederung Deutschlands :: a Soviet program for the reintegration of Germany`,
-      D: `ein europäischer Plan für den Frieden :: a European plan for peace`
+      D: `ein europäischer Plan für den Frieden :: a European plan for peace`,
     },
-    correctAnswer: "B"
+    correctAnswer: 'B',
   },
   {
     id: 97,
@@ -1062,9 +1062,9 @@ const questions = [
       A: `Nordrhein-Westfalen, Niedersachsen, Schleswig-Holstein, Hamburg :: North Rhine-Westphalia, Lower Saxony, Schleswig-Holstein, Hamburg`,
       B: `Bayern, Baden-Württemberg, Hessen :: Bavaria, Baden-Württemberg, Hesse`,
       C: `Sachsen, Thüringen, Sachsen-Anhalt :: Saxony, Thuringia, Saxony-Anhalt`,
-      D: `Brandenburg, Mecklenburg-Vorpommern :: Brandenburg, Mecklenburg-Western Pomerania`
+      D: `Brandenburg, Mecklenburg-Vorpommern :: Brandenburg, Mecklenburg-Western Pomerania`,
     },
-    correctAnswer: "A"
+    correctAnswer: 'A',
   },
   {
     id: 98,
@@ -1073,9 +1073,9 @@ const questions = [
       A: `1947`,
       B: `1948`,
       C: `1949`,
-      D: `1950`
+      D: `1950`,
     },
-    correctAnswer: "C"
+    correctAnswer: 'C',
   },
   {
     id: 99,
@@ -1084,9 +1084,9 @@ const questions = [
       A: `1947`,
       B: `1948`,
       C: `1949`,
-      D: `1950`
+      D: `1950`,
     },
-    correctAnswer: "C"
+    correctAnswer: 'C',
   },
   {
     id: 100,
@@ -1095,9 +1095,9 @@ const questions = [
       A: `Sozialistische Partei Deutschlands :: Socialist Party of Germany`,
       B: `Sozialdemokratische Partei Deutschlands :: Social Democratic Party of Germany`,
       C: `Sozialpolitische Partei Deutschlands :: Social Policy Party of Germany`,
-      D: `Sozialgerechte Partei Deutschlands :: Socially Just Party of Germany`
+      D: `Sozialgerechte Partei Deutschlands :: Socially Just Party of Germany`,
     },
-    correctAnswer: "B"
+    correctAnswer: 'B',
   },
   {
     id: 101,
@@ -1106,9 +1106,9 @@ const questions = [
       A: `Konrad Adenauer`,
       B: `Willy Brandt`,
       C: `Helmut Schmidt`,
-      D: `Helmut Kohl`
+      D: `Helmut Kohl`,
     },
-    correctAnswer: "A"
+    correctAnswer: 'A',
   },
   {
     id: 102,
@@ -1117,9 +1117,9 @@ const questions = [
       A: `ein Staatenverbund mit eigener Währung :: a confederation of states with its own currency`,
       B: `ein europäischer Staat :: a European state`,
       C: `eine internationale Organisation :: an international organization`,
-      D: `ein Militärbündnis :: a military alliance`
+      D: `ein Militärbündnis :: a military alliance`,
     },
-    correctAnswer: "A"
+    correctAnswer: 'A',
   },
   {
     id: 103,
@@ -1128,9 +1128,9 @@ const questions = [
       A: `1957`,
       B: `1993`,
       C: `1995`,
-      D: `2004`
+      D: `2004`,
     },
-    correctAnswer: "A"
+    correctAnswer: 'A',
   },
   {
     id: 104,
@@ -1139,9 +1139,9 @@ const questions = [
       A: `9 Länder :: 9 countries`,
       B: `6 Länder :: 6 countries`,
       C: `7 Länder :: 7 countries`,
-      D: `8 Länder :: 8 countries`
+      D: `8 Länder :: 8 countries`,
     },
-    correctAnswer: "A"
+    correctAnswer: 'A',
   },
   {
     id: 105,
@@ -1150,9 +1150,9 @@ const questions = [
       A: `Frankreich :: France`,
       B: `Ungarn :: Hungary`,
       C: `Österreich :: Austria`,
-      D: `Tschechien :: Czech Republic`
+      D: `Tschechien :: Czech Republic`,
     },
-    correctAnswer: "B"
+    correctAnswer: 'B',
   },
   {
     id: 106,
@@ -1161,9 +1161,9 @@ const questions = [
       A: `Köln :: Cologne`,
       B: `Düsseldorf`,
       C: `Dortmund`,
-      D: `Essen`
+      D: `Essen`,
     },
-    correctAnswer: "B"
+    correctAnswer: 'B',
   },
   {
     id: 107,
@@ -1172,9 +1172,9 @@ const questions = [
       A: `Augsburg`,
       B: `Würzburg`,
       C: `München :: Munich`,
-      D: `Regensburg`
+      D: `Regensburg`,
     },
-    correctAnswer: "C"
+    correctAnswer: 'C',
   },
   {
     id: 108,
@@ -1183,9 +1183,9 @@ const questions = [
       A: `Frankreich :: France`,
       B: `Sowjetunion :: Soviet Union`,
       C: `Großbritannien :: Great Britain`,
-      D: `USA`
+      D: `USA`,
     },
-    correctAnswer: "B"
+    correctAnswer: 'B',
   },
   {
     id: 109,
@@ -1194,9 +1194,9 @@ const questions = [
       A: `Willy Brandt`,
       B: `Helmut Schmidt`,
       C: `Helmut Kohl`,
-      D: `Gerhard Schröder`
+      D: `Gerhard Schröder`,
     },
-    correctAnswer: "C"
+    correctAnswer: 'C',
   },
   {
     id: 110,
@@ -1205,9 +1205,9 @@ const questions = [
       A: `1999`,
       B: `2001`,
       C: `2002`,
-      D: `2003`
+      D: `2003`,
     },
-    correctAnswer: "C"
+    correctAnswer: 'C',
   },
   {
     id: 111,
@@ -1216,9 +1216,9 @@ const questions = [
       A: `Deutsche Mark :: German Mark`,
       B: `Ost-Mark :: East Mark`,
       C: `Mark der DDR :: GDR Mark`,
-      D: `Reichsmark`
+      D: `Reichsmark`,
     },
-    correctAnswer: "C"
+    correctAnswer: 'C',
   },
   {
     id: 112,
@@ -1227,9 +1227,9 @@ const questions = [
       A: `Theodor Heuss`,
       B: `Heinrich Lübke`,
       C: `Walter Scheel`,
-      D: `Karl Carstens`
+      D: `Karl Carstens`,
     },
-    correctAnswer: "A"
+    correctAnswer: 'A',
   },
   {
     id: 113,
@@ -1238,9 +1238,9 @@ const questions = [
       A: `North Atlantic Treaty Organization`,
       B: `New Atlantic Treaty Organization`,
       C: `North American Treaty Organization`,
-      D: `Northern Atlantic Treaty Organization`
+      D: `Northern Atlantic Treaty Organization`,
     },
-    correctAnswer: "A"
+    correctAnswer: 'A',
   },
   {
     id: 114,
@@ -1249,9 +1249,9 @@ const questions = [
       A: `1949`,
       B: `1955`,
       C: `1961`,
-      D: `1990`
+      D: `1990`,
     },
-    correctAnswer: "B"
+    correctAnswer: 'B',
   },
   {
     id: 115,
@@ -1260,9 +1260,9 @@ const questions = [
       A: `ein Militärbündnis europäischer Staaten :: a military alliance of European states`,
       B: `ein Wirtschaftsbündnis sozialistischer Staaten :: an economic alliance of socialist states`,
       C: `ein Militärbündnis sozialistischer Staaten :: a military alliance of socialist states`,
-      D: `ein Friedensvertrag :: a peace treaty`
+      D: `ein Friedensvertrag :: a peace treaty`,
     },
-    correctAnswer: "C"
+    correctAnswer: 'C',
   },
   {
     id: 116,
@@ -1271,9 +1271,9 @@ const questions = [
       A: `1917`,
       B: `1918`,
       C: `1919`,
-      D: `1920`
+      D: `1920`,
     },
-    correctAnswer: "B"
+    correctAnswer: 'B',
   },
   {
     id: 117,
@@ -1282,9 +1282,9 @@ const questions = [
       A: `Bundesrepublik Deutschland :: Federal Republic of Germany`,
       B: `Deutsche Demokratische Republik :: German Democratic Republic`,
       C: `Weimarer Republik :: Weimar Republic`,
-      D: `Deutsches Reich :: German Empire`
+      D: `Deutsches Reich :: German Empire`,
     },
-    correctAnswer: "C"
+    correctAnswer: 'C',
   },
   {
     id: 118,
@@ -1293,9 +1293,9 @@ const questions = [
       A: `die Grenze zwischen Ost- und Westeuropa während des Kalten Krieges :: the border between Eastern and Western Europe during the Cold War`,
       B: `die Berliner Mauer :: the Berlin Wall`,
       C: `die Grenze zwischen Deutschland und Polen :: the border between Germany and Poland`,
-      D: `eine Theatervorhang :: a theater curtain`
+      D: `eine Theatervorhang :: a theater curtain`,
     },
-    correctAnswer: "A"
+    correctAnswer: 'A',
   },
   {
     id: 119,
@@ -1304,9 +1304,9 @@ const questions = [
       A: `Kürbisse aufstellen :: setting up pumpkins`,
       B: `Feuerwerk anzünden :: lighting fireworks`,
       C: `den Tannenbaum schmücken :: decorating the Christmas tree`,
-      D: `Ostereier bemalen :: painting Easter eggs`
+      D: `Ostereier bemalen :: painting Easter eggs`,
     },
-    correctAnswer: "B"
+    correctAnswer: 'B',
   },
   {
     id: 120,
@@ -1315,9 +1315,9 @@ const questions = [
       A: `Islam`,
       B: `Judentum :: Judaism`,
       C: `Christentum :: Christianity`,
-      D: `Buddhismus :: Buddhism`
+      D: `Buddhismus :: Buddhism`,
     },
-    correctAnswer: "C"
+    correctAnswer: 'C',
   },
   {
     id: 121,
@@ -1326,9 +1326,9 @@ const questions = [
       A: `der Tag der Deutschen Einheit :: Day of German Unity`,
       B: `der Tag der Arbeit :: Labor Day`,
       C: `der Frauentag :: Women's Day`,
-      D: `der Europatag :: Europe Day`
+      D: `der Europatag :: Europe Day`,
     },
-    correctAnswer: "B"
+    correctAnswer: 'B',
   },
   {
     id: 122,
@@ -1337,9 +1337,9 @@ const questions = [
       A: `Bayern :: Bavaria`,
       B: `Sachsen :: Saxony`,
       C: `Hessen :: Hesse`,
-      D: `Alle neuen Bundesländer :: All new federal states`
+      D: `Alle neuen Bundesländer :: All new federal states`,
     },
-    correctAnswer: "D"
+    correctAnswer: 'D',
   },
   {
     id: 123,
@@ -1348,9 +1348,9 @@ const questions = [
       A: `Karlsruhe`,
       B: `Mannheim`,
       C: `Stuttgart`,
-      D: `Freiburg`
+      D: `Freiburg`,
     },
-    correctAnswer: "C"
+    correctAnswer: 'C',
   },
   {
     id: 124,
@@ -1359,9 +1359,9 @@ const questions = [
       A: `das Mittelmeer :: the Mediterranean Sea`,
       B: `die Nordsee :: the North Sea`,
       C: `das Schwarze Meer :: the Black Sea`,
-      D: `die Ostsee :: the Baltic Sea`
+      D: `die Ostsee :: the Baltic Sea`,
     },
-    correctAnswer: "B"
+    correctAnswer: 'B',
   },
   {
     id: 125,
@@ -1370,9 +1370,9 @@ const questions = [
       A: `BND`,
       B: `BKA`,
       C: `Verfassungsschutz :: Constitutional Protection`,
-      D: `GSG 9`
+      D: `GSG 9`,
     },
-    correctAnswer: "C"
+    correctAnswer: 'C',
   },
   {
     id: 126,
@@ -1381,9 +1381,9 @@ const questions = [
       A: `mit Bitten und Beschwerden an Behörden wenden :: turn to authorities with requests and complaints`,
       B: `bei der Polizei bewerben :: apply to the police`,
       C: `sich kandidieren lassen :: run as a candidate`,
-      D: `Steuern sparen :: save taxes`
+      D: `Steuern sparen :: save taxes`,
     },
-    correctAnswer: "A"
+    correctAnswer: 'A',
   },
   {
     id: 127,
@@ -1392,9 +1392,9 @@ const questions = [
       A: `Amtsgericht :: Local Court`,
       B: `Bundesverfassungsgericht :: Federal Constitutional Court`,
       C: `Bundesgerichtshof :: Federal Court of Justice`,
-      D: `Bundesarbeitsgericht :: Federal Labor Court`
+      D: `Bundesarbeitsgericht :: Federal Labor Court`,
     },
-    correctAnswer: "B"
+    correctAnswer: 'B',
   },
   {
     id: 128,
@@ -1403,9 +1403,9 @@ const questions = [
       A: `16`,
       B: `18`,
       C: `21`,
-      D: `Es ist in jedem Bundesland anders :: It varies by federal state`
+      D: `Es ist in jedem Bundesland anders :: It varies by federal state`,
     },
-    correctAnswer: "D"
+    correctAnswer: 'D',
   },
   {
     id: 129,
@@ -1414,9 +1414,9 @@ const questions = [
       A: `Europäische Union :: European Union`,
       B: `Europäische Unternehmen :: European Companies`,
       C: `Europäische Unabhängigkeit :: European Independence`,
-      D: `Europäisches Unternehmen :: European Enterprise`
+      D: `Europäisches Unternehmen :: European Enterprise`,
     },
-    correctAnswer: "A"
+    correctAnswer: 'A',
   },
   {
     id: 130,
@@ -1425,9 +1425,9 @@ const questions = [
       A: `blau :: blue`,
       B: `rot :: red`,
       C: `grün :: green`,
-      D: `schwarz :: black`
+      D: `schwarz :: black`,
     },
-    correctAnswer: "B"
+    correctAnswer: 'B',
   },
   {
     id: 131,
@@ -1436,9 +1436,9 @@ const questions = [
       A: `70 Millionen :: 70 million`,
       B: `80 Millionen :: 80 million`,
       C: `85 Millionen :: 85 million`,
-      D: `90 Millionen :: 90 million`
+      D: `90 Millionen :: 90 million`,
     },
-    correctAnswer: "C"
+    correctAnswer: 'C',
   },
   {
     id: 132,
@@ -1447,9 +1447,9 @@ const questions = [
       A: `mit Frankreich :: with France`,
       B: `mit Polen :: with Poland`,
       C: `mit Österreich :: with Austria`,
-      D: `mit Tschechien :: with Czech Republic`
+      D: `mit Tschechien :: with Czech Republic`,
     },
-    correctAnswer: "C"
+    correctAnswer: 'C',
   },
   {
     id: 133,
@@ -1458,9 +1458,9 @@ const questions = [
       A: `Raketen in die Luft schießen :: shooting rockets into the air`,
       B: `einen Maibaum aufstellen :: erecting a maypole`,
       C: `Kürbisse in die Fenster stellen :: putting pumpkins in windows`,
-      D: `grüne Zweige ins Haus holen :: bringing green branches into the house`
+      D: `grüne Zweige ins Haus holen :: bringing green branches into the house`,
     },
-    correctAnswer: "D"
+    correctAnswer: 'D',
   },
   {
     id: 134,
@@ -1469,9 +1469,9 @@ const questions = [
       A: `Lebensversicherung :: life insurance`,
       B: `Hausratversicherung :: household insurance`,
       C: `Krankenversicherung :: health insurance`,
-      D: `Haftpflichtversicherung :: liability insurance`
+      D: `Haftpflichtversicherung :: liability insurance`,
     },
-    correctAnswer: "C"
+    correctAnswer: 'C',
   },
   {
     id: 135,
@@ -1480,9 +1480,9 @@ const questions = [
       A: `die Lehrer und Lehrerinnen :: the teachers`,
       B: `die Bundesländer :: the federal states`,
       C: `das Bundesministerium für Bildung :: the Federal Ministry of Education`,
-      D: `die Universitäten :: the universities`
+      D: `die Universitäten :: the universities`,
     },
-    correctAnswer: "B"
+    correctAnswer: 'B',
   },
   {
     id: 136,
@@ -1491,9 +1491,9 @@ const questions = [
       A: `ein Gericht für Verfassungsfragen :: a court for constitutional matters`,
       B: `ein Gericht für Strafrecht :: a court for criminal law`,
       C: `ein Gericht für Privatrecht :: a court for private law`,
-      D: `ein Gericht für Steuerrecht :: a court for tax law`
+      D: `ein Gericht für Steuerrecht :: a court for tax law`,
     },
-    correctAnswer: "A"
+    correctAnswer: 'A',
   },
   {
     id: 137,
@@ -1502,9 +1502,9 @@ const questions = [
       A: `garantiert jedem Bürger einen Arbeitsplatz :: guarantees every citizen a job`,
       B: `kann die Wirtschaft vollständig planen :: can completely plan the economy`,
       C: `sorgt für sozialen Ausgleich :: provides for social balance`,
-      D: `besitzt alle Produktionsmittel :: owns all means of production`
+      D: `besitzt alle Produktionsmittel :: owns all means of production`,
     },
-    correctAnswer: "C"
+    correctAnswer: 'C',
   },
   {
     id: 138,
@@ -1513,9 +1513,9 @@ const questions = [
       A: `der Bau der Berliner Mauer :: the construction of the Berlin Wall`,
       B: `die Währungsreform :: the currency reform`,
       C: `die erste Bundestagswahl :: the first federal election`,
-      D: `das Ende des Zweiten Weltkriegs :: the end of World War II`
+      D: `das Ende des Zweiten Weltkriegs :: the end of World War II`,
     },
-    correctAnswer: "A"
+    correctAnswer: 'A',
   },
   {
     id: 139,
@@ -1524,9 +1524,9 @@ const questions = [
       A: `ein Volksaufstand :: a popular uprising`,
       B: `der Bau der Berliner Mauer :: the construction of the Berlin Wall`,
       C: `die Gründung der DDR :: the founding of the GDR`,
-      D: `der erste Parteitag der SED :: the first party congress of the SED`
+      D: `der erste Parteitag der SED :: the first party congress of the SED`,
     },
-    correctAnswer: "A"
+    correctAnswer: 'A',
   },
   {
     id: 140,
@@ -1535,9 +1535,9 @@ const questions = [
       A: `gegen den Westen :: against the West`,
       B: `zur Verteidigung :: for defense`,
       C: `zum Schutz vor Einwanderung :: for protection against immigration`,
-      D: `zur Verhinderung der Flucht aus der DDR :: to prevent escape from the GDR`
+      D: `zur Verhinderung der Flucht aus der DDR :: to prevent escape from the GDR`,
     },
-    correctAnswer: "D"
+    correctAnswer: 'D',
   },
   {
     id: 141,
@@ -1546,9 +1546,9 @@ const questions = [
       A: `Adenauer und de Gaulle`,
       B: `Brandt und Pompidou`,
       C: `Schmidt und Giscard d'Estaing`,
-      D: `Kohl und Mitterrand`
+      D: `Kohl und Mitterrand`,
     },
-    correctAnswer: "A"
+    correctAnswer: 'A',
   },
   {
     id: 142,
@@ -1557,9 +1557,9 @@ const questions = [
       A: `die Entwicklung der Wirtschaft in der DDR :: the economic development in the GDR`,
       B: `den raschen Wiederaufbau nach dem Zweiten Weltkrieg :: the rapid reconstruction after World War II`,
       C: `die Einführung der D-Mark :: the introduction of the D-Mark`,
-      D: `die Wiedervereinigung :: reunification`
+      D: `die Wiedervereinigung :: reunification`,
     },
-    correctAnswer: "B"
+    correctAnswer: 'B',
   },
   {
     id: 143,
@@ -1568,9 +1568,9 @@ const questions = [
       A: `Bundespräsident :: Federal President`,
       B: `Bundeskanzler :: Federal Chancellor`,
       C: `Außenminister :: Foreign Minister`,
-      D: `Bundestagspräsident :: President of the Bundestag`
+      D: `Bundestagspräsident :: President of the Bundestag`,
     },
-    correctAnswer: "B"
+    correctAnswer: 'B',
   },
   {
     id: 144,
@@ -1579,9 +1579,9 @@ const questions = [
       A: `die Politik der DDR gegenüber der Bundesrepublik :: GDR policy toward the Federal Republic`,
       B: `die Politik der Bundesrepublik gegenüber Osteuropa :: Federal Republic policy toward Eastern Europe`,
       C: `die Wirtschaftspolitik der DDR :: GDR economic policy`,
-      D: `die Sozialpolitik der Bundesrepublik :: Federal Republic social policy`
+      D: `die Sozialpolitik der Bundesrepublik :: Federal Republic social policy`,
     },
-    correctAnswer: "B"
+    correctAnswer: 'B',
   },
   {
     id: 145,
@@ -1590,9 +1590,9 @@ const questions = [
       A: `Ludwig Erhard`,
       B: `Willy Brandt`,
       C: `Helmut Schmidt`,
-      D: `Helmut Kohl`
+      D: `Helmut Kohl`,
     },
-    correctAnswer: "B"
+    correctAnswer: 'B',
   },
   {
     id: 146,
@@ -1601,9 +1601,9 @@ const questions = [
       A: `ein Studienfach :: a field of study`,
       B: `ein Schulabschluss :: a school diploma`,
       C: `eine Berufsausbildung :: vocational training`,
-      D: `ein Hochschulabschluss :: a university degree`
+      D: `ein Hochschulabschluss :: a university degree`,
     },
-    correctAnswer: "B"
+    correctAnswer: 'B',
   },
   {
     id: 147,
@@ -1612,9 +1612,9 @@ const questions = [
       A: `die Hauptschule :: secondary school`,
       B: `die Realschule :: intermediate school`,
       C: `das Gymnasium :: grammar school`,
-      D: `die Grundschule :: primary school`
+      D: `die Grundschule :: primary school`,
     },
-    correctAnswer: "D"
+    correctAnswer: 'D',
   },
   {
     id: 148,
@@ -1623,9 +1623,9 @@ const questions = [
       A: `Alle Kinder müssen eine Schule besuchen :: All children must attend school`,
       B: `Alle Kinder können eine Schule besuchen :: All children may attend school`,
       C: `Nur deutsche Kinder müssen eine Schule besuchen :: Only German children must attend school`,
-      D: `Die Eltern entscheiden über den Schulbesuch :: Parents decide about school attendance`
+      D: `Die Eltern entscheiden über den Schulbesuch :: Parents decide about school attendance`,
     },
-    correctAnswer: "A"
+    correctAnswer: 'A',
   },
   {
     id: 149,
@@ -1634,9 +1634,9 @@ const questions = [
       A: `16`,
       B: `17`,
       C: `18`,
-      D: `21`
+      D: `21`,
     },
-    correctAnswer: "C"
+    correctAnswer: 'C',
   },
   {
     id: 150,
@@ -1645,9 +1645,9 @@ const questions = [
       A: `die Einwilligung der Eltern :: parental consent`,
       B: `eine Arbeitsstelle :: a job`,
       C: `eine Wohnung :: an apartment`,
-      D: `einen Ehefähigkeitsnachweis :: a certificate of eligibility to marry`
+      D: `einen Ehefähigkeitsnachweis :: a certificate of eligibility to marry`,
     },
-    correctAnswer: "D"
+    correctAnswer: 'D',
   },
   {
     id: 151,
@@ -1656,9 +1656,9 @@ const questions = [
       A: `16`,
       B: `17`,
       C: `18`,
-      D: `21`
+      D: `21`,
     },
-    correctAnswer: "C"
+    correctAnswer: 'C',
   },
   {
     id: 152,
@@ -1667,9 +1667,9 @@ const questions = [
       A: `leichte Ohrfeigen bei Fehlverhalten :: light slaps for misbehavior`,
       B: `Kinder als Arbeiter einsetzen :: using children as workers`,
       C: `körperliche Bestrafung zur Erziehung :: physical punishment for education`,
-      D: `Kinder nicht in die Schule schicken :: not sending children to school`
+      D: `Kinder nicht in die Schule schicken :: not sending children to school`,
     },
-    correctAnswer: "A"
+    correctAnswer: 'A',
   },
   {
     id: 153,
@@ -1678,9 +1678,9 @@ const questions = [
       A: `Meinungsfreiheit :: freedom of opinion`,
       B: `Kinderarbeit :: child labor`,
       C: `Religionsfreiheit :: religious freedom`,
-      D: `Versammlungsfreiheit :: freedom of assembly`
+      D: `Versammlungsfreiheit :: freedom of assembly`,
     },
-    correctAnswer: "B"
+    correctAnswer: 'B',
   },
   {
     id: 154,
@@ -1689,9 +1689,9 @@ const questions = [
       A: `Rheinland-Pfalz :: Rhineland-Palatinate`,
       B: `Schleswig-Holstein`,
       C: `Saarland`,
-      D: `Vogesen :: Vosges`
+      D: `Vogesen :: Vosges`,
     },
-    correctAnswer: "D"
+    correctAnswer: 'D',
   },
   {
     id: 155,
@@ -1700,9 +1700,9 @@ const questions = [
       A: `es wird verschrottet :: it is scrapped`,
       B: `der Führerschein wird entzogen :: the license is revoked`,
       C: `es wird beschlagnahmt :: it is confiscated`,
-      D: `nichts :: nothing`
+      D: `nichts :: nothing`,
     },
-    correctAnswer: "C"
+    correctAnswer: 'C',
   },
   {
     id: 156,
@@ -1711,9 +1711,9 @@ const questions = [
       A: `Christi Himmelfahrt :: Ascension Day`,
       B: `Pfingsten :: Pentecost`,
       C: `Fronleichnam :: Corpus Christi`,
-      D: `Allerheiligen :: All Saints' Day`
+      D: `Allerheiligen :: All Saints' Day`,
     },
-    correctAnswer: "A"
+    correctAnswer: 'A',
   },
   {
     id: 157,
@@ -1722,9 +1722,9 @@ const questions = [
       A: `staatliche Maßnahmen müssen angemessen sein :: state measures must be appropriate`,
       B: `alle sollen gleich behandelt werden :: all should be treated equally`,
       C: `jeder soll nach seinen Fähigkeiten beurteilt werden :: everyone should be judged according to their abilities`,
-      D: `die Strafe muss der Tat entsprechen :: the punishment must fit the crime`
+      D: `die Strafe muss der Tat entsprechen :: the punishment must fit the crime`,
     },
-    correctAnswer: "A"
+    correctAnswer: 'A',
   },
   {
     id: 158,
@@ -1733,9 +1733,9 @@ const questions = [
       A: `In Deutschland darf man seinen Glauben frei wählen :: In Germany one may freely choose one's faith`,
       B: `In Deutschland gibt es nur eine erlaubte Religion :: In Germany there is only one permitted religion`,
       C: `In Deutschland darf man nicht an Gott glauben :: In Germany one may not believe in God`,
-      D: `In Deutschland bestimmt der Staat die Religion :: In Germany the state determines religion`
+      D: `In Deutschland bestimmt der Staat die Religion :: In Germany the state determines religion`,
     },
-    correctAnswer: "A"
+    correctAnswer: 'A',
   },
   {
     id: 159,
@@ -1744,9 +1744,9 @@ const questions = [
       A: `Die Frau ist lange krank :: The woman is sick for a long time`,
       B: `Die Frau kam oft zu spät :: The woman often came late`,
       C: `Die Frau ist schwanger :: The woman is pregnant`,
-      D: `Die Frau hat ein schlechtes Arbeitszeugnis :: The woman has a bad work reference`
+      D: `Die Frau hat ein schlechtes Arbeitszeugnis :: The woman has a bad work reference`,
     },
-    correctAnswer: "C"
+    correctAnswer: 'C',
   },
   {
     id: 160,
@@ -1755,9 +1755,9 @@ const questions = [
       A: `Er wird nicht eingestellt, weil er im Rollstuhl sitzt :: He is not hired because he is in a wheelchair`,
       B: `Er wird nicht eingestellt, weil seine Qualifikationen fehlen :: He is not hired because he lacks qualifications`,
       C: `Er wird nicht eingestellt, weil es schon andere Bewerber gibt :: He is not hired because there are already other applicants`,
-      D: `Er wird nicht eingestellt, weil er zu jung ist :: He is not hired because he is too young`
+      D: `Er wird nicht eingestellt, weil er zu jung ist :: He is not hired because he is too young`,
     },
-    correctAnswer: "A"
+    correctAnswer: 'A',
   },
   {
     id: 161,
@@ -1766,9 +1766,9 @@ const questions = [
       A: `Das Verschuldensprinzip :: The fault principle`,
       B: `Das Zerrüttungsprinzip :: The breakdown principle`,
       C: `Das Zustimmungsprinzip :: The consent principle`,
-      D: `Das Härtefallprinzip :: The hardship principle`
+      D: `Das Härtefallprinzip :: The hardship principle`,
     },
-    correctAnswer: "B"
+    correctAnswer: 'B',
   },
   {
     id: 162,
@@ -1777,9 +1777,9 @@ const questions = [
       A: `Kürbisse vor die Tür stellen :: putting pumpkins in front of the door`,
       B: `einen Tannenbaum schmücken :: decorating a fir tree`,
       C: `Eier verstecken :: hiding eggs`,
-      D: `Raketen anzünden :: lighting rockets`
+      D: `Raketen anzünden :: lighting rockets`,
     },
-    correctAnswer: "B"
+    correctAnswer: 'B',
   },
   {
     id: 163,
@@ -1788,9 +1788,9 @@ const questions = [
       A: `Reformen :: reforms`,
       B: `Revolution :: revolution`,
       C: `Transformation :: transformation`,
-      D: `Intervention :: intervention`
+      D: `Intervention :: intervention`,
     },
-    correctAnswer: "C"
+    correctAnswer: 'C',
   },
   {
     id: 164,
@@ -1799,9 +1799,9 @@ const questions = [
       A: `ein Attentat auf Hitler :: an assassination attempt on Hitler`,
       B: `eine große Demonstration :: a large demonstration`,
       C: `der D-Day :: D-Day`,
-      D: `die Befreiung der Konzentrationslager :: the liberation of concentration camps`
+      D: `die Befreiung der Konzentrationslager :: the liberation of concentration camps`,
     },
-    correctAnswer: "A"
+    correctAnswer: 'A',
   },
   {
     id: 165,
@@ -1810,9 +1810,9 @@ const questions = [
       A: `Frauen, die nach dem Krieg Deutschland wieder aufbauten :: women who rebuilt Germany after the war`,
       B: `Frauen, die im Krieg gekämpft haben :: women who fought in the war`,
       C: `Frauen, die Witwen geworden sind :: women who became widows`,
-      D: `Frauen, die in Fabriken gearbeitet haben :: women who worked in factories`
+      D: `Frauen, die in Fabriken gearbeitet haben :: women who worked in factories`,
     },
-    correctAnswer: "A"
+    correctAnswer: 'A',
   },
   {
     id: 166,
@@ -1821,9 +1821,9 @@ const questions = [
       A: `Deutschland wurde geteilt :: Germany was divided`,
       B: `Deutschland wurde größer :: Germany became larger`,
       C: `Deutschland wurde zur Diktatur :: Germany became a dictatorship`,
-      D: `Deutschland gewann Kolonien :: Germany gained colonies`
+      D: `Deutschland gewann Kolonien :: Germany gained colonies`,
     },
-    correctAnswer: "A"
+    correctAnswer: 'A',
   },
   {
     id: 167,
@@ -1832,9 +1832,9 @@ const questions = [
       A: `ein Prozess gegen Kriegsverbrecher :: a trial against war criminals`,
       B: `ein Wirtschaftsprozess :: an economic trial`,
       C: `ein politischer Prozess gegen Kommunisten :: a political trial against communists`,
-      D: `ein Prozess gegen Demokraten :: a trial against democrats`
+      D: `ein Prozess gegen Demokraten :: a trial against democrats`,
     },
-    correctAnswer: "A"
+    correctAnswer: 'A',
   },
   {
     id: 168,
@@ -1843,9 +1843,9 @@ const questions = [
       A: `eine deutsche Schriftstellerin :: a German writer`,
       B: `eine jüdische Politikerin :: a Jewish politician`,
       C: `ein jüdisches Mädchen, das ein Tagebuch über die NS-Zeit schrieb :: a Jewish girl who wrote a diary about the Nazi era`,
-      D: `eine Widerstandskämpferin :: a resistance fighter`
+      D: `eine Widerstandskämpferin :: a resistance fighter`,
     },
-    correctAnswer: "C"
+    correctAnswer: 'C',
   },
   {
     id: 169,
@@ -1854,9 +1854,9 @@ const questions = [
       A: `Feindschaft gegen Juden :: hostility toward Jews`,
       B: `Feindschaft gegen Christen :: hostility toward Christians`,
       C: `Feindschaft gegen Muslime :: hostility toward Muslims`,
-      D: `Feindschaft gegen Atheisten :: hostility toward atheists`
+      D: `Feindschaft gegen Atheisten :: hostility toward atheists`,
     },
-    correctAnswer: "A"
+    correctAnswer: 'A',
   },
   {
     id: 170,
@@ -1865,9 +1865,9 @@ const questions = [
       A: `aktive Unterstützung :: active support`,
       B: `passiver Gehorsam :: passive obedience`,
       C: `aktiver Protest :: active protest`,
-      D: `passive Teilnahme :: passive participation`
+      D: `passive Teilnahme :: passive participation`,
     },
-    correctAnswer: "C"
+    correctAnswer: 'C',
   },
   {
     id: 171,
@@ -1876,9 +1876,9 @@ const questions = [
       A: `Geldstrafe und Gefängnis :: fine and imprisonment`,
       B: `Bußgeld :: fine`,
       C: `Sozialstunden :: community service`,
-      D: `Verwarnung :: warning`
+      D: `Verwarnung :: warning`,
     },
-    correctAnswer: "A"
+    correctAnswer: 'A',
   },
   {
     id: 172,
@@ -1887,9 +1887,9 @@ const questions = [
       A: `der Sozialhilfe :: social assistance`,
       B: `der Sozialversicherung :: social insurance`,
       C: `der Volkshilfe :: public assistance`,
-      D: `der Bürgerhilfe :: citizen assistance`
+      D: `der Bürgerhilfe :: citizen assistance`,
     },
-    correctAnswer: "B"
+    correctAnswer: 'B',
   },
   {
     id: 173,
@@ -1898,9 +1898,9 @@ const questions = [
       A: `die Krankenversicherung :: health insurance`,
       B: `die Kontenüberwachung :: account monitoring`,
       C: `die Meinungsfreiheit :: freedom of opinion`,
-      D: `die allgemeine Dienstpflicht :: general service obligation`
+      D: `die allgemeine Dienstpflicht :: general service obligation`,
     },
-    correctAnswer: "A"
+    correctAnswer: 'A',
   },
   {
     id: 174,
@@ -1909,9 +1909,9 @@ const questions = [
       A: `durch Steuern :: through taxes`,
       B: `durch Umlagen :: through contributions`,
       C: `durch Spenden :: through donations`,
-      D: `durch Zinsen :: through interest`
+      D: `durch Zinsen :: through interest`,
     },
-    correctAnswer: "B"
+    correctAnswer: 'B',
   },
   {
     id: 175,
@@ -1920,9 +1920,9 @@ const questions = [
       A: `die Exekutive kontrollieren :: control the executive`,
       B: `das Volk vertreten :: represent the people`,
       C: `Gesetze beschließen :: pass laws`,
-      D: `alle Antworten sind richtig :: all answers are correct`
+      D: `alle Antworten sind richtig :: all answers are correct`,
     },
-    correctAnswer: "D"
+    correctAnswer: 'D',
   },
   {
     id: 176,
@@ -1931,9 +1931,9 @@ const questions = [
       A: `die Bundesregierung :: the federal government`,
       B: `das Bundesverfassungsgericht :: the Federal Constitutional Court`,
       C: `der Bundestag :: the Bundestag`,
-      D: `der Bundespräsident :: the Federal President`
+      D: `der Bundespräsident :: the Federal President`,
     },
-    correctAnswer: "B"
+    correctAnswer: 'B',
   },
   {
     id: 177,
@@ -1942,9 +1942,9 @@ const questions = [
       A: `Abgeordnete des EU-Parlaments :: Members of the EU Parliament`,
       B: `den Bundeskanzler / die Bundeskanzlerin :: the Federal Chancellor`,
       C: `Abgeordnete des Bundestages :: Members of the Bundestag`,
-      D: `Abgeordnete des Landtages :: Members of the state parliament`
+      D: `Abgeordnete des Landtages :: Members of the state parliament`,
     },
-    correctAnswer: "B"
+    correctAnswer: 'B',
   },
   {
     id: 178,
@@ -1953,9 +1953,9 @@ const questions = [
       A: `Der Adel herrscht über das Volk :: The nobility rules over the people`,
       B: `Das Volk wählt seine Vertreter :: The people elect their representatives`,
       C: `Das Volk herrscht über sich selbst :: The people rule over themselves`,
-      D: `Das Volk gehorcht der Regierung :: The people obey the government`
+      D: `Das Volk gehorcht der Regierung :: The people obey the government`,
     },
-    correctAnswer: "C"
+    correctAnswer: 'C',
   },
   {
     id: 179,
@@ -1964,9 +1964,9 @@ const questions = [
       A: `eine Demokratie :: a democracy`,
       B: `ein Rechtsstaat :: a constitutional state`,
       C: `ein Bundesstaat :: a federal state`,
-      D: `eine Monarchie :: a monarchy`
+      D: `eine Monarchie :: a monarchy`,
     },
-    correctAnswer: "D"
+    correctAnswer: 'D',
   },
   {
     id: 180,
@@ -1975,9 +1975,9 @@ const questions = [
       A: `Die Würde des Menschen ist unantastbar :: Human dignity is inviolable`,
       B: `Alle Menschen sind vor dem Gesetz gleich :: All people are equal before the law`,
       C: `Die Todesstrafe ist zulässig :: The death penalty is permissible`,
-      D: `Jeder hat das Recht auf freie Entfaltung der Persönlichkeit :: Everyone has the right to free development of personality`
+      D: `Jeder hat das Recht auf freie Entfaltung der Persönlichkeit :: Everyone has the right to free development of personality`,
     },
-    correctAnswer: "C"
+    correctAnswer: 'C',
   },
   {
     id: 181,
@@ -1986,9 +1986,9 @@ const questions = [
       A: `Deutsche können ohne Visum in viele Länder reisen :: Germans can travel to many countries without a visa`,
       B: `Deutsche können in jedem EU-Land arbeiten :: Germans can work in any EU country`,
       C: `Deutsche können ohne Passkontrolle in viele europäische Länder reisen :: Germans can travel to many European countries without passport control`,
-      D: `Deutsche können überall mit dem Euro bezahlen :: Germans can pay with euros everywhere`
+      D: `Deutsche können überall mit dem Euro bezahlen :: Germans can pay with euros everywhere`,
     },
-    correctAnswer: "C"
+    correctAnswer: 'C',
   },
   {
     id: 182,
@@ -1997,9 +1997,9 @@ const questions = [
       A: `Gesetze erlassen :: enacting laws`,
       B: `die Müllabfuhr organisieren :: organizing garbage collection`,
       C: `das Militär befehligen :: commanding the military`,
-      D: `Verträge mit anderen Staaten schließen :: concluding treaties with other states`
+      D: `Verträge mit anderen Staaten schließen :: concluding treaties with other states`,
     },
-    correctAnswer: "B"
+    correctAnswer: 'B',
   },
   {
     id: 183,
@@ -2008,9 +2008,9 @@ const questions = [
       A: `Er / sie hilft bei Gericht bei der Urteilsfindung :: He/she helps in court with verdict finding`,
       B: `Er / sie schreibt Gesetze :: He/she writes laws`,
       C: `Er / sie gibt Bürgern rechtliche Hilfe :: He/she gives citizens legal help`,
-      D: `Er / sie ist Mitglied der Regierung :: He/she is a member of the government`
+      D: `Er / sie ist Mitglied der Regierung :: He/she is a member of the government`,
     },
-    correctAnswer: "A"
+    correctAnswer: 'A',
   },
   {
     id: 184,
@@ -2019,9 +2019,9 @@ const questions = [
       A: `alles sagen darf :: may say everything`,
       B: `meine Meinung frei äußern darf, solange ich andere nicht verletze :: may freely express my opinion as long as I don't hurt others`,
       C: `unwahre Tatsachen behaupten darf :: may claim untrue facts`,
-      D: `die Meinung der Regierung sagen muss :: must say the government's opinion`
+      D: `die Meinung der Regierung sagen muss :: must say the government's opinion`,
     },
-    correctAnswer: "B"
+    correctAnswer: 'B',
   },
   {
     id: 185,
@@ -2030,9 +2030,9 @@ const questions = [
       A: `Gesetze beschließen :: passing laws`,
       B: `die Regierung bilden :: forming the government`,
       C: `das Grundgesetz ändern :: changing the Basic Law`,
-      D: `alle Antworten sind richtig :: all answers are correct`
+      D: `alle Antworten sind richtig :: all answers are correct`,
     },
-    correctAnswer: "D"
+    correctAnswer: 'D',
   },
   {
     id: 186,
@@ -2041,9 +2041,9 @@ const questions = [
       A: `Man hat eine Stimme :: One has one vote`,
       B: `Man hat zwei Stimmen :: One has two votes`,
       C: `Man hat drei Stimmen :: One has three votes`,
-      D: `Die Anzahl der Stimmen hängt vom Alter ab :: The number of votes depends on age`
+      D: `Die Anzahl der Stimmen hängt vom Alter ab :: The number of votes depends on age`,
     },
-    correctAnswer: "B"
+    correctAnswer: 'B',
   },
   {
     id: 187,
@@ -2052,9 +2052,9 @@ const questions = [
       A: `Es wird automatisch ungültig :: It automatically becomes invalid`,
       B: `Das Bundesverfassungsgericht entscheidet :: The Federal Constitutional Court decides`,
       C: `Der Bundestag stimmt erneut ab :: The Bundestag votes again`,
-      D: `Es bleibt gültig :: It remains valid`
+      D: `Es bleibt gültig :: It remains valid`,
     },
-    correctAnswer: "B"
+    correctAnswer: 'B',
   },
   {
     id: 188,
@@ -2063,9 +2063,9 @@ const questions = [
       A: `Ludwig Erhard`,
       B: `Willy Brandt`,
       C: `Helmut Schmidt`,
-      D: `Franz-Josef Strauß`
+      D: `Franz-Josef Strauß`,
     },
-    correctAnswer: "B"
+    correctAnswer: 'B',
   },
   {
     id: 189,
@@ -2074,9 +2074,9 @@ const questions = [
       A: `ein Krieg zwischen Ost- und Westdeutschland :: a war between East and West Germany`,
       B: `die Spannungen zwischen NATO und Warschauer Pakt :: tensions between NATO and Warsaw Pact`,
       C: `ein Krieg mit Atomwaffen :: a war with nuclear weapons`,
-      D: `ein Wirtschaftskrieg :: an economic war`
+      D: `ein Wirtschaftskrieg :: an economic war`,
     },
-    correctAnswer: "B"
+    correctAnswer: 'B',
   },
   {
     id: 190,
@@ -2085,9 +2085,9 @@ const questions = [
       A: `1987`,
       B: `1989`,
       C: `1991`,
-      D: `1995`
+      D: `1995`,
     },
-    correctAnswer: "C"
+    correctAnswer: 'C',
   },
   {
     id: 191,
@@ -2096,9 +2096,9 @@ const questions = [
       A: `Der Wandel fand ohne Gewalt statt :: The change took place without violence`,
       B: `Es gab einen Bürgerkrieg :: There was a civil war`,
       C: `Die Armee übernahm die Macht :: The army took power`,
-      D: `Andere Länder marschierten ein :: Other countries invaded`
+      D: `Andere Länder marschierten ein :: Other countries invaded`,
     },
-    correctAnswer: "A"
+    correctAnswer: 'A',
   },
   {
     id: 192,
@@ -2107,9 +2107,9 @@ const questions = [
       A: `Demonstrationen für die Regierung :: demonstrations for the government`,
       B: `Proteste gegen das SED-Regime :: protests against the SED regime`,
       C: `Feiern zur Gründung der DDR :: celebrations for the founding of the GDR`,
-      D: `Arbeitskämpfe :: labor disputes`
+      D: `Arbeitskämpfe :: labor disputes`,
     },
-    correctAnswer: "B"
+    correctAnswer: 'B',
   },
   {
     id: 193,
@@ -2118,9 +2118,9 @@ const questions = [
       A: `Berlin`,
       B: `Dresden`,
       C: `Leipzig`,
-      D: `Rostock`
+      D: `Rostock`,
     },
-    correctAnswer: "C"
+    correctAnswer: 'C',
   },
   {
     id: 194,
@@ -2129,9 +2129,9 @@ const questions = [
       A: `die Gründung :: the founding`,
       B: `eine Revolution :: a revolution`,
       C: `eine Reform :: a reform`,
-      D: `das Ende :: the end`
+      D: `das Ende :: the end`,
     },
-    correctAnswer: "D"
+    correctAnswer: 'D',
   },
   {
     id: 195,
@@ -2140,9 +2140,9 @@ const questions = [
       A: `der Beginn der DDR :: the beginning of the GDR`,
       B: `der Übergang von der Diktatur zur Demokratie in der DDR :: the transition from dictatorship to democracy in the GDR`,
       C: `die Teilung Deutschlands :: the division of Germany`,
-      D: `der Bau der Berliner Mauer :: the construction of the Berlin Wall`
+      D: `der Bau der Berliner Mauer :: the construction of the Berlin Wall`,
     },
-    correctAnswer: "B"
+    correctAnswer: 'B',
   },
   {
     id: 196,
@@ -2151,9 +2151,9 @@ const questions = [
       A: `die Deutsche Wiedervereinigung :: German reunification`,
       B: `der Fall der Berliner Mauer :: the fall of the Berlin Wall`,
       C: `die erste freie Wahl in der DDR :: the first free election in the GDR`,
-      D: `der Beitritt zur NATO :: joining NATO`
+      D: `der Beitritt zur NATO :: joining NATO`,
     },
-    correctAnswer: "A"
+    correctAnswer: 'A',
   },
   {
     id: 197,
@@ -2162,9 +2162,9 @@ const questions = [
       A: `alle 16 Bundesländer :: all 16 federal states`,
       B: `nur die westdeutschen Länder :: only the West German states`,
       C: `nur die ostdeutschen Länder :: only the East German states`,
-      D: `nur Bayern und Hessen :: only Bavaria and Hesse`
+      D: `nur Bayern und Hessen :: only Bavaria and Hesse`,
     },
-    correctAnswer: "B"
+    correctAnswer: 'B',
   },
   {
     id: 198,
@@ -2173,9 +2173,9 @@ const questions = [
       A: `Brandenburg, Mecklenburg-Vorpommern, Sachsen, Sachsen-Anhalt, Thüringen :: Brandenburg, Mecklenburg-Western Pomerania, Saxony, Saxony-Anhalt, Thuringia`,
       B: `Brandenburg, Bremen, Sachsen, Sachsen-Anhalt, Thüringen :: Brandenburg, Bremen, Saxony, Saxony-Anhalt, Thuringia`,
       C: `Berlin, Brandenburg, Sachsen, Sachsen-Anhalt, Thüringen :: Berlin, Brandenburg, Saxony, Saxony-Anhalt, Thuringia`,
-      D: `Brandenburg, Mecklenburg-Vorpommern, Sachsen, Saarland, Thüringen :: Brandenburg, Mecklenburg-Western Pomerania, Saxony, Saarland, Thuringia`
+      D: `Brandenburg, Mecklenburg-Vorpommern, Sachsen, Saarland, Thüringen :: Brandenburg, Mecklenburg-Western Pomerania, Saxony, Saarland, Thuringia`,
     },
-    correctAnswer: "A"
+    correctAnswer: 'A',
   },
   {
     id: 199,
@@ -2184,9 +2184,9 @@ const questions = [
       A: `Leipzig`,
       B: `Dresden`,
       C: `Chemnitz`,
-      D: `Zwickau`
+      D: `Zwickau`,
     },
-    correctAnswer: "B"
+    correctAnswer: 'B',
   },
   {
     id: 200,
@@ -2195,9 +2195,9 @@ const questions = [
       A: `München :: Munich`,
       B: `Hamburg`,
       C: `Berlin`,
-      D: `Köln :: Cologne`
+      D: `Köln :: Cologne`,
     },
-    correctAnswer: "C"
+    correctAnswer: 'C',
   },
   {
     id: 201,
@@ -2206,9 +2206,9 @@ const questions = [
       A: `Jena`,
       B: `Weimar`,
       C: `Erfurt`,
-      D: `Gera`
+      D: `Gera`,
     },
-    correctAnswer: "C"
+    correctAnswer: 'C',
   },
   {
     id: 202,
@@ -2217,9 +2217,9 @@ const questions = [
       A: `1989`,
       B: `1990`,
       C: `1991`,
-      D: `1992`
+      D: `1992`,
     },
-    correctAnswer: "B"
+    correctAnswer: 'B',
   },
   {
     id: 203,
@@ -2228,9 +2228,9 @@ const questions = [
       A: `eine Wahl zum Bundestag :: an election to the Bundestag`,
       B: `eine Abstimmung über eine Sachfrage :: a vote on a specific issue`,
       C: `eine Kandidatenwahl :: a candidate election`,
-      D: `eine Parteiwahl :: a party election`
+      D: `eine Parteiwahl :: a party election`,
     },
-    correctAnswer: "B"
+    correctAnswer: 'B',
   },
   {
     id: 204,
@@ -2239,9 +2239,9 @@ const questions = [
       A: `Bürger beantragen eine Abstimmung :: citizens request a vote`,
       B: `Bürger gründen eine Partei :: citizens found a party`,
       C: `Bürger wählen den Bundeskanzler :: citizens elect the chancellor`,
-      D: `Bürger bilden eine Regierung :: citizens form a government`
+      D: `Bürger bilden eine Regierung :: citizens form a government`,
     },
-    correctAnswer: "A"
+    correctAnswer: 'A',
   },
   {
     id: 205,
@@ -2250,9 +2250,9 @@ const questions = [
       A: `Bürger arbeiten ehrenamtlich :: citizens work voluntarily`,
       B: `Bürger zahlen Steuern :: citizens pay taxes`,
       C: `Bürger beteiligen sich an politischen Entscheidungen :: citizens participate in political decisions`,
-      D: `Bürger gehen zur Schule :: citizens go to school`
+      D: `Bürger gehen zur Schule :: citizens go to school`,
     },
-    correctAnswer: "C"
+    correctAnswer: 'C',
   },
   {
     id: 206,
@@ -2261,9 +2261,9 @@ const questions = [
       A: `das Gericht :: the court`,
       B: `die Staatsanwaltschaft :: the public prosecutor's office`,
       C: `die Polizei :: the police`,
-      D: `das Ministerium :: the ministry`
+      D: `das Ministerium :: the ministry`,
     },
-    correctAnswer: "A"
+    correctAnswer: 'A',
   },
   {
     id: 207,
@@ -2272,9 +2272,9 @@ const questions = [
       A: `das Amtsgericht :: the local court`,
       B: `das Landgericht :: the regional court`,
       C: `das Bundesverfassungsgericht :: the Federal Constitutional Court`,
-      D: `das Bundesarbeitsgericht :: the Federal Labor Court`
+      D: `das Bundesarbeitsgericht :: the Federal Labor Court`,
     },
-    correctAnswer: "C"
+    correctAnswer: 'C',
   },
   {
     id: 208,
@@ -2283,9 +2283,9 @@ const questions = [
       A: `nur Strafgerichte :: only criminal courts`,
       B: `nur Zivilgerichte :: only civil courts`,
       C: `Straf-, Zivil- und Verwaltungsgerichte :: criminal, civil and administrative courts`,
-      D: `nur Verfassungsgerichte :: only constitutional courts`
+      D: `nur Verfassungsgerichte :: only constitutional courts`,
     },
-    correctAnswer: "C"
+    correctAnswer: 'C',
   },
   {
     id: 209,
@@ -2294,9 +2294,9 @@ const questions = [
       A: `eine Beschwerde gegen die Verfassung :: a complaint against the constitution`,
       B: `eine Beschwerde wegen Verletzung von Grundrechten :: a complaint due to violation of basic rights`,
       C: `eine Beschwerde gegen den Bundespräsidenten :: a complaint against the Federal President`,
-      D: `eine Beschwerde gegen die Polizei :: a complaint against the police`
+      D: `eine Beschwerde gegen die Polizei :: a complaint against the police`,
     },
-    correctAnswer: "B"
+    correctAnswer: 'B',
   },
   {
     id: 210,
@@ -2305,9 +2305,9 @@ const questions = [
       A: `wenn Sie mehrere Kandidaten ankreuzen :: when you mark multiple candidates`,
       B: `wenn Sie nur einen Kandidaten ankreuzen :: when you mark only one candidate`,
       C: `wenn Sie zur Wahl gehen :: when you go to vote`,
-      D: `wenn Sie nicht zur Wahl gehen :: when you don't go to vote`
+      D: `wenn Sie nicht zur Wahl gehen :: when you don't go to vote`,
     },
-    correctAnswer: "A"
+    correctAnswer: 'A',
   },
   {
     id: 211,
@@ -2316,9 +2316,9 @@ const questions = [
       A: `Die Wahl ist geheim :: The vote is secret`,
       B: `Nur Männer dürfen wählen :: Only men may vote`,
       C: `Nur Deutsche über 21 dürfen wählen :: Only Germans over 21 may vote`,
-      D: `Alle Ausländer dürfen wählen :: All foreigners may vote`
+      D: `Alle Ausländer dürfen wählen :: All foreigners may vote`,
     },
-    correctAnswer: "A"
+    correctAnswer: 'A',
   },
   {
     id: 212,
@@ -2327,9 +2327,9 @@ const questions = [
       A: `ein Zusammenschluss von Parteien :: an alliance of parties`,
       B: `eine neue Partei :: a new party`,
       C: `eine Bürgerbewegung :: a citizens' movement`,
-      D: `eine Demonstration :: a demonstration`
+      D: `eine Demonstration :: a demonstration`,
     },
-    correctAnswer: "A"
+    correctAnswer: 'A',
   },
   {
     id: 213,
@@ -2338,9 +2338,9 @@ const questions = [
       A: `die Wahl des Direktkandidaten :: the election of the direct candidate`,
       B: `die Wahl der Landesliste einer Partei :: the election of a party's state list`,
       C: `eine zweite Chance zu wählen :: a second chance to vote`,
-      D: `die Wahl des Bundeskanzlers :: the election of the Federal Chancellor`
+      D: `die Wahl des Bundeskanzlers :: the election of the Federal Chancellor`,
     },
-    correctAnswer: "B"
+    correctAnswer: 'B',
   },
   {
     id: 214,
@@ -2349,9 +2349,9 @@ const questions = [
       A: `bei der Bundestagswahl :: in the federal election`,
       B: `bei der Landtagswahl :: in the state election`,
       C: `bei der Kommunalwahl :: in the local election`,
-      D: `bei der Wahl zum Bundespräsidenten :: in the Federal President election`
+      D: `bei der Wahl zum Bundespräsidenten :: in the Federal President election`,
     },
-    correctAnswer: "C"
+    correctAnswer: 'C',
   },
   {
     id: 215,
@@ -2360,9 +2360,9 @@ const questions = [
       A: `Niemand darf erfahren, wen Sie gewählt haben :: No one may find out whom you voted for`,
       B: `Sie dürfen nicht zur Wahl gehen :: You may not go to vote`,
       C: `Sie müssen vor der Wahl Stillschweigen bewahren :: You must keep silent before the election`,
-      D: `Sie dürfen niemandem sagen, dass Sie zur Wahl gegangen sind :: You may not tell anyone that you went to vote`
+      D: `Sie dürfen niemandem sagen, dass Sie zur Wahl gegangen sind :: You may not tell anyone that you went to vote`,
     },
-    correctAnswer: "A"
+    correctAnswer: 'A',
   },
   {
     id: 216,
@@ -2371,9 +2371,9 @@ const questions = [
       A: `eine Parteiwahl :: a party election`,
       B: `eine Volksabstimmung :: a popular vote`,
       C: `eine Kandidatenwahl :: a candidate election`,
-      D: `eine Umfrage :: a survey`
+      D: `eine Umfrage :: a survey`,
     },
-    correctAnswer: "B"
+    correctAnswer: 'B',
   },
   {
     id: 217,
@@ -2382,9 +2382,9 @@ const questions = [
       A: `die Zeit zwischen zwei Wahlen :: the time between two elections`,
       B: `die Zeit für ein Gesetz :: the time for a law`,
       C: `die Arbeitszeit von Politikern :: the working time of politicians`,
-      D: `die Zeit einer Sitzung :: the time of a session`
+      D: `die Zeit einer Sitzung :: the time of a session`,
     },
-    correctAnswer: "A"
+    correctAnswer: 'A',
   },
   {
     id: 218,
@@ -2393,9 +2393,9 @@ const questions = [
       A: `zur Wahl gehen :: going to vote`,
       B: `einer Partei beitreten :: joining a party`,
       C: `sich politisch engagieren :: getting politically involved`,
-      D: `alle Antworten sind richtig :: all answers are correct`
+      D: `alle Antworten sind richtig :: all answers are correct`,
     },
-    correctAnswer: "D"
+    correctAnswer: 'D',
   },
   {
     id: 219,
@@ -2404,9 +2404,9 @@ const questions = [
       A: `der Missbrauch von Macht für private Vorteile :: the abuse of power for private benefits`,
       B: `eine Form der Demokratie :: a form of democracy`,
       C: `eine Wirtschaftsform :: an economic system`,
-      D: `eine Staatsform :: a form of government`
+      D: `eine Staatsform :: a form of government`,
     },
-    correctAnswer: "A"
+    correctAnswer: 'A',
   },
   {
     id: 220,
@@ -2415,9 +2415,9 @@ const questions = [
       A: `Legislative, Exekutive, Judikative :: legislative, executive, judiciary`,
       B: `Bundestag, Bundesrat, Bundespräsident :: Bundestag, Federal Council, Federal President`,
       C: `Bund, Länder, Gemeinden :: federation, states, municipalities`,
-      D: `CDU, SPD, FDP`
+      D: `CDU, SPD, FDP`,
     },
-    correctAnswer: "A"
+    correctAnswer: 'A',
   },
   {
     id: 221,
@@ -2426,9 +2426,9 @@ const questions = [
       A: `Mehrheitsprinzip :: majority principle`,
       B: `Gewaltenteilung :: separation of powers`,
       C: `Erbfolge :: hereditary succession`,
-      D: `Volkssouveränität :: popular sovereignty`
+      D: `Volkssouveränität :: popular sovereignty`,
     },
-    correctAnswer: "C"
+    correctAnswer: 'C',
   },
   {
     id: 222,
@@ -2437,9 +2437,9 @@ const questions = [
       A: `Vielfalt der Meinungen :: diversity of opinions`,
       B: `Einheitliche Meinung :: uniform opinion`,
       C: `Staatsreligion :: state religion`,
-      D: `Einparteiensystem :: one-party system`
+      D: `Einparteiensystem :: one-party system`,
     },
-    correctAnswer: "A"
+    correctAnswer: 'A',
   },
   {
     id: 223,
@@ -2448,9 +2448,9 @@ const questions = [
       A: `Bayern :: Bavaria`,
       B: `Baden-Württemberg`,
       C: `Nordrhein-Westfalen :: North Rhine-Westphalia`,
-      D: `Niedersachsen :: Lower Saxony`
+      D: `Niedersachsen :: Lower Saxony`,
     },
-    correctAnswer: "C"
+    correctAnswer: 'C',
   },
   {
     id: 224,
@@ -2459,9 +2459,9 @@ const questions = [
       A: `Nordrhein-Westfalen :: North Rhine-Westphalia`,
       B: `Baden-Württemberg`,
       C: `Niedersachsen :: Lower Saxony`,
-      D: `Bayern :: Bavaria`
+      D: `Bayern :: Bavaria`,
     },
-    correctAnswer: "D"
+    correctAnswer: 'D',
   },
   {
     id: 225,
@@ -2470,9 +2470,9 @@ const questions = [
       A: `München :: Munich`,
       B: `Bremen`,
       C: `Dresden`,
-      D: `Düsseldorf`
+      D: `Düsseldorf`,
     },
-    correctAnswer: "B"
+    correctAnswer: 'B',
   },
   {
     id: 226,
@@ -2481,9 +2481,9 @@ const questions = [
       A: `Frankfurt am Main`,
       B: `Wiesbaden`,
       C: `Kassel`,
-      D: `Darmstadt`
+      D: `Darmstadt`,
     },
-    correctAnswer: "B"
+    correctAnswer: 'B',
   },
   {
     id: 227,
@@ -2492,9 +2492,9 @@ const questions = [
       A: `der Rhein :: the Rhine`,
       B: `die Elbe :: the Elbe`,
       C: `die Donau :: the Danube`,
-      D: `die Weser :: the Weser`
+      D: `die Weser :: the Weser`,
     },
-    correctAnswer: "C"
+    correctAnswer: 'C',
   },
   {
     id: 228,
@@ -2503,9 +2503,9 @@ const questions = [
       A: `Hannover`,
       B: `Braunschweig`,
       C: `Oldenburg`,
-      D: `Göttingen`
+      D: `Göttingen`,
     },
-    correctAnswer: "A"
+    correctAnswer: 'A',
   },
   {
     id: 229,
@@ -2514,9 +2514,9 @@ const questions = [
       A: `Brocken`,
       B: `Zugspitze`,
       C: `Feldberg`,
-      D: `Watzmann`
+      D: `Watzmann`,
     },
-    correctAnswer: "B"
+    correctAnswer: 'B',
   },
   {
     id: 230,
@@ -2525,9 +2525,9 @@ const questions = [
       A: `Nordsee und Ostsee :: North Sea and Baltic Sea`,
       B: `Nordsee und Mittelmeer :: North Sea and Mediterranean Sea`,
       C: `Ostsee und Schwarzes Meer :: Baltic Sea and Black Sea`,
-      D: `nur an die Nordsee :: only the North Sea`
+      D: `nur an die Nordsee :: only the North Sea`,
     },
-    correctAnswer: "A"
+    correctAnswer: 'A',
   },
   {
     id: 231,
@@ -2536,9 +2536,9 @@ const questions = [
       A: `Cottbus`,
       B: `Brandenburg an der Havel`,
       C: `Potsdam`,
-      D: `Frankfurt (Oder)`
+      D: `Frankfurt (Oder)`,
     },
-    correctAnswer: "C"
+    correctAnswer: 'C',
   },
   {
     id: 232,
@@ -2547,9 +2547,9 @@ const questions = [
       A: `Köln :: Cologne`,
       B: `Essen`,
       C: `Hannover`,
-      D: `Leipzig`
+      D: `Leipzig`,
     },
-    correctAnswer: "B"
+    correctAnswer: 'B',
   },
   {
     id: 233,
@@ -2558,9 +2558,9 @@ const questions = [
       A: `Rostock`,
       B: `Greifswald`,
       C: `Schwerin`,
-      D: `Wismar`
+      D: `Wismar`,
     },
-    correctAnswer: "C"
+    correctAnswer: 'C',
   },
   {
     id: 234,
@@ -2569,9 +2569,9 @@ const questions = [
       A: `Bayern :: Bavaria`,
       B: `Hessen :: Hesse`,
       C: `Baden-Württemberg`,
-      D: `Rheinland-Pfalz :: Rhineland-Palatinate`
+      D: `Rheinland-Pfalz :: Rhineland-Palatinate`,
     },
-    correctAnswer: "C"
+    correctAnswer: 'C',
   },
   {
     id: 235,
@@ -2580,9 +2580,9 @@ const questions = [
       A: `Lübeck`,
       B: `Flensburg`,
       C: `Neumünster`,
-      D: `Kiel`
+      D: `Kiel`,
     },
-    correctAnswer: "D"
+    correctAnswer: 'D',
   },
   {
     id: 236,
@@ -2591,9 +2591,9 @@ const questions = [
       A: `Berlin`,
       B: `Hamburg`,
       C: `München :: Munich`,
-      D: `Köln :: Cologne`
+      D: `Köln :: Cologne`,
     },
-    correctAnswer: "C"
+    correctAnswer: 'C',
   },
   {
     id: 237,
@@ -2602,9 +2602,9 @@ const questions = [
       A: `Völklingen`,
       B: `Neunkirchen`,
       C: `Homburg`,
-      D: `Saarbrücken`
+      D: `Saarbrücken`,
     },
-    correctAnswer: "D"
+    correctAnswer: 'D',
   },
   {
     id: 238,
@@ -2613,9 +2613,9 @@ const questions = [
       A: `Köln :: Cologne`,
       B: `Bremen`,
       C: `Hamburg`,
-      D: `Stuttgart`
+      D: `Stuttgart`,
     },
-    correctAnswer: "A"
+    correctAnswer: 'A',
   },
   {
     id: 239,
@@ -2624,9 +2624,9 @@ const questions = [
       A: `Koblenz`,
       B: `Mainz`,
       C: `Kaiserslautern`,
-      D: `Trier`
+      D: `Trier`,
     },
-    correctAnswer: "B"
+    correctAnswer: 'B',
   },
   {
     id: 240,
@@ -2635,9 +2635,9 @@ const questions = [
       A: `Sachsen :: Saxony`,
       B: `Sachsen-Anhalt :: Saxony-Anhalt`,
       C: `Thüringen :: Thuringia`,
-      D: `Brandenburg`
+      D: `Brandenburg`,
     },
-    correctAnswer: "C"
+    correctAnswer: 'C',
   },
   {
     id: 241,
@@ -2646,9 +2646,9 @@ const questions = [
       A: `die Eingliederung in die Gesellschaft :: integration into society`,
       B: `die Trennung von der Gesellschaft :: separation from society`,
       C: `die Rückkehr ins Heimatland :: return to the homeland`,
-      D: `die Ablehnung der deutschen Kultur :: rejection of German culture`
+      D: `die Ablehnung der deutschen Kultur :: rejection of German culture`,
     },
-    correctAnswer: "A"
+    correctAnswer: 'A',
   },
   {
     id: 242,
@@ -2657,9 +2657,9 @@ const questions = [
       A: `deutscher Sprachkurs :: German language course`,
       B: `Orientierungskurs :: orientation course`,
       C: `Führerscheinkurs :: driving course`,
-      D: `Test "Leben in Deutschland" :: "Life in Germany" test`
+      D: `Test "Leben in Deutschland" :: "Life in Germany" test`,
     },
-    correctAnswer: "C"
+    correctAnswer: 'C',
   },
   {
     id: 243,
@@ -2668,9 +2668,9 @@ const questions = [
       A: `Ausländer sollen Deutschland verlassen :: foreigners should leave Germany`,
       B: `Ausländer sollen sich in Deutschland einleben :: foreigners should settle in Germany`,
       C: `Deutsche sollen auswandern :: Germans should emigrate`,
-      D: `Ausländer sollen getrennt von Deutschen leben :: foreigners should live separately from Germans`
+      D: `Ausländer sollen getrennt von Deutschen leben :: foreigners should live separately from Germans`,
     },
-    correctAnswer: "B"
+    correctAnswer: 'B',
   },
   {
     id: 244,
@@ -2679,9 +2679,9 @@ const questions = [
       A: `um Freunde zu finden :: to find friends`,
       B: `um Deutsch zu lernen und sich zu integrieren :: to learn German and integrate`,
       C: `um den Eltern zu helfen :: to help parents`,
-      D: `um früh zu arbeiten :: to work early`
+      D: `um früh zu arbeiten :: to work early`,
     },
-    correctAnswer: "B"
+    correctAnswer: 'B',
   },
   {
     id: 245,
@@ -2690,9 +2690,9 @@ const questions = [
       A: `eine Arbeitsstelle :: a job`,
       B: `eine Wohnung :: an apartment`,
       C: `die deutsche Staatsangehörigkeit :: German citizenship`,
-      D: `einen deutschen Freund :: a German friend`
+      D: `einen deutschen Freund :: a German friend`,
     },
-    correctAnswer: "C"
+    correctAnswer: 'C',
   },
   {
     id: 246,
@@ -2701,9 +2701,9 @@ const questions = [
       A: `die politische Teilhabe :: political participation`,
       B: `bessere Arbeitsmöglichkeiten :: better job opportunities`,
       C: `größere Reisefreiheit :: greater freedom of travel`,
-      D: `alle Antworten sind richtig :: all answers are correct`
+      D: `alle Antworten sind richtig :: all answers are correct`,
     },
-    correctAnswer: "D"
+    correctAnswer: 'D',
   },
   {
     id: 247,
@@ -2712,9 +2712,9 @@ const questions = [
       A: `eine Arbeitsstelle :: a job`,
       B: `einen Führerschein :: a driver's license`,
       C: `eine Wohnung :: an apartment`,
-      D: `eine Versicherung :: insurance`
+      D: `eine Versicherung :: insurance`,
     },
-    correctAnswer: "B"
+    correctAnswer: 'B',
   },
   {
     id: 248,
@@ -2723,9 +2723,9 @@ const questions = [
       A: `für Arbeitsgenehmigungen :: for work permits`,
       B: `für Integrationskurse :: for integration courses`,
       C: `für Einbürgerungen :: for naturalizations`,
-      D: `alle Antworten sind richtig :: all answers are correct`
+      D: `alle Antworten sind richtig :: all answers are correct`,
     },
-    correctAnswer: "D"
+    correctAnswer: 'D',
   },
   {
     id: 249,
@@ -2734,9 +2734,9 @@ const questions = [
       A: `ausreichende Deutschkenntnisse :: sufficient German language skills`,
       B: `ein bestimmtes Einkommen :: a certain income`,
       C: `eine bestimmte Körpergröße :: a certain height`,
-      D: `eine bestimmte Religion :: a certain religion`
+      D: `eine bestimmte Religion :: a certain religion`,
     },
-    correctAnswer: "A"
+    correctAnswer: 'A',
   },
   {
     id: 250,
@@ -2745,9 +2745,9 @@ const questions = [
       A: `1900`,
       B: `1918`,
       C: `1933`,
-      D: `1949`
+      D: `1949`,
     },
-    correctAnswer: "B"
+    correctAnswer: 'B',
   },
   {
     id: 251,
@@ -2756,9 +2756,9 @@ const questions = [
       A: `freie Wahlen :: free elections`,
       B: `nur eine Partei :: only one party`,
       C: `staatliche Kontrolle der Medien :: state control of media`,
-      D: `keine Opposition :: no opposition`
+      D: `keine Opposition :: no opposition`,
     },
-    correctAnswer: "A"
+    correctAnswer: 'A',
   },
   {
     id: 252,
@@ -2767,9 +2767,9 @@ const questions = [
       A: `Amtsgericht :: Local Court`,
       B: `Landgericht :: Regional Court`,
       C: `Bundesverfassungsgericht :: Federal Constitutional Court`,
-      D: `Oberlandesgericht :: Higher Regional Court`
+      D: `Oberlandesgericht :: Higher Regional Court`,
     },
-    correctAnswer: "C"
+    correctAnswer: 'C',
   },
   {
     id: 253,
@@ -2778,9 +2778,9 @@ const questions = [
       A: `Rechte nur für Deutsche :: rights only for Germans`,
       B: `Rechte für alle Menschen :: rights for all people`,
       C: `Rechte nur für Bürger einer Gemeinde :: rights only for citizens of a municipality`,
-      D: `Rechte nur für Erwachsene :: rights only for adults`
+      D: `Rechte nur für Erwachsene :: rights only for adults`,
     },
-    correctAnswer: "A"
+    correctAnswer: 'A',
   },
   {
     id: 254,
@@ -2789,9 +2789,9 @@ const questions = [
       A: `Meinungsfreiheit :: freedom of opinion`,
       B: `Rechtsstaatsprinzip :: rule of law principle`,
       C: `Religionsfreiheit :: religious freedom`,
-      D: `Versammlungsfreiheit :: freedom of assembly`
+      D: `Versammlungsfreiheit :: freedom of assembly`,
     },
-    correctAnswer: "B"
+    correctAnswer: 'B',
   },
   {
     id: 255,
@@ -2800,9 +2800,9 @@ const questions = [
       A: `Jeder ist schuldig bis zum Beweis des Gegenteils :: everyone is guilty until proven otherwise`,
       B: `Jeder ist unschuldig bis zum Beweis der Schuld :: everyone is innocent until proven guilty`,
       C: `Nur Deutsche sind unschuldig :: only Germans are innocent`,
-      D: `Niemand ist schuldig :: no one is guilty`
+      D: `Niemand ist schuldig :: no one is guilty`,
     },
-    correctAnswer: "B"
+    correctAnswer: 'B',
   },
   {
     id: 256,
@@ -2811,9 +2811,9 @@ const questions = [
       A: `das Recht, alles zu sagen :: the right to say everything`,
       B: `das Recht, seine Meinung frei zu äußern :: the right to freely express one's opinion`,
       C: `das Recht, andere zu beleidigen :: the right to insult others`,
-      D: `das Recht, unwahre Tatsachen zu verbreiten :: the right to spread false facts`
+      D: `das Recht, unwahre Tatsachen zu verbreiten :: the right to spread false facts`,
     },
-    correctAnswer: "B"
+    correctAnswer: 'B',
   },
   {
     id: 257,
@@ -2822,9 +2822,9 @@ const questions = [
       A: `Journalisten dürfen alles schreiben :: journalists may write everything`,
       B: `die Presse darf nicht kritisieren :: the press may not criticize`,
       C: `die Presse kann frei berichten :: the press can report freely`,
-      D: `nur Deutsche dürfen Zeitung lesen :: only Germans may read newspapers`
+      D: `nur Deutsche dürfen Zeitung lesen :: only Germans may read newspapers`,
     },
-    correctAnswer: "C"
+    correctAnswer: 'C',
   },
   {
     id: 258,
@@ -2833,9 +2833,9 @@ const questions = [
       A: `das Recht, sich friedlich zu versammeln :: the right to assemble peacefully`,
       B: `das Recht, Gewalt anzuwenden :: the right to use violence`,
       C: `das Recht, andere zu stören :: the right to disturb others`,
-      D: `das Recht, ohne Anmeldung zu demonstrieren :: the right to demonstrate without registration`
+      D: `das Recht, ohne Anmeldung zu demonstrieren :: the right to demonstrate without registration`,
     },
-    correctAnswer: "A"
+    correctAnswer: 'A',
   },
   {
     id: 259,
@@ -2844,9 +2844,9 @@ const questions = [
       A: `das Recht, vor Gericht zu klagen :: the right to sue in court`,
       B: `das Recht, sich an Behörden zu wenden :: the right to contact authorities`,
       C: `das Recht, nicht zu wählen :: the right not to vote`,
-      D: `das Recht, auszuwandern :: the right to emigrate`
+      D: `das Recht, auszuwandern :: the right to emigrate`,
     },
-    correctAnswer: "B"
+    correctAnswer: 'B',
   },
   {
     id: 260,
@@ -2855,9 +2855,9 @@ const questions = [
       A: `Meinungsfreiheit :: freedom of opinion`,
       B: `Unverletzlichkeit der Wohnung :: inviolability of the home`,
       C: `Versammlungsfreiheit :: freedom of assembly`,
-      D: `Religionsfreiheit :: religious freedom`
+      D: `Religionsfreiheit :: religious freedom`,
     },
-    correctAnswer: "B"
+    correctAnswer: 'B',
   },
   {
     id: 261,
@@ -2866,9 +2866,9 @@ const questions = [
       A: `jeder kann arbeiten, wo er will :: everyone can work where they want`,
       B: `jeder kann den Beruf frei wählen :: everyone can freely choose their profession`,
       C: `niemand muss arbeiten :: no one has to work`,
-      D: `nur Deutsche dürfen arbeiten :: only Germans may work`
+      D: `nur Deutsche dürfen arbeiten :: only Germans may work`,
     },
-    correctAnswer: "B"
+    correctAnswer: 'B',
   },
   {
     id: 262,
@@ -2877,9 +2877,9 @@ const questions = [
       A: `das Recht, überall in Deutschland zu wohnen :: the right to live anywhere in Germany`,
       B: `das Recht, nicht zu arbeiten :: the right not to work`,
       C: `das Recht, kostenlos zu reisen :: the right to travel for free`,
-      D: `das Recht, im Ausland zu leben :: the right to live abroad`
+      D: `das Recht, im Ausland zu leben :: the right to live abroad`,
     },
-    correctAnswer: "A"
+    correctAnswer: 'A',
   },
   {
     id: 263,
@@ -2888,9 +2888,9 @@ const questions = [
       A: `alle Menschen sind gleich :: all people are equal`,
       B: `Männer und Frauen haben die gleichen Rechte :: men and women have the same rights`,
       C: `nur Deutsche sind gleichberechtigt :: only Germans have equal rights`,
-      D: `reiche Menschen haben mehr Rechte :: rich people have more rights`
+      D: `reiche Menschen haben mehr Rechte :: rich people have more rights`,
     },
-    correctAnswer: "B"
+    correctAnswer: 'B',
   },
   {
     id: 264,
@@ -2899,9 +2899,9 @@ const questions = [
       A: `bezahlte Arbeit :: paid work`,
       B: `unbezahlte Arbeit für die Gesellschaft :: unpaid work for society`,
       C: `Arbeit nur für Deutsche :: work only for Germans`,
-      D: `Arbeit nur für Männer :: work only for men`
+      D: `Arbeit nur für Männer :: work only for men`,
     },
-    correctAnswer: "B"
+    correctAnswer: 'B',
   },
   {
     id: 265,
@@ -2910,9 +2910,9 @@ const questions = [
       A: `eine Gruppe von Bürgern mit einem gemeinsamen Ziel :: a group of citizens with a common goal`,
       B: `eine politische Partei :: a political party`,
       C: `ein Unternehmen :: a company`,
-      D: `eine Behörde :: an authority`
+      D: `eine Behörde :: an authority`,
     },
-    correctAnswer: "A"
+    correctAnswer: 'A',
   },
   {
     id: 266,
@@ -2921,9 +2921,9 @@ const questions = [
       A: `Mut zum Militärdienst :: courage for military service`,
       B: `Mut, anderen zu helfen und für Recht einzustehen :: courage to help others and stand up for what is right`,
       C: `Angst vor Problemen :: fear of problems`,
-      D: `Gehorsam gegenüber der Regierung :: obedience to the government`
+      D: `Gehorsam gegenüber der Regierung :: obedience to the government`,
     },
-    correctAnswer: "B"
+    correctAnswer: 'B',
   },
   {
     id: 267,
@@ -2932,9 +2932,9 @@ const questions = [
       A: `Toleranz :: tolerance`,
       B: `Vorurteile :: prejudices`,
       C: `Abgrenzung :: separation`,
-      D: `Ausgrenzung :: exclusion`
+      D: `Ausgrenzung :: exclusion`,
     },
-    correctAnswer: "A"
+    correctAnswer: 'A',
   },
   {
     id: 268,
@@ -2943,9 +2943,9 @@ const questions = [
       A: `gegenseitiger Respekt :: mutual respect`,
       B: `gleiche Sprache :: same language`,
       C: `gleiche Religion :: same religion`,
-      D: `gleiche Herkunft :: same origin`
+      D: `gleiche Herkunft :: same origin`,
     },
-    correctAnswer: "A"
+    correctAnswer: 'A',
   },
   {
     id: 269,
@@ -2954,9 +2954,9 @@ const questions = [
       A: `Menschen verschiedener Kulturen leben zusammen :: people of different cultures live together`,
       B: `nur eine Kultur ist erlaubt :: only one culture is allowed`,
       C: `alle müssen die gleiche Kultur haben :: everyone must have the same culture`,
-      D: `Kulturen leben getrennt voneinander :: cultures live separately from each other`
+      D: `Kulturen leben getrennt voneinander :: cultures live separately from each other`,
     },
-    correctAnswer: "A"
+    correctAnswer: 'A',
   },
   {
     id: 270,
@@ -2965,9 +2965,9 @@ const questions = [
       A: `gleiche Behandlung aller Menschen :: equal treatment of all people`,
       B: `ungleiche Behandlung aufgrund bestimmter Merkmale :: unequal treatment based on certain characteristics`,
       C: `besondere Förderung von Minderheiten :: special promotion of minorities`,
-      D: `respektvoller Umgang miteinander :: respectful interaction with each other`
+      D: `respektvoller Umgang miteinander :: respectful interaction with each other`,
     },
-    correctAnswer: "B"
+    correctAnswer: 'B',
   },
   {
     id: 271,
@@ -2976,9 +2976,9 @@ const questions = [
       A: `Diskriminierung aufgrund der Hautfarbe oder Herkunft :: discrimination based on skin color or origin`,
       B: `gleiche Rechte für alle :: equal rights for all`,
       C: `Respekt vor anderen Kulturen :: respect for other cultures`,
-      D: `Hilfe für Benachteiligte :: help for the disadvantaged`
+      D: `Hilfe für Benachteiligte :: help for the disadvantaged`,
     },
-    correctAnswer: "A"
+    correctAnswer: 'A',
   },
   {
     id: 272,
@@ -2987,9 +2987,9 @@ const questions = [
       A: `wegschauen :: look away`,
       B: `sich dagegen aussprechen :: speak out against it`,
       C: `mitmachen :: participate`,
-      D: `nichts :: nothing`
+      D: `nichts :: nothing`,
     },
-    correctAnswer: "B"
+    correctAnswer: 'B',
   },
   {
     id: 273,
@@ -2998,9 +2998,9 @@ const questions = [
       A: `Intoleranz :: intolerance`,
       B: `Toleranz :: tolerance`,
       C: `Gleichgültigkeit :: indifference`,
-      D: `Vorurteile :: prejudices`
+      D: `Vorurteile :: prejudices`,
     },
-    correctAnswer: "B"
+    correctAnswer: 'B',
   },
   {
     id: 274,
@@ -3009,9 +3009,9 @@ const questions = [
       A: `Solidarität :: solidarity`,
       B: `Egoismus :: egoism`,
       C: `Isolation :: isolation`,
-      D: `Gleichgültigkeit :: indifference`
+      D: `Gleichgültigkeit :: indifference`,
     },
-    correctAnswer: "A"
+    correctAnswer: 'A',
   },
   {
     id: 275,
@@ -3020,9 +3020,9 @@ const questions = [
       A: `sich von der Gesellschaft abgrenzen :: separating oneself from society`,
       B: `aktiv am Gemeinschaftsleben teilnehmen :: actively participating in community life`,
       C: `nur zu Hause bleiben :: only staying at home`,
-      D: `andere Menschen meiden :: avoiding other people`
+      D: `andere Menschen meiden :: avoiding other people`,
     },
-    correctAnswer: "B"
+    correctAnswer: 'B',
   },
   {
     id: 276,
@@ -3031,9 +3031,9 @@ const questions = [
       A: `politische Bildung der Bürger :: political education of citizens`,
       B: `Unwissenheit der Bürger :: ignorance of citizens`,
       C: `nur eine Meinung :: only one opinion`,
-      D: `keine Wahlen :: no elections`
+      D: `keine Wahlen :: no elections`,
     },
-    correctAnswer: "A"
+    correctAnswer: 'A',
   },
   {
     id: 277,
@@ -3042,9 +3042,9 @@ const questions = [
       A: `Schutz der Verfassung vor Feinden :: protection of the constitution from enemies`,
       B: `Schutz von Politikern :: protection of politicians`,
       C: `Schutz von Gebäuden :: protection of buildings`,
-      D: `Schutz vor der Polizei :: protection from police`
+      D: `Schutz vor der Polizei :: protection from police`,
     },
-    correctAnswer: "A"
+    correctAnswer: 'A',
   },
   {
     id: 278,
@@ -3053,9 +3053,9 @@ const questions = [
       A: `gemäßigte politische Meinungen :: moderate political opinions`,
       B: `radikale Ansichten gegen die demokratische Ordnung :: radical views against democratic order`,
       C: `normale politische Teilnahme :: normal political participation`,
-      D: `friedliche Demonstrationen :: peaceful demonstrations`
+      D: `friedliche Demonstrationen :: peaceful demonstrations`,
     },
-    correctAnswer: "B"
+    correctAnswer: 'B',
   },
   {
     id: 279,
@@ -3064,9 +3064,9 @@ const questions = [
       A: `friedlicher Protest :: peaceful protest`,
       B: `politische Gewalt zur Einschüchterung :: political violence for intimidation`,
       C: `demokratische Meinungsäußerung :: democratic expression of opinion`,
-      D: `normale Kriminalität :: normal crime`
+      D: `normale Kriminalität :: normal crime`,
     },
-    correctAnswer: "B"
+    correctAnswer: 'B',
   },
   {
     id: 280,
@@ -3075,9 +3075,9 @@ const questions = [
       A: `Frieden schaffen :: creating peace`,
       B: `Angst und Schrecken verbreiten :: spreading fear and terror`,
       C: `Demokratie fördern :: promoting democracy`,
-      D: `Menschen helfen :: helping people`
+      D: `Menschen helfen :: helping people`,
     },
-    correctAnswer: "B"
+    correctAnswer: 'B',
   },
   {
     id: 281,
@@ -3086,9 +3086,9 @@ const questions = [
       A: `mit Gewalt :: with violence`,
       B: `mit rechtsstaatlichen Mitteln :: with constitutional means`,
       C: `mit Gleichgültigkeit :: with indifference`,
-      D: `mit Angst :: with fear`
+      D: `mit Angst :: with fear`,
     },
-    correctAnswer: "B"
+    correctAnswer: 'B',
   },
   {
     id: 282,
@@ -3097,9 +3097,9 @@ const questions = [
       A: `Terrorismus von Rechtsanwälten :: terrorism by lawyers`,
       B: `Terrorismus von rechtsextremen Gruppen :: terrorism by right-wing extremist groups`,
       C: `legaler Terrorismus :: legal terrorism`,
-      D: `berechtigter Terrorismus :: justified terrorism`
+      D: `berechtigter Terrorismus :: justified terrorism`,
     },
-    correctAnswer: "B"
+    correctAnswer: 'B',
   },
   {
     id: 283,
@@ -3108,9 +3108,9 @@ const questions = [
       A: `Terrorismus mit der linken Hand :: terrorism with the left hand`,
       B: `Terrorismus von linksextremen Gruppen :: terrorism by left-wing extremist groups`,
       C: `falscher Terrorismus :: false terrorism`,
-      D: `schwacher Terrorismus :: weak terrorism`
+      D: `schwacher Terrorismus :: weak terrorism`,
     },
-    correctAnswer: "B"
+    correctAnswer: 'B',
   },
   {
     id: 284,
@@ -3119,9 +3119,9 @@ const questions = [
       A: `eine deutsche Fluggesellschaft :: a German airline`,
       B: `eine terroristische Vereinigung :: a terrorist organization`,
       C: `eine politische Partei :: a political party`,
-      D: `eine Hilfsorganisation :: a relief organization`
+      D: `eine Hilfsorganisation :: a relief organization`,
     },
-    correctAnswer: "B"
+    correctAnswer: 'B',
   },
   {
     id: 285,
@@ -3130,9 +3130,9 @@ const questions = [
       A: `tiefe Religiosität :: deep religiosity`,
       B: `radikale Auslegung religiöser Texte :: radical interpretation of religious texts`,
       C: `normale Religionsausübung :: normal religious practice`,
-      D: `Religionsfreiheit :: religious freedom`
+      D: `Religionsfreiheit :: religious freedom`,
     },
-    correctAnswer: "B"
+    correctAnswer: 'B',
   },
   {
     id: 286,
@@ -3141,9 +3141,9 @@ const questions = [
       A: `die Religion Islam :: the religion Islam`,
       B: `politische Ideologie, die den Islam missbraucht :: political ideology that misuses Islam`,
       C: `islamische Kultur :: Islamic culture`,
-      D: `islamische Kunst :: Islamic art`
+      D: `islamische Kunst :: Islamic art`,
     },
-    correctAnswer: "B"
+    correctAnswer: 'B',
   },
   {
     id: 287,
@@ -3152,9 +3152,9 @@ const questions = [
       A: `nichts :: nothing`,
       B: `Islam ist Religion, Islamismus ist Extremismus :: Islam is religion, Islamism is extremism`,
       C: `alles :: everything`,
-      D: `die Sprache :: the language`
+      D: `die Sprache :: the language`,
     },
-    correctAnswer: "B"
+    correctAnswer: 'B',
   },
   {
     id: 288,
@@ -3163,9 +3163,9 @@ const questions = [
       A: `Aufklärung und Bildung :: education and enlightenment`,
       B: `Ausgrenzung :: exclusion`,
       C: `Ignoranz :: ignorance`,
-      D: `Gewalt :: violence`
+      D: `Gewalt :: violence`,
     },
-    correctAnswer: "A"
+    correctAnswer: 'A',
   },
   {
     id: 289,
@@ -3174,9 +3174,9 @@ const questions = [
       A: `Nachsorge :: aftercare`,
       B: `Vorbeugung :: prevention`,
       C: `Bestrafung :: punishment`,
-      D: `Vergeltung :: retaliation`
+      D: `Vergeltung :: retaliation`,
     },
-    correctAnswer: "B"
+    correctAnswer: 'B',
   },
   {
     id: 290,
@@ -3185,9 +3185,9 @@ const questions = [
       A: `soziale Integration :: social integration`,
       B: `Isolation :: isolation`,
       C: `Diskriminierung :: discrimination`,
-      D: `Ausgrenzung :: exclusion`
+      D: `Ausgrenzung :: exclusion`,
     },
-    correctAnswer: "A"
+    correctAnswer: 'A',
   },
   {
     id: 291,
@@ -3196,9 +3196,9 @@ const questions = [
       A: `normale politische Teilnahme :: normal political participation`,
       B: `plötzlicher Rückzug und extreme Ansichten :: sudden withdrawal and extreme views`,
       C: `Interesse an Politik :: interest in politics`,
-      D: `Toleranz gegenüber anderen :: tolerance towards others`
+      D: `Toleranz gegenüber anderen :: tolerance towards others`,
     },
-    correctAnswer: "B"
+    correctAnswer: 'B',
   },
   {
     id: 292,
@@ -3207,9 +3207,9 @@ const questions = [
       A: `durch Gespräche und professionelle Hilfe :: through conversations and professional help`,
       B: `durch Ignorieren :: by ignoring`,
       C: `durch Bestrafung :: through punishment`,
-      D: `durch Isolation :: through isolation`
+      D: `durch Isolation :: through isolation`,
     },
-    correctAnswer: "A"
+    correctAnswer: 'A',
   },
   {
     id: 293,
@@ -3218,9 +3218,9 @@ const questions = [
       A: `Toleranz und Respekt :: tolerance and respect`,
       B: `Ausgrenzung :: exclusion`,
       C: `Vorurteile :: prejudices`,
-      D: `Gleichgültigkeit :: indifference`
+      D: `Gleichgültigkeit :: indifference`,
     },
-    correctAnswer: "A"
+    correctAnswer: 'A',
   },
   {
     id: 294,
@@ -3229,9 +3229,9 @@ const questions = [
       A: `nur an sich selbst denken :: only thinking of oneself`,
       B: `Verantwortung für das Gemeinwohl übernehmen :: taking responsibility for the common good`,
       C: `anderen die Schuld geben :: blaming others`,
-      D: `sich nicht einmischen :: not getting involved`
+      D: `sich nicht einmischen :: not getting involved`,
     },
-    correctAnswer: "B"
+    correctAnswer: 'B',
   },
   {
     id: 295,
@@ -3240,9 +3240,9 @@ const questions = [
       A: `Vielfalt :: diversity`,
       B: `Einheitlichkeit :: uniformity`,
       C: `Isolation :: isolation`,
-      D: `Ausgrenzung :: exclusion`
+      D: `Ausgrenzung :: exclusion`,
     },
-    correctAnswer: "A"
+    correctAnswer: 'A',
   },
   {
     id: 296,
@@ -3251,9 +3251,9 @@ const questions = [
       A: `gemeinsame Werte :: shared values`,
       B: `Trennung :: separation`,
       C: `Konkurrenz :: competition`,
-      D: `Misstrauen :: mistrust`
+      D: `Misstrauen :: mistrust`,
     },
-    correctAnswer: "A"
+    correctAnswer: 'A',
   },
   {
     id: 297,
@@ -3262,9 +3262,9 @@ const questions = [
       A: `Bildung und Innovation :: education and innovation`,
       B: `Stillstand :: stagnation`,
       C: `Rückschritt :: regression`,
-      D: `Isolation :: isolation`
+      D: `Isolation :: isolation`,
     },
-    correctAnswer: "A"
+    correctAnswer: 'A',
   },
   {
     id: 298,
@@ -3273,9 +3273,9 @@ const questions = [
       A: `Chancengleichheit :: equal opportunities`,
       B: `Ausgrenzung :: exclusion`,
       C: `Privilegien für wenige :: privileges for few`,
-      D: `Bildung nur für Deutsche :: education only for Germans`
+      D: `Bildung nur für Deutsche :: education only for Germans`,
     },
-    correctAnswer: "A"
+    correctAnswer: 'A',
   },
   {
     id: 299,
@@ -3284,9 +3284,9 @@ const questions = [
       A: `Entwicklung ohne Rücksicht auf die Umwelt :: development without regard for the environment`,
       B: `Entwicklung, die auch künftige Generationen berücksichtigt :: development that also considers future generations`,
       C: `nur wirtschaftliche Entwicklung :: only economic development`,
-      D: `schnelle Entwicklung :: rapid development`
+      D: `schnelle Entwicklung :: rapid development`,
     },
-    correctAnswer: "B"
+    correctAnswer: 'B',
   },
   {
     id: 300,
@@ -3295,8 +3295,8 @@ const questions = [
       A: `gegenseitiger Respekt und Toleranz :: mutual respect and tolerance`,
       B: `Ausgrenzung von Minderheiten :: exclusion of minorities`,
       C: `nur deutsche Kultur zulassen :: only allowing German culture`,
-      D: `getrennte Lebenswelten :: separate living worlds`
+      D: `getrennte Lebenswelten :: separate living worlds`,
     },
-    correctAnswer: "A"
-  }
+    correctAnswer: 'A',
+  },
 ]

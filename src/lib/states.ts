@@ -1,20 +1,20 @@
 const germanStates = [
-  "Baden-Württemberg",
-  "Bayern",
-  "Berlin",
-  "Brandenburg",
-  "Bremen", 
-  "Hamburg",
-  "Hessen",
-  "Mecklenburg-Vorpommern",
-  "Niedersachsen",
-  "Nordrhein-Westfalen",
-  "Rheinland-Pfalz",
-  "Saarland",
-  "Sachsen",
-  "Sachsen-Anhalt",
-  "Schleswig-Holstein",
-  "Thüringen"
-];
+  'Baden-Württemberg',
+  'Bayern',
+  'Berlin',
+  'Brandenburg',
+  'Bremen',
+  'Hamburg',
+  'Hessen',
+  'Mecklenburg-Vorpommern',
+  'Niedersachsen',
+  'Nordrhein-Westfalen',
+  'Rheinland-Pfalz',
+  'Saarland',
+  'Sachsen',
+  'Sachsen-Anhalt',
+  'Schleswig-Holstein',
+  'Thüringen',
+]
 
-export default germanStates;
+export default germanStates

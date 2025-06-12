@@ -1,5 +1,5 @@
 export const stateSpecificQuestions = {
-  "Baden-Württemberg": [
+  'Baden-Württemberg': [
     {
       id: 1,
       question: `Welche Stadt ist die Landeshauptstadt von Baden-Württemberg? :: Which city is the state capital of Baden-Württemberg?`,
@@ -7,9 +7,9 @@ export const stateSpecificQuestions = {
         A: `Mannheim`,
         B: `Stuttgart`,
         C: `Karlsruhe`,
-        D: `Freiburg`
+        D: `Freiburg`,
       },
-      correctAnswer: "B"
+      correctAnswer: 'B',
     },
     {
       id: 2,
@@ -18,9 +18,9 @@ export const stateSpecificQuestions = {
         A: `BMW`,
         B: `Volkswagen`,
         C: `Mercedes-Benz :: Mercedes-Benz`,
-        D: `Audi`
+        D: `Audi`,
       },
-      correctAnswer: "C"
+      correctAnswer: 'C',
     },
     {
       id: 3,
@@ -29,9 +29,9 @@ export const stateSpecificQuestions = {
         A: `Technik Museum Sinsheim`,
         B: `Mercedes-Benz Museum`,
         C: `Porsche Museum`,
-        D: `Auto & Technik Museum`
+        D: `Auto & Technik Museum`,
       },
-      correctAnswer: "A"
+      correctAnswer: 'A',
     },
     {
       id: 4,
@@ -40,9 +40,9 @@ export const stateSpecificQuestions = {
         A: `der Rhein :: the Rhine`,
         B: `die Donau :: the Danube`,
         C: `der Neckar :: the Neckar`,
-        D: `der Main :: the Main`
+        D: `der Main :: the Main`,
       },
-      correctAnswer: "C"
+      correctAnswer: 'C',
     },
     {
       id: 5,
@@ -51,9 +51,9 @@ export const stateSpecificQuestions = {
         A: `Universität Stuttgart`,
         B: `Universität Heidelberg`,
         C: `Universität Tübingen`,
-        D: `Universität Freiburg`
+        D: `Universität Freiburg`,
       },
-      correctAnswer: "B"
+      correctAnswer: 'B',
     },
     {
       id: 6,
@@ -62,9 +62,9 @@ export const stateSpecificQuestions = {
         A: `ein Gebirge :: a mountain range`,
         B: `ein See :: a lake`,
         C: `eine Stadt :: a city`,
-        D: `ein Fluss :: a river`
+        D: `ein Fluss :: a river`,
       },
-      correctAnswer: "A"
+      correctAnswer: 'A',
     },
     {
       id: 7,
@@ -73,9 +73,9 @@ export const stateSpecificQuestions = {
         A: `Weißwurst :: white sausage`,
         B: `Schwarzwälder Kirschtorte :: Black Forest cake`,
         C: `Sauerbraten :: sauerbraten`,
-        D: `Currywurst :: curry sausage`
+        D: `Currywurst :: curry sausage`,
       },
-      correctAnswer: "B"
+      correctAnswer: 'B',
     },
     {
       id: 8,
@@ -84,9 +84,9 @@ export const stateSpecificQuestions = {
         A: `Landtag :: State Parliament`,
         B: `Bundesrat :: Federal Council`,
         C: `Bundestag :: Federal Parliament`,
-        D: `Stadtrat :: City Council`
+        D: `Stadtrat :: City Council`,
       },
-      correctAnswer: "A"
+      correctAnswer: 'A',
     },
     {
       id: 9,
@@ -95,9 +95,9 @@ export const stateSpecificQuestions = {
         A: `Mannheim`,
         B: `Karlsruhe`,
         C: `Heidelberg`,
-        D: `Ulm`
+        D: `Ulm`,
       },
-      correctAnswer: "C"
+      correctAnswer: 'C',
     },
     {
       id: 10,
@@ -106,13 +106,13 @@ export const stateSpecificQuestions = {
         A: `1949`,
         B: `1952`,
         C: `1945`,
-        D: `1956`
+        D: `1956`,
       },
-      correctAnswer: "B"
-    }
+      correctAnswer: 'B',
+    },
   ],
 
-  "Bayern": [
+  Bayern: [
     {
       id: 1,
       question: `Welche Stadt ist die Landeshauptstadt von Bayern? :: Which city is the state capital of Bavaria?`,
@@ -120,9 +120,9 @@ export const stateSpecificQuestions = {
         A: `Nürnberg :: Nuremberg`,
         B: `Augsburg`,
         C: `München :: Munich`,
-        D: `Regensburg`
+        D: `Regensburg`,
       },
-      correctAnswer: "C"
+      correctAnswer: 'C',
     },
     {
       id: 2,
@@ -131,9 +131,9 @@ export const stateSpecificQuestions = {
         A: `Karneval :: Carnival`,
         B: `Oktoberfest`,
         C: `Weihnachtsmarkt :: Christmas market`,
-        D: `Osterfest :: Easter festival`
+        D: `Osterfest :: Easter festival`,
       },
-      correctAnswer: "B"
+      correctAnswer: 'B',
     },
     {
       id: 3,
@@ -142,9 +142,9 @@ export const stateSpecificQuestions = {
         A: `Biergesetz :: Beer law`,
         B: `Reinheitsgebot :: Purity law`,
         C: `Bierordnung :: Beer order`,
-        D: `Braugesetz :: Brewing law`
+        D: `Braugesetz :: Brewing law`,
       },
-      correctAnswer: "B"
+      correctAnswer: 'B',
     },
     {
       id: 4,
@@ -153,9 +153,9 @@ export const stateSpecificQuestions = {
         A: `Brocken`,
         B: `Feldberg`,
         C: `Zugspitze`,
-        D: `Watzmann`
+        D: `Watzmann`,
       },
-      correctAnswer: "C"
+      correctAnswer: 'C',
     },
     {
       id: 5,
@@ -164,9 +164,9 @@ export const stateSpecificQuestions = {
         A: `rot-weiß :: red-white`,
         B: `blau-weiß :: blue-white`,
         C: `schwarz-rot-gold :: black-red-gold`,
-        D: `grün-weiß :: green-white`
+        D: `grün-weiß :: green-white`,
       },
-      correctAnswer: "B"
+      correctAnswer: 'B',
     },
     {
       id: 6,
@@ -175,9 +175,9 @@ export const stateSpecificQuestions = {
         A: `Schloss Nymphenburg`,
         B: `Schloss Neuschwanstein`,
         C: `Schloss Herrenchiemsee`,
-        D: `Schloss Linderhof`
+        D: `Schloss Linderhof`,
       },
-      correctAnswer: "B"
+      correctAnswer: 'B',
     },
     {
       id: 7,
@@ -186,9 +186,9 @@ export const stateSpecificQuestions = {
         A: `die Donau :: the Danube`,
         B: `der Main :: the Main`,
         C: `die Isar :: the Isar`,
-        D: `der Inn :: the Inn`
+        D: `der Inn :: the Inn`,
       },
-      correctAnswer: "C"
+      correctAnswer: 'C',
     },
     {
       id: 8,
@@ -197,9 +197,9 @@ export const stateSpecificQuestions = {
         A: `Bayerische Staatskanzlei`,
         B: `Münchner Rathaus :: Munich City Hall`,
         C: `Bayerisches Parlament :: Bavarian Parliament`,
-        D: `Residenz München :: Munich Residence`
+        D: `Residenz München :: Munich Residence`,
       },
-      correctAnswer: "A"
+      correctAnswer: 'A',
     },
     {
       id: 9,
@@ -208,9 +208,9 @@ export const stateSpecificQuestions = {
         A: `Currywurst :: curry sausage`,
         B: `Weißwurst :: white sausage`,
         C: `Bratwurst :: bratwurst`,
-        D: `Leberwurst :: liver sausage`
+        D: `Leberwurst :: liver sausage`,
       },
-      correctAnswer: "B"
+      correctAnswer: 'B',
     },
     {
       id: 10,
@@ -219,13 +219,13 @@ export const stateSpecificQuestions = {
         A: `München :: Munich`,
         B: `Augsburg`,
         C: `Regensburg`,
-        D: `Nürnberg :: Nuremberg`
+        D: `Nürnberg :: Nuremberg`,
       },
-      correctAnswer: "D"
-    }
+      correctAnswer: 'D',
+    },
   ],
 
-  "Berlin": [
+  Berlin: [
     {
       id: 1,
       question: `Welcher Status hat Berlin? :: What status does Berlin have?`,
@@ -233,9 +233,9 @@ export const stateSpecificQuestions = {
         A: `Bundesland und Hauptstadt :: federal state and capital`,
         B: `nur Hauptstadt :: only capital`,
         C: `nur Stadtstaat :: only city-state`,
-        D: `Bezirk :: district`
+        D: `Bezirk :: district`,
       },
-      correctAnswer: "A"
+      correctAnswer: 'A',
     },
     {
       id: 2,
@@ -244,9 +244,9 @@ export const stateSpecificQuestions = {
         A: `10`,
         B: `12`,
         C: `14`,
-        D: `16`
+        D: `16`,
       },
-      correctAnswer: "B"
+      correctAnswer: 'B',
     },
     {
       id: 3,
@@ -255,9 +255,9 @@ export const stateSpecificQuestions = {
         A: `Reichstag :: Reichstag`,
         B: `Brandenburger Tor :: Brandenburg Gate`,
         C: `Fernsehturm :: TV Tower`,
-        D: `Siegessäule :: Victory Column`
+        D: `Siegessäule :: Victory Column`,
       },
-      correctAnswer: "B"
+      correctAnswer: 'B',
     },
     {
       id: 4,
@@ -266,9 +266,9 @@ export const stateSpecificQuestions = {
         A: `an der Elbe :: on the Elbe`,
         B: `an der Oder :: on the Oder`,
         C: `an der Spree :: on the Spree`,
-        D: `am Rhein :: on the Rhine`
+        D: `am Rhein :: on the Rhine`,
       },
-      correctAnswer: "C"
+      correctAnswer: 'C',
     },
     {
       id: 5,
@@ -277,9 +277,9 @@ export const stateSpecificQuestions = {
         A: `Unter den Linden`,
         B: `Kurfürstendamm`,
         C: `Friedrichstraße`,
-        D: `Potsdamer Platz`
+        D: `Potsdamer Platz`,
       },
-      correctAnswer: "B"
+      correctAnswer: 'B',
     },
     {
       id: 6,
@@ -288,9 +288,9 @@ export const stateSpecificQuestions = {
         A: `Deutsches Technikmuseum :: German Technology Museum`,
         B: `Pergamonmuseum`,
         C: `Museum für Naturkunde :: Natural History Museum`,
-        D: `Hamburger Bahnhof`
+        D: `Hamburger Bahnhof`,
       },
-      correctAnswer: "B"
+      correctAnswer: 'B',
     },
     {
       id: 7,
@@ -299,9 +299,9 @@ export const stateSpecificQuestions = {
         A: `Die Mauer :: The Wall`,
         B: `Berliner Mauer :: Berlin Wall`,
         C: `Eiserner Vorhang :: Iron Curtain`,
-        D: `Grenzwall :: Border Wall`
+        D: `Grenzwall :: Border Wall`,
       },
-      correctAnswer: "B"
+      correctAnswer: 'B',
     },
     {
       id: 8,
@@ -310,9 +310,9 @@ export const stateSpecificQuestions = {
         A: `Potsdamer Platz`,
         B: `Breitscheidplatz`,
         C: `Alexanderplatz`,
-        D: `Pariser Platz`
+        D: `Pariser Platz`,
       },
-      correctAnswer: "C"
+      correctAnswer: 'C',
     },
     {
       id: 9,
@@ -321,9 +321,9 @@ export const stateSpecificQuestions = {
         A: `der Adler :: the eagle`,
         B: `der Löwe :: the lion`,
         C: `der Bär :: the bear`,
-        D: `der Wolf :: the wolf`
+        D: `der Wolf :: the wolf`,
       },
-      correctAnswer: "C"
+      correctAnswer: 'C',
     },
     {
       id: 10,
@@ -332,13 +332,13 @@ export const stateSpecificQuestions = {
         A: `9. November 1989`,
         B: `3. Oktober 1990`,
         C: `17. Juni 1953`,
-        D: `13. August 1961`
+        D: `13. August 1961`,
       },
-      correctAnswer: "A"
-    }
+      correctAnswer: 'A',
+    },
   ],
 
-  "Brandenburg": [
+  Brandenburg: [
     {
       id: 1,
       question: `Welche Stadt ist die Landeshauptstadt von Brandenburg? :: Which city is the state capital of Brandenburg?`,
@@ -346,9 +346,9 @@ export const stateSpecificQuestions = {
         A: `Cottbus`,
         B: `Frankfurt (Oder)`,
         C: `Potsdam`,
-        D: `Brandenburg an der Havel`
+        D: `Brandenburg an der Havel`,
       },
-      correctAnswer: "C"
+      correctAnswer: 'C',
     },
     {
       id: 2,
@@ -357,9 +357,9 @@ export const stateSpecificQuestions = {
         A: `Schloss Neuschwanstein`,
         B: `Schloss Sanssouci`,
         C: `Schloss Nymphenburg`,
-        D: `Schloss Charlottenburg`
+        D: `Schloss Charlottenburg`,
       },
-      correctAnswer: "B"
+      correctAnswer: 'B',
     },
     {
       id: 3,
@@ -368,9 +368,9 @@ export const stateSpecificQuestions = {
         A: `Friedrich Wilhelm I.`,
         B: `Friedrich der Große :: Frederick the Great`,
         C: `Friedrich Wilhelm III.`,
-        D: `Wilhelm II.`
+        D: `Wilhelm II.`,
       },
-      correctAnswer: "B"
+      correctAnswer: 'B',
     },
     {
       id: 4,
@@ -379,9 +379,9 @@ export const stateSpecificQuestions = {
         A: `der Spreewald`,
         B: `die Uckermark`,
         C: `die Prignitz`,
-        D: `das Havelland`
+        D: `das Havelland`,
       },
-      correctAnswer: "A"
+      correctAnswer: 'A',
     },
     {
       id: 5,
@@ -390,9 +390,9 @@ export const stateSpecificQuestions = {
         A: `Cottbus`,
         B: `Eberswalde`,
         C: `Frankfurt (Oder)`,
-        D: `Schwedt`
+        D: `Schwedt`,
       },
-      correctAnswer: "C"
+      correctAnswer: 'C',
     },
     {
       id: 6,
@@ -401,9 +401,9 @@ export const stateSpecificQuestions = {
         A: `die Oder :: the Oder`,
         B: `die Elbe :: the Elbe`,
         C: `der Rhein :: the Rhine`,
-        D: `die Weser :: the Weser`
+        D: `die Weser :: the Weser`,
       },
-      correctAnswer: "A"
+      correctAnswer: 'A',
     },
     {
       id: 7,
@@ -412,9 +412,9 @@ export const stateSpecificQuestions = {
         A: `ein Gebirge :: a mountain range`,
         B: `eine hügelige Landschaft :: a hilly landscape`,
         C: `ein See :: a lake`,
-        D: `eine Stadt :: a city`
+        D: `eine Stadt :: a city`,
       },
-      correctAnswer: "B"
+      correctAnswer: 'B',
     },
     {
       id: 8,
@@ -423,9 +423,9 @@ export const stateSpecificQuestions = {
         A: `Fahrrad :: bicycle`,
         B: `Kahn :: punt boat`,
         C: `Auto :: car`,
-        D: `Zug :: train`
+        D: `Zug :: train`,
       },
-      correctAnswer: "B"
+      correctAnswer: 'B',
     },
     {
       id: 9,
@@ -434,9 +434,9 @@ export const stateSpecificQuestions = {
         A: `katholisch :: Catholic`,
         B: `evangelisch :: Protestant`,
         C: `orthodox :: Orthodox`,
-        D: `jüdisch :: Jewish`
+        D: `jüdisch :: Jewish`,
       },
-      correctAnswer: "B"
+      correctAnswer: 'B',
     },
     {
       id: 10,
@@ -445,13 +445,13 @@ export const stateSpecificQuestions = {
         A: `1989`,
         B: `1990`,
         C: `1991`,
-        D: `1992`
+        D: `1992`,
       },
-      correctAnswer: "B"
-    }
+      correctAnswer: 'B',
+    },
   ],
 
-  "Bremen": [
+  Bremen: [
     {
       id: 1,
       question: `Welchen Status hat Bremen? :: What status does Bremen have?`,
@@ -459,9 +459,9 @@ export const stateSpecificQuestions = {
         A: `Stadtstaat :: city-state`,
         B: `normale Stadt :: normal city`,
         C: `Bezirk :: district`,
-        D: `Gemeinde :: municipality`
+        D: `Gemeinde :: municipality`,
       },
-      correctAnswer: "A"
+      correctAnswer: 'A',
     },
     {
       id: 2,
@@ -470,9 +470,9 @@ export const stateSpecificQuestions = {
         A: `einer :: one`,
         B: `zwei :: two`,
         C: `drei :: three`,
-        D: `vier :: four`
+        D: `vier :: four`,
       },
-      correctAnswer: "B"
+      correctAnswer: 'B',
     },
     {
       id: 3,
@@ -481,9 +481,9 @@ export const stateSpecificQuestions = {
         A: `Oldenburg`,
         B: `Delmenhorst`,
         C: `Bremerhaven`,
-        D: `Wilhelmshaven`
+        D: `Wilhelmshaven`,
       },
-      correctAnswer: "C"
+      correctAnswer: 'C',
     },
     {
       id: 4,
@@ -492,9 +492,9 @@ export const stateSpecificQuestions = {
         A: `die Elbe :: the Elbe`,
         B: `die Weser :: the Weser`,
         C: `der Rhein :: the Rhine`,
-        D: `die Ems :: the Ems`
+        D: `die Ems :: the Ems`,
       },
-      correctAnswer: "B"
+      correctAnswer: 'B',
     },
     {
       id: 5,
@@ -503,9 +503,9 @@ export const stateSpecificQuestions = {
         A: `eine Rockband :: a rock band`,
         B: `ein Märchen :: a fairy tale`,
         C: `ein Orchester :: an orchestra`,
-        D: `eine Oper :: an opera`
+        D: `eine Oper :: an opera`,
       },
-      correctAnswer: "B"
+      correctAnswer: 'B',
     },
     {
       id: 6,
@@ -514,9 +514,9 @@ export const stateSpecificQuestions = {
         A: `Hund, Katze, Hahn, Esel :: dog, cat, rooster, donkey`,
         B: `Pferd, Kuh, Schwein, Schaf :: horse, cow, pig, sheep`,
         C: `Löwe, Bär, Wolf, Fuchs :: lion, bear, wolf, fox`,
-        D: `Eule, Rabe, Taube, Spatz :: owl, raven, dove, sparrow`
+        D: `Eule, Rabe, Taube, Spatz :: owl, raven, dove, sparrow`,
       },
-      correctAnswer: "A"
+      correctAnswer: 'A',
     },
     {
       id: 7,
@@ -525,9 +525,9 @@ export const stateSpecificQuestions = {
         A: `am Hauptbahnhof :: at the main station`,
         B: `am Rathaus :: at the town hall`,
         C: `am Marktplatz :: at the market square`,
-        D: `an der Weser :: at the Weser`
+        D: `an der Weser :: at the Weser`,
       },
-      correctAnswer: "B"
+      correctAnswer: 'B',
     },
     {
       id: 8,
@@ -536,9 +536,9 @@ export const stateSpecificQuestions = {
         A: `eine Einkaufsstraße :: a shopping street`,
         B: `eine historische Straße :: a historic street`,
         C: `eine Kunststraße :: an art street`,
-        D: `alle Antworten sind richtig :: all answers are correct`
+        D: `alle Antworten sind richtig :: all answers are correct`,
       },
-      correctAnswer: "D"
+      correctAnswer: 'D',
     },
     {
       id: 9,
@@ -547,9 +547,9 @@ export const stateSpecificQuestions = {
         A: `Kölsch`,
         B: `Beck's Bier :: Beck's beer`,
         C: `Weißbier :: wheat beer`,
-        D: `Flensburger`
+        D: `Flensburger`,
       },
-      correctAnswer: "B"
+      correctAnswer: 'B',
     },
     {
       id: 10,
@@ -558,13 +558,13 @@ export const stateSpecificQuestions = {
         A: `im 11. Jahrhundert :: in the 11th century`,
         B: `im 13. Jahrhundert :: in the 13th century`,
         C: `im 15. Jahrhundert :: in the 15th century`,
-        D: `im 17. Jahrhundert :: in the 17th century`
+        D: `im 17. Jahrhundert :: in the 17th century`,
       },
-      correctAnswer: "B"
-    }
+      correctAnswer: 'B',
+    },
   ],
 
-  "Hamburg": [
+  Hamburg: [
     {
       id: 1,
       question: `Welchen Status hat Hamburg? :: What status does Hamburg have?`,
@@ -572,9 +572,9 @@ export const stateSpecificQuestions = {
         A: `Stadtstaat :: city-state`,
         B: `normale Stadt :: normal city`,
         C: `Hauptstadt :: capital`,
-        D: `Kreisstadt :: county town`
+        D: `Kreisstadt :: county town`,
       },
-      correctAnswer: "A"
+      correctAnswer: 'A',
     },
     {
       id: 2,
@@ -583,9 +583,9 @@ export const stateSpecificQuestions = {
         A: `das Tor zur Welt :: the gateway to the world`,
         B: `die weiße Stadt :: the white city`,
         C: `die goldene Stadt :: the golden city`,
-        D: `die grüne Stadt :: the green city`
+        D: `die grüne Stadt :: the green city`,
       },
-      correctAnswer: "A"
+      correctAnswer: 'A',
     },
     {
       id: 3,
@@ -594,9 +594,9 @@ export const stateSpecificQuestions = {
         A: `der Rhein :: the Rhine`,
         B: `die Weser :: the Weser`,
         C: `die Elbe :: the Elbe`,
-        D: `die Oder :: the Oder`
+        D: `die Oder :: the Oder`,
       },
-      correctAnswer: "C"
+      correctAnswer: 'C',
     },
     {
       id: 4,
@@ -605,9 +605,9 @@ export const stateSpecificQuestions = {
         A: `St. Pauli`,
         B: `Altona`,
         C: `Eimsbüttel`,
-        D: `Harburg`
+        D: `Harburg`,
       },
-      correctAnswer: "A"
+      correctAnswer: 'A',
     },
     {
       id: 5,
@@ -616,9 +616,9 @@ export const stateSpecificQuestions = {
         A: `Königsstraße :: King Street`,
         B: `Reeperbahn`,
         C: `Mönckebergstraße`,
-        D: `Jungfernstieg`
+        D: `Jungfernstieg`,
       },
-      correctAnswer: "B"
+      correctAnswer: 'B',
     },
     {
       id: 6,
@@ -627,9 +627,9 @@ export const stateSpecificQuestions = {
         A: `ein Einkaufszentrum :: a shopping center`,
         B: `ein historisches Lagerhausviertel :: a historic warehouse district`,
         C: `ein Wohngebiet :: a residential area`,
-        D: `ein Industriegebiet :: an industrial area`
+        D: `ein Industriegebiet :: an industrial area`,
       },
-      correctAnswer: "B"
+      correctAnswer: 'B',
     },
     {
       id: 7,
@@ -638,9 +638,9 @@ export const stateSpecificQuestions = {
         A: `St. Petri`,
         B: `St. Katharinen`,
         C: `St. Michaelis (Michel)`,
-        D: `St. Jacobi`
+        D: `St. Jacobi`,
       },
-      correctAnswer: "C"
+      correctAnswer: 'C',
     },
     {
       id: 8,
@@ -649,9 +649,9 @@ export const stateSpecificQuestions = {
         A: `der größte Seehafen Deutschlands :: Germany's largest seaport`,
         B: `ein kleiner Fischerhafen :: a small fishing port`,
         C: `nur ein Yachthafen :: only a yacht harbor`,
-        D: `ein historischer Hafen :: a historic port`
+        D: `ein historischer Hafen :: a historic port`,
       },
-      correctAnswer: "A"
+      correctAnswer: 'A',
     },
     {
       id: 9,
@@ -660,9 +660,9 @@ export const stateSpecificQuestions = {
         A: `blau-weiß :: blue-white`,
         B: `rot-weiß :: red-white`,
         C: `schwarz-rot-gold :: black-red-gold`,
-        D: `grün-weiß :: green-white`
+        D: `grün-weiß :: green-white`,
       },
-      correctAnswer: "B"
+      correctAnswer: 'B',
     },
     {
       id: 10,
@@ -671,13 +671,13 @@ export const stateSpecificQuestions = {
         A: `Guten Morgen :: Good morning`,
         B: `Hallo :: Hello`,
         C: `Auf Wiedersehen :: Goodbye`,
-        D: `Entschuldigung :: Excuse me`
+        D: `Entschuldigung :: Excuse me`,
       },
-      correctAnswer: "B"
-    }
+      correctAnswer: 'B',
+    },
   ],
 
-  "Hessen": [
+  Hessen: [
     {
       id: 1,
       question: `Welche Stadt ist die Landeshauptstadt von Hessen? :: Which city is the state capital of Hesse?`,
@@ -685,9 +685,9 @@ export const stateSpecificQuestions = {
         A: `Frankfurt am Main`,
         B: `Kassel`,
         C: `Wiesbaden`,
-        D: `Darmstadt`
+        D: `Darmstadt`,
       },
-      correctAnswer: "C"
+      correctAnswer: 'C',
     },
     {
       id: 2,
@@ -696,9 +696,9 @@ export const stateSpecificQuestions = {
         A: `Wiesbaden`,
         B: `Frankfurt am Main`,
         C: `Kassel`,
-        D: `Offenbach`
+        D: `Offenbach`,
       },
-      correctAnswer: "B"
+      correctAnswer: 'B',
     },
     {
       id: 3,
@@ -707,9 +707,9 @@ export const stateSpecificQuestions = {
         A: `der Rhein :: the Rhine`,
         B: `die Weser :: the Weser`,
         C: `der Main :: the Main`,
-        D: `die Lahn :: the Lahn`
+        D: `die Lahn :: the Lahn`,
       },
-      correctAnswer: "C"
+      correctAnswer: 'C',
     },
     {
       id: 4,
@@ -718,9 +718,9 @@ export const stateSpecificQuestions = {
         A: `in Wiesbaden :: in Wiesbaden`,
         B: `in Frankfurt am Main :: in Frankfurt am Main`,
         C: `in Kassel :: in Kassel`,
-        D: `in Darmstadt :: in Darmstadt`
+        D: `in Darmstadt :: in Darmstadt`,
       },
-      correctAnswer: "B"
+      correctAnswer: 'B',
     },
     {
       id: 5,
@@ -729,9 +729,9 @@ export const stateSpecificQuestions = {
         A: `der Schwarzwald :: the Black Forest`,
         B: `die Alpen :: the Alps`,
         C: `der Taunus :: the Taunus`,
-        D: `das Erzgebirge :: the Ore Mountains`
+        D: `das Erzgebirge :: the Ore Mountains`,
       },
-      correctAnswer: "C"
+      correctAnswer: 'C',
     },
     {
       id: 6,
@@ -740,9 +740,9 @@ export const stateSpecificQuestions = {
         A: `die Brüder Wright :: the Wright brothers`,
         B: `die Brüder Grimm :: the Brothers Grimm`,
         C: `die Brüder Mann :: the Mann brothers`,
-        D: `die Brüder Humboldt :: the Humboldt brothers`
+        D: `die Brüder Humboldt :: the Humboldt brothers`,
       },
-      correctAnswer: "B"
+      correctAnswer: 'B',
     },
     {
       id: 7,
@@ -751,9 +751,9 @@ export const stateSpecificQuestions = {
         A: `Frankfurt :: Frankfurt`,
         B: `Wiesbaden`,
         C: `Kassel`,
-        D: `Marburg`
+        D: `Marburg`,
       },
-      correctAnswer: "C"
+      correctAnswer: 'C',
     },
     {
       id: 8,
@@ -762,9 +762,9 @@ export const stateSpecificQuestions = {
         A: `ein Museum :: a museum`,
         B: `eine Kunstausstellung :: an art exhibition`,
         C: `ein Musikfestival :: a music festival`,
-        D: `ein Theaterfestival :: a theater festival`
+        D: `ein Theaterfestival :: a theater festival`,
       },
-      correctAnswer: "B"
+      correctAnswer: 'B',
     },
     {
       id: 9,
@@ -773,9 +773,9 @@ export const stateSpecificQuestions = {
         A: `Kölsch`,
         B: `Weißbier :: wheat beer`,
         C: `Apfelwein :: apple wine`,
-        D: `Pilsner`
+        D: `Pilsner`,
       },
-      correctAnswer: "C"
+      correctAnswer: 'C',
     },
     {
       id: 10,
@@ -784,13 +784,13 @@ export const stateSpecificQuestions = {
         A: `Universität Frankfurt`,
         B: `Universität Gießen`,
         C: `Universität Marburg`,
-        D: `Universität Kassel`
+        D: `Universität Kassel`,
       },
-      correctAnswer: "C"
-    }
+      correctAnswer: 'C',
+    },
   ],
 
-  "Mecklenburg-Vorpommern": [
+  'Mecklenburg-Vorpommern': [
     {
       id: 1,
       question: `Welche Stadt ist die Landeshauptstadt von Mecklenburg-Vorpommern? :: Which city is the state capital of Mecklenburg-Western Pomerania?`,
@@ -798,9 +798,9 @@ export const stateSpecificQuestions = {
         A: `Rostock`,
         B: `Schwerin`,
         C: `Stralsund`,
-        D: `Greifswald`
+        D: `Greifswald`,
       },
-      correctAnswer: "B"
+      correctAnswer: 'B',
     },
     {
       id: 2,
@@ -809,9 +809,9 @@ export const stateSpecificQuestions = {
         A: `Nordsee :: North Sea`,
         B: `Ostsee :: Baltic Sea`,
         C: `Mittelmeer :: Mediterranean Sea`,
-        D: `Schwarzes Meer :: Black Sea`
+        D: `Schwarzes Meer :: Black Sea`,
       },
-      correctAnswer: "B"
+      correctAnswer: 'B',
     },
     {
       id: 3,
@@ -820,9 +820,9 @@ export const stateSpecificQuestions = {
         A: `Sylt`,
         B: `Norderney`,
         C: `Rügen`,
-        D: `Helgoland`
+        D: `Helgoland`,
       },
-      correctAnswer: "C"
+      correctAnswer: 'C',
     },
     {
       id: 4,
@@ -831,9 +831,9 @@ export const stateSpecificQuestions = {
         A: `weiße Felsen auf Rügen :: white cliffs on Rügen`,
         B: `Berge :: mountains`,
         C: `Seen :: lakes`,
-        D: `Wälder :: forests`
+        D: `Wälder :: forests`,
       },
-      correctAnswer: "A"
+      correctAnswer: 'A',
     },
     {
       id: 5,
@@ -842,9 +842,9 @@ export const stateSpecificQuestions = {
         A: `Bodensee :: Lake Constance`,
         B: `Chiemsee`,
         C: `Müritz`,
-        D: `Starnberger See`
+        D: `Starnberger See`,
       },
-      correctAnswer: "C"
+      correctAnswer: 'C',
     },
     {
       id: 6,
@@ -853,9 +853,9 @@ export const stateSpecificQuestions = {
         A: `Mecklenburgische Schweiz :: Mecklenburg Switzerland`,
         B: `Mecklenburgische Seenplatte :: Mecklenburg Lake District`,
         C: `Vorpommersche Alpen :: Western Pomeranian Alps`,
-        D: `Ostseeplatte :: Baltic Plateau`
+        D: `Ostseeplatte :: Baltic Plateau`,
       },
-      correctAnswer: "B"
+      correctAnswer: 'B',
     },
     {
       id: 7,
@@ -864,9 +864,9 @@ export const stateSpecificQuestions = {
         A: `Albrecht Dürer`,
         B: `Caspar David Friedrich`,
         C: `Max Liebermann`,
-        D: `Franz Marc`
+        D: `Franz Marc`,
       },
-      correctAnswer: "B"
+      correctAnswer: 'B',
     },
     {
       id: 8,
@@ -875,9 +875,9 @@ export const stateSpecificQuestions = {
         A: `eine Stadt :: a city`,
         B: `eine Insel :: an island`,
         C: `ein Berg :: a mountain`,
-        D: `ein Fluss :: a river`
+        D: `ein Fluss :: a river`,
       },
-      correctAnswer: "B"
+      correctAnswer: 'B',
     },
     {
       id: 9,
@@ -886,9 +886,9 @@ export const stateSpecificQuestions = {
         A: `Schwerin`,
         B: `Neubrandenburg`,
         C: `Rostock`,
-        D: `Wismar`
+        D: `Wismar`,
       },
-      correctAnswer: "C"
+      correctAnswer: 'C',
     },
     {
       id: 10,
@@ -897,13 +897,13 @@ export const stateSpecificQuestions = {
         A: `1989`,
         B: `1990`,
         C: `1991`,
-        D: `1992`
+        D: `1992`,
       },
-      correctAnswer: "B"
-    }
+      correctAnswer: 'B',
+    },
   ],
 
-  "Niedersachsen": [
+  Niedersachsen: [
     {
       id: 1,
       question: `Welche Stadt ist die Landeshauptstadt von Niedersachsen? :: Which city is the state capital of Lower Saxony?`,
@@ -911,9 +911,9 @@ export const stateSpecificQuestions = {
         A: `Braunschweig`,
         B: `Oldenburg`,
         C: `Hannover`,
-        D: `Osnabrück`
+        D: `Osnabrück`,
       },
-      correctAnswer: "C"
+      correctAnswer: 'C',
     },
     {
       id: 2,
@@ -922,9 +922,9 @@ export const stateSpecificQuestions = {
         A: `BMW`,
         B: `Mercedes-Benz`,
         C: `Audi`,
-        D: `Volkswagen`
+        D: `Volkswagen`,
       },
-      correctAnswer: "D"
+      correctAnswer: 'D',
     },
     {
       id: 3,
@@ -933,9 +933,9 @@ export const stateSpecificQuestions = {
         A: `Ostfriesische Inseln :: East Frisian Islands`,
         B: `Halligen`,
         C: `Boddeninseln :: Bodden Islands`,
-        D: `Nordfriesische Inseln :: North Frisian Islands`
+        D: `Nordfriesische Inseln :: North Frisian Islands`,
       },
-      correctAnswer: "A"
+      correctAnswer: 'A',
     },
     {
       id: 4,
@@ -944,9 +944,9 @@ export const stateSpecificQuestions = {
         A: `Zugspitze`,
         B: `Brocken`,
         C: `Wurmberg`,
-        D: `Feldberg`
+        D: `Feldberg`,
       },
-      correctAnswer: "C"
+      correctAnswer: 'C',
     },
     {
       id: 5,
@@ -955,9 +955,9 @@ export const stateSpecificQuestions = {
         A: `die Alpen :: the Alps`,
         B: `der Schwarzwald :: the Black Forest`,
         C: `der Harz :: the Harz`,
-        D: `das Erzgebirge :: the Ore Mountains`
+        D: `das Erzgebirge :: the Ore Mountains`,
       },
-      correctAnswer: "C"
+      correctAnswer: 'C',
     },
     {
       id: 6,
@@ -966,9 +966,9 @@ export const stateSpecificQuestions = {
         A: `Aschenputtel :: Cinderella`,
         B: `der Rattenfänger :: the Pied Piper`,
         C: `Hänsel und Gretel :: Hansel and Gretel`,
-        D: `Rotkäppchen :: Little Red Riding Hood`
+        D: `Rotkäppchen :: Little Red Riding Hood`,
       },
-      correctAnswer: "B"
+      correctAnswer: 'B',
     },
     {
       id: 7,
@@ -977,9 +977,9 @@ export const stateSpecificQuestions = {
         A: `Ostsee :: Baltic Sea`,
         B: `Nordsee :: North Sea`,
         C: `Mittelmeer :: Mediterranean Sea`,
-        D: `Schwarzes Meer :: Black Sea`
+        D: `Schwarzes Meer :: Black Sea`,
       },
-      correctAnswer: "B"
+      correctAnswer: 'B',
     },
     {
       id: 8,
@@ -988,9 +988,9 @@ export const stateSpecificQuestions = {
         A: `ein Gebirge :: a mountain range`,
         B: `ein Nationalpark :: a national park`,
         C: `eine Stadt :: a city`,
-        D: `ein Fluss :: a river`
+        D: `ein Fluss :: a river`,
       },
-      correctAnswer: "B"
+      correctAnswer: 'B',
     },
     {
       id: 9,
@@ -999,9 +999,9 @@ export const stateSpecificQuestions = {
         A: `Friesisch :: Frisian`,
         B: `Dänisch :: Danish`,
         C: `Niederländisch :: Dutch`,
-        D: `Plattdeutsch :: Low German`
+        D: `Plattdeutsch :: Low German`,
       },
-      correctAnswer: "D"
+      correctAnswer: 'D',
     },
     {
       id: 10,
@@ -1010,13 +1010,13 @@ export const stateSpecificQuestions = {
         A: `Münster`,
         B: `Göttingen`,
         C: `Marburg`,
-        D: `Heidelberg`
+        D: `Heidelberg`,
       },
-      correctAnswer: "B"
-    }
+      correctAnswer: 'B',
+    },
   ],
 
-  "Nordrhein-Westfalen": [
+  'Nordrhein-Westfalen': [
     {
       id: 1,
       question: `Welche Stadt ist die Landeshauptstadt von Nordrhein-Westfalen? :: Which city is the state capital of North Rhine-Westphalia?`,
@@ -1024,9 +1024,9 @@ export const stateSpecificQuestions = {
         A: `Köln :: Cologne`,
         B: `Essen`,
         C: `Dortmund`,
-        D: `Düsseldorf`
+        D: `Düsseldorf`,
       },
-      correctAnswer: "D"
+      correctAnswer: 'D',
     },
     {
       id: 2,
@@ -1035,9 +1035,9 @@ export const stateSpecificQuestions = {
         A: `Düsseldorf`,
         B: `Dortmund`,
         C: `Köln :: Cologne`,
-        D: `Essen`
+        D: `Essen`,
       },
-      correctAnswer: "C"
+      correctAnswer: 'C',
     },
     {
       id: 3,
@@ -1046,9 +1046,9 @@ export const stateSpecificQuestions = {
         A: `Saargebiet :: Saar region`,
         B: `Ruhrgebiet :: Ruhr area`,
         C: `Rheingebiet :: Rhine region`,
-        D: `Bergisches Land :: Bergisches Land`
+        D: `Bergisches Land :: Bergisches Land`,
       },
-      correctAnswer: "B"
+      correctAnswer: 'B',
     },
     {
       id: 4,
@@ -1057,9 +1057,9 @@ export const stateSpecificQuestions = {
         A: `die Weser :: the Weser`,
         B: `die Elbe :: the Elbe`,
         C: `der Rhein :: the Rhine`,
-        D: `die Donau :: the Danube`
+        D: `die Donau :: the Danube`,
       },
-      correctAnswer: "C"
+      correctAnswer: 'C',
     },
     {
       id: 5,
@@ -1068,9 +1068,9 @@ export const stateSpecificQuestions = {
         A: `Brandenburger Tor :: Brandenburg Gate`,
         B: `Kölner Dom :: Cologne Cathedral`,
         C: `Schloss Neuschwanstein`,
-        D: `Frauenkirche`
+        D: `Frauenkirche`,
       },
-      correctAnswer: "B"
+      correctAnswer: 'B',
     },
     {
       id: 6,
@@ -1079,9 +1079,9 @@ export const stateSpecificQuestions = {
         A: `Universität zu Köln :: University of Cologne`,
         B: `FernUniversität Hagen :: Distance University of Hagen`,
         C: `RWTH Aachen`,
-        D: `Universität Düsseldorf`
+        D: `Universität Düsseldorf`,
       },
-      correctAnswer: "B"
+      correctAnswer: 'B',
     },
     {
       id: 7,
@@ -1090,9 +1090,9 @@ export const stateSpecificQuestions = {
         A: `FC Bayern München :: FC Bayern Munich`,
         B: `FC Schalke 04`,
         C: `Borussia Dortmund (BVB)`,
-        D: `Bayer Leverkusen`
+        D: `Bayer Leverkusen`,
       },
-      correctAnswer: "C"
+      correctAnswer: 'C',
     },
     {
       id: 8,
@@ -1101,9 +1101,9 @@ export const stateSpecificQuestions = {
         A: `ein Einkaufszentrum :: a shopping center`,
         B: `eine ehemalige Kohlemine :: a former coal mine`,
         C: `ein Krankenhaus :: a hospital`,
-        D: `eine Universität :: a university`
+        D: `eine Universität :: a university`,
       },
-      correctAnswer: "B"
+      correctAnswer: 'B',
     },
     {
       id: 9,
@@ -1112,9 +1112,9 @@ export const stateSpecificQuestions = {
         A: `Pils`,
         B: `Weißbier :: wheat beer`,
         C: `Kölsch`,
-        D: `Alt`
+        D: `Alt`,
       },
-      correctAnswer: "C"
+      correctAnswer: 'C',
     },
     {
       id: 10,
@@ -1123,13 +1123,13 @@ export const stateSpecificQuestions = {
         A: `Essen`,
         B: `Dortmund`,
         C: `Düsseldorf`,
-        D: `Wuppertal`
+        D: `Wuppertal`,
       },
-      correctAnswer: "C"
-    }
+      correctAnswer: 'C',
+    },
   ],
 
-  "Rheinland-Pfalz": [
+  'Rheinland-Pfalz': [
     {
       id: 1,
       question: `Welche Stadt ist die Landeshauptstadt von Rheinland-Pfalz? :: Which city is the state capital of Rhineland-Palatinate?`,
@@ -1137,9 +1137,9 @@ export const stateSpecificQuestions = {
         A: `Koblenz`,
         B: `Mainz`,
         C: `Trier`,
-        D: `Kaiserslautern`
+        D: `Kaiserslautern`,
       },
-      correctAnswer: "B"
+      correctAnswer: 'B',
     },
     {
       id: 2,
@@ -1148,9 +1148,9 @@ export const stateSpecificQuestions = {
         A: `die Mosel :: the Moselle`,
         B: `der Rhein :: the Rhine`,
         C: `die Nahe :: the Nahe`,
-        D: `die Lahn :: the Lahn`
+        D: `die Lahn :: the Lahn`,
       },
-      correctAnswer: "B"
+      correctAnswer: 'B',
     },
     {
       id: 3,
@@ -1159,9 +1159,9 @@ export const stateSpecificQuestions = {
         A: `Bierbrauen :: beer brewing`,
         B: `Weinbau :: wine growing`,
         C: `Käseherstellung :: cheese making`,
-        D: `Fischfang :: fishing`
+        D: `Fischfang :: fishing`,
       },
-      correctAnswer: "B"
+      correctAnswer: 'B',
     },
     {
       id: 4,
@@ -1170,9 +1170,9 @@ export const stateSpecificQuestions = {
         A: `Mainz`,
         B: `Koblenz`,
         C: `Bonn`,
-        D: `Trier`
+        D: `Trier`,
       },
-      correctAnswer: "C"
+      correctAnswer: 'C',
     },
     {
       id: 5,
@@ -1181,9 +1181,9 @@ export const stateSpecificQuestions = {
         A: `Mainz`,
         B: `Koblenz`,
         C: `Trier`,
-        D: `Worms`
+        D: `Worms`,
       },
-      correctAnswer: "C"
+      correctAnswer: 'C',
     },
     {
       id: 6,
@@ -1192,9 +1192,9 @@ export const stateSpecificQuestions = {
         A: `eine Stadt :: a city`,
         B: `ein Felsen am Rhein :: a rock on the Rhine`,
         C: `eine Burg :: a castle`,
-        D: `ein Berg :: a mountain`
+        D: `ein Berg :: a mountain`,
       },
-      correctAnswer: "B"
+      correctAnswer: 'B',
     },
     {
       id: 7,
@@ -1203,9 +1203,9 @@ export const stateSpecificQuestions = {
         A: `Johannes Gutenberg`,
         B: `Albert Einstein`,
         C: `Konrad Zuse`,
-        D: `Rudolf Diesel`
+        D: `Rudolf Diesel`,
       },
-      correctAnswer: "A"
+      correctAnswer: 'A',
     },
     {
       id: 8,
@@ -1214,9 +1214,9 @@ export const stateSpecificQuestions = {
         A: `das Auto :: the car`,
         B: `den Buchdruck :: printing`,
         C: `das Telefon :: the telephone`,
-        D: `die Glühbirne :: the light bulb`
+        D: `die Glühbirne :: the light bulb`,
       },
-      correctAnswer: "B"
+      correctAnswer: 'B',
     },
     {
       id: 9,
@@ -1225,9 +1225,9 @@ export const stateSpecificQuestions = {
         A: `Rheingau`,
         B: `Moseltal :: Moselle Valley`,
         C: `Nahetal :: Nahe Valley`,
-        D: `alle Antworten sind richtig :: all answers are correct`
+        D: `alle Antworten sind richtig :: all answers are correct`,
       },
-      correctAnswer: "D"
+      correctAnswer: 'D',
     },
     {
       id: 10,
@@ -1236,13 +1236,13 @@ export const stateSpecificQuestions = {
         A: `in Mainz :: in Mainz`,
         B: `in Koblenz :: in Koblenz`,
         C: `in Trier :: in Trier`,
-        D: `in Worms :: in Worms`
+        D: `in Worms :: in Worms`,
       },
-      correctAnswer: "B"
-    }
+      correctAnswer: 'B',
+    },
   ],
 
-  "Saarland": [
+  Saarland: [
     {
       id: 1,
       question: `Welche Stadt ist die Landeshauptstadt des Saarlandes? :: Which city is the state capital of Saarland?`,
@@ -1250,9 +1250,9 @@ export const stateSpecificQuestions = {
         A: `Neunkirchen`,
         B: `Völklingen`,
         C: `Saarbrücken`,
-        D: `Homburg`
+        D: `Homburg`,
       },
-      correctAnswer: "C"
+      correctAnswer: 'C',
     },
     {
       id: 2,
@@ -1261,9 +1261,9 @@ export const stateSpecificQuestions = {
         A: `Belgien :: Belgium`,
         B: `Frankreich :: France`,
         C: `Luxemburg :: Luxembourg`,
-        D: `Niederlande :: Netherlands`
+        D: `Niederlande :: Netherlands`,
       },
-      correctAnswer: "B"
+      correctAnswer: 'B',
     },
     {
       id: 3,
@@ -1272,9 +1272,9 @@ export const stateSpecificQuestions = {
         A: `der Rhein :: the Rhine`,
         B: `die Mosel :: the Moselle`,
         C: `die Saar :: the Saar`,
-        D: `die Nahe :: the Nahe`
+        D: `die Nahe :: the Nahe`,
       },
-      correctAnswer: "C"
+      correctAnswer: 'C',
     },
     {
       id: 4,
@@ -1283,9 +1283,9 @@ export const stateSpecificQuestions = {
         A: `1949`,
         B: `1955`,
         C: `1957`,
-        D: `1959`
+        D: `1959`,
       },
-      correctAnswer: "C"
+      correctAnswer: 'C',
     },
     {
       id: 5,
@@ -1294,9 +1294,9 @@ export const stateSpecificQuestions = {
         A: `Textilindustrie :: textile industry`,
         B: `Kohle- und Stahlindustrie :: coal and steel industry`,
         C: `Chemieindustrie :: chemical industry`,
-        D: `Automobilindustrie :: automotive industry`
+        D: `Automobilindustrie :: automotive industry`,
       },
-      correctAnswer: "B"
+      correctAnswer: 'B',
     },
     {
       id: 6,
@@ -1305,9 +1305,9 @@ export const stateSpecificQuestions = {
         A: `ein Schloss :: a castle`,
         B: `eine Kirche :: a church`,
         C: `eine Völklinger Hütte :: Völklingen Ironworks`,
-        D: `ein Kloster :: a monastery`
+        D: `ein Kloster :: a monastery`,
       },
-      correctAnswer: "C"
+      correctAnswer: 'C',
     },
     {
       id: 7,
@@ -1316,9 +1316,9 @@ export const stateSpecificQuestions = {
         A: `Französisch :: French`,
         B: `Englisch :: English`,
         C: `Italienisch :: Italian`,
-        D: `Niederländisch :: Dutch`
+        D: `Niederländisch :: Dutch`,
       },
-      correctAnswer: "A"
+      correctAnswer: 'A',
     },
     {
       id: 8,
@@ -1327,9 +1327,9 @@ export const stateSpecificQuestions = {
         A: `das größte :: the largest`,
         B: `das zweitgrößte :: the second largest`,
         C: `das kleinste :: the smallest`,
-        D: `das zweitkleinste :: the second smallest`
+        D: `das zweitkleinste :: the second smallest`,
       },
-      correctAnswer: "C"
+      correctAnswer: 'C',
     },
     {
       id: 9,
@@ -1338,9 +1338,9 @@ export const stateSpecificQuestions = {
         A: `ein Getränk :: a drink`,
         B: `ein Gericht :: a dish`,
         C: `ein Fest :: a festival`,
-        D: `ein Tanz :: a dance`
+        D: `ein Tanz :: a dance`,
       },
-      correctAnswer: "B"
+      correctAnswer: 'B',
     },
     {
       id: 10,
@@ -1349,13 +1349,13 @@ export const stateSpecificQuestions = {
         A: `Universität des Saarlandes :: Saarland University`,
         B: `HTW Saar`,
         C: `Hochschule für Musik`,
-        D: `Technische Hochschule`
+        D: `Technische Hochschule`,
       },
-      correctAnswer: "A"
-    }
+      correctAnswer: 'A',
+    },
   ],
 
-  "Sachsen": [
+  Sachsen: [
     {
       id: 1,
       question: `Welche Stadt ist die Landeshauptstadt von Sachsen? :: Which city is the state capital of Saxony?`,
@@ -1363,9 +1363,9 @@ export const stateSpecificQuestions = {
         A: `Leipzig`,
         B: `Chemnitz`,
         C: `Dresden`,
-        D: `Zwickau`
+        D: `Zwickau`,
       },
-      correctAnswer: "C"
+      correctAnswer: 'C',
     },
     {
       id: 2,
@@ -1374,9 +1374,9 @@ export const stateSpecificQuestions = {
         A: `Dresden`,
         B: `Leipzig`,
         C: `Chemnitz`,
-        D: `Plauen`
+        D: `Plauen`,
       },
-      correctAnswer: "B"
+      correctAnswer: 'B',
     },
     {
       id: 3,
@@ -1385,9 +1385,9 @@ export const stateSpecificQuestions = {
         A: `die Spree :: the Spree`,
         B: `die Elbe :: the Elbe`,
         C: `die Saale :: the Saale`,
-        D: `die Mulde :: the Mulde`
+        D: `die Mulde :: the Mulde`,
       },
-      correctAnswer: "B"
+      correctAnswer: 'B',
     },
     {
       id: 4,
@@ -1396,9 +1396,9 @@ export const stateSpecificQuestions = {
         A: `Porzellan :: porcelain`,
         B: `Bier :: beer`,
         C: `Wein :: wine`,
-        D: `Käse :: cheese`
+        D: `Käse :: cheese`,
       },
-      correctAnswer: "A"
+      correctAnswer: 'A',
     },
     {
       id: 5,
@@ -1407,9 +1407,9 @@ export const stateSpecificQuestions = {
         A: `Staatsoper Berlin :: Berlin State Opera`,
         B: `Semperoper`,
         C: `Gewandhaus`,
-        D: `Alte Oper :: Old Opera`
+        D: `Alte Oper :: Old Opera`,
       },
-      correctAnswer: "B"
+      correctAnswer: 'B',
     },
     {
       id: 6,
@@ -1418,9 +1418,9 @@ export const stateSpecificQuestions = {
         A: `Dresden`,
         B: `Chemnitz`,
         C: `Leipzig`,
-        D: `Zwickau`
+        D: `Zwickau`,
       },
-      correctAnswer: "C"
+      correctAnswer: 'C',
     },
     {
       id: 7,
@@ -1429,9 +1429,9 @@ export const stateSpecificQuestions = {
         A: `der Harz :: the Harz`,
         B: `das Erzgebirge :: the Ore Mountains`,
         C: `der Thüringer Wald :: the Thuringian Forest`,
-        D: `die Rhön :: the Rhön`
+        D: `die Rhön :: the Rhön`,
       },
-      correctAnswer: "B"
+      correctAnswer: 'B',
     },
     {
       id: 8,
@@ -1440,9 +1440,9 @@ export const stateSpecificQuestions = {
         A: `ein Tunnel :: a tunnel`,
         B: `ein Weihnachtsgebäck :: a Christmas pastry`,
         C: `ein Bauwerk :: a building`,
-        D: `ein Fest :: a festival`
+        D: `ein Fest :: a festival`,
       },
-      correctAnswer: "B"
+      correctAnswer: 'B',
     },
     {
       id: 9,
@@ -1451,9 +1451,9 @@ export const stateSpecificQuestions = {
         A: `Thomaskirche :: St. Thomas Church`,
         B: `Nikolaikirche :: St. Nicholas Church`,
         C: `Frauenkirche :: Church of Our Lady`,
-        D: `Kreuzkirche :: Church of the Cross`
+        D: `Kreuzkirche :: Church of the Cross`,
       },
-      correctAnswer: "C"
+      correctAnswer: 'C',
     },
     {
       id: 10,
@@ -1462,13 +1462,13 @@ export const stateSpecificQuestions = {
         A: `Wolfgang Amadeus Mozart`,
         B: `Ludwig van Beethoven`,
         C: `Johann Sebastian Bach`,
-        D: `Franz Schubert`
+        D: `Franz Schubert`,
       },
-      correctAnswer: "C"
-    }
+      correctAnswer: 'C',
+    },
   ],
 
-  "Sachsen-Anhalt": [
+  'Sachsen-Anhalt': [
     {
       id: 1,
       question: `Welche Stadt ist die Landeshauptstadt von Sachsen-Anhalt? :: Which city is the state capital of Saxony-Anhalt?`,
@@ -1476,9 +1476,9 @@ export const stateSpecificQuestions = {
         A: `Halle (Saale)`,
         B: `Magdeburg`,
         C: `Dessau`,
-        D: `Wittenberg`
+        D: `Wittenberg`,
       },
-      correctAnswer: "B"
+      correctAnswer: 'B',
     },
     {
       id: 2,
@@ -1487,9 +1487,9 @@ export const stateSpecificQuestions = {
         A: `die Saale :: the Saale`,
         B: `die Elbe :: the Elbe`,
         C: `die Mulde :: the Mulde`,
-        D: `die Unstrut :: the Unstrut`
+        D: `die Unstrut :: the Unstrut`,
       },
-      correctAnswer: "B"
+      correctAnswer: 'B',
     },
     {
       id: 3,
@@ -1498,9 +1498,9 @@ export const stateSpecificQuestions = {
         A: `Magdeburg`,
         B: `Halle`,
         C: `Wittenberg`,
-        D: `Eisleben`
+        D: `Eisleben`,
       },
-      correctAnswer: "C"
+      correctAnswer: 'C',
     },
     {
       id: 4,
@@ -1509,9 +1509,9 @@ export const stateSpecificQuestions = {
         A: `Wittenberg`,
         B: `Eisleben`,
         C: `Halle`,
-        D: `Magdeburg`
+        D: `Magdeburg`,
       },
-      correctAnswer: "B"
+      correctAnswer: 'B',
     },
     {
       id: 5,
@@ -1520,9 +1520,9 @@ export const stateSpecificQuestions = {
         A: `Bauhaus`,
         B: `Kunsthochschule :: Art College`,
         C: `Designschule :: Design School`,
-        D: `Architekturhochschule :: Architecture College`
+        D: `Architekturhochschule :: Architecture College`,
       },
-      correctAnswer: "A"
+      correctAnswer: 'A',
     },
     {
       id: 6,
@@ -1531,9 +1531,9 @@ export const stateSpecificQuestions = {
         A: `die Alpen :: the Alps`,
         B: `der Schwarzwald :: the Black Forest`,
         C: `der Harz :: the Harz`,
-        D: `das Erzgebirge :: the Ore Mountains`
+        D: `das Erzgebirge :: the Ore Mountains`,
       },
-      correctAnswer: "C"
+      correctAnswer: 'C',
     },
     {
       id: 7,
@@ -1542,9 +1542,9 @@ export const stateSpecificQuestions = {
         A: `Wurmberg`,
         B: `Brocken`,
         C: `Acker`,
-        D: `Ramberg`
+        D: `Ramberg`,
       },
-      correctAnswer: "B"
+      correctAnswer: 'B',
     },
     {
       id: 8,
@@ -1553,9 +1553,9 @@ export const stateSpecificQuestions = {
         A: `eine Autobahn :: a highway`,
         B: `eine Touristenroute :: a tourist route`,
         C: `eine Handelsstraße :: a trade route`,
-        D: `eine Pilgerstraße :: a pilgrimage route`
+        D: `eine Pilgerstraße :: a pilgrimage route`,
       },
-      correctAnswer: "B"
+      correctAnswer: 'B',
     },
     {
       id: 9,
@@ -1564,9 +1564,9 @@ export const stateSpecificQuestions = {
         A: `Universität Magdeburg`,
         B: `Martin-Luther-Universität Halle-Wittenberg`,
         C: `Hochschule Anhalt`,
-        D: `Hochschule Magdeburg-Stendal`
+        D: `Hochschule Magdeburg-Stendal`,
       },
-      correctAnswer: "B"
+      correctAnswer: 'B',
     },
     {
       id: 10,
@@ -1575,13 +1575,13 @@ export const stateSpecificQuestions = {
         A: `die Altstadt :: the old town`,
         B: `das Schloss :: the castle`,
         C: `die Kirche :: the church`,
-        D: `das Rathaus :: the town hall`
+        D: `das Rathaus :: the town hall`,
       },
-      correctAnswer: "A"
-    }
+      correctAnswer: 'A',
+    },
   ],
 
-  "Schleswig-Holstein": [
+  'Schleswig-Holstein': [
     {
       id: 1,
       question: `Welche Stadt ist die Landeshauptstadt von Schleswig-Holstein? :: Which city is the state capital of Schleswig-Holstein?`,
@@ -1589,9 +1589,9 @@ export const stateSpecificQuestions = {
         A: `Lübeck`,
         B: `Flensburg`,
         C: `Kiel`,
-        D: `Neumünster`
+        D: `Neumünster`,
       },
-      correctAnswer: "C"
+      correctAnswer: 'C',
     },
     {
       id: 2,
@@ -1600,9 +1600,9 @@ export const stateSpecificQuestions = {
         A: `Nord- und Ostsee :: North and Baltic Sea`,
         B: `Nord- und Mittelmeer :: North and Mediterranean Sea`,
         C: `Ost- und Mittelmeer :: Baltic and Mediterranean Sea`,
-        D: `Nord- und Schwarzes Meer :: North and Black Sea`
+        D: `Nord- und Schwarzes Meer :: North and Black Sea`,
       },
-      correctAnswer: "A"
+      correctAnswer: 'A',
     },
     {
       id: 3,
@@ -1611,9 +1611,9 @@ export const stateSpecificQuestions = {
         A: `Mittellandkanal :: Mittelland Canal`,
         B: `Nord-Ostsee-Kanal :: Kiel Canal`,
         C: `Dortmund-Ems-Kanal :: Dortmund-Ems Canal`,
-        D: `Elbe-Seitenkanal :: Elbe Lateral Canal`
+        D: `Elbe-Seitenkanal :: Elbe Lateral Canal`,
       },
-      correctAnswer: "B"
+      correctAnswer: 'B',
     },
     {
       id: 4,
@@ -1622,9 +1622,9 @@ export const stateSpecificQuestions = {
         A: `Rügen`,
         B: `Usedom`,
         C: `Sylt`,
-        D: `Borkum`
+        D: `Borkum`,
       },
-      correctAnswer: "C"
+      correctAnswer: 'C',
     },
     {
       id: 5,
@@ -1633,9 +1633,9 @@ export const stateSpecificQuestions = {
         A: `Niederlande :: Netherlands`,
         B: `Belgien :: Belgium`,
         C: `Polen :: Poland`,
-        D: `Dänemark :: Denmark`
+        D: `Dänemark :: Denmark`,
       },
-      correctAnswer: "D"
+      correctAnswer: 'D',
     },
     {
       id: 6,
@@ -1644,9 +1644,9 @@ export const stateSpecificQuestions = {
         A: `Kiel`,
         B: `Lübeck`,
         C: `Flensburg`,
-        D: `Schleswig`
+        D: `Schleswig`,
       },
-      correctAnswer: "B"
+      correctAnswer: 'B',
     },
     {
       id: 7,
@@ -1655,9 +1655,9 @@ export const stateSpecificQuestions = {
         A: `ein Nationalpark :: a national park`,
         B: `ein Gebirge :: a mountain range`,
         C: `eine Stadt :: a city`,
-        D: `ein Fluss :: a river`
+        D: `ein Fluss :: a river`,
       },
-      correctAnswer: "A"
+      correctAnswer: 'A',
     },
     {
       id: 8,
@@ -1666,9 +1666,9 @@ export const stateSpecificQuestions = {
         A: `Dänisch :: Danish`,
         B: `Friesisch :: Frisian`,
         C: `Plattdeutsch :: Low German`,
-        D: `alle Antworten sind richtig :: all answers are correct`
+        D: `alle Antworten sind richtig :: all answers are correct`,
       },
-      correctAnswer: "D"
+      correctAnswer: 'D',
     },
     {
       id: 9,
@@ -1677,9 +1677,9 @@ export const stateSpecificQuestions = {
         A: `ein Fisch :: a fish`,
         B: `ein Gericht :: a dish`,
         C: `ein Getränk :: a drink`,
-        D: `ein Fest :: a festival`
+        D: `ein Fest :: a festival`,
       },
-      correctAnswer: "B"
+      correctAnswer: 'B',
     },
     {
       id: 10,
@@ -1688,13 +1688,13 @@ export const stateSpecificQuestions = {
         A: `Christian-Albrechts-Universität`,
         B: `Universität Hamburg`,
         C: `Universität Lübeck`,
-        D: `Fachhochschule Kiel`
+        D: `Fachhochschule Kiel`,
       },
-      correctAnswer: "A"
-    }
+      correctAnswer: 'A',
+    },
   ],
 
-  "Thüringen": [
+  Thüringen: [
     {
       id: 1,
       question: `Welche Stadt ist die Landeshauptstadt von Thüringen? :: Which city is the state capital of Thuringia?`,
@@ -1702,9 +1702,9 @@ export const stateSpecificQuestions = {
         A: `Weimar`,
         B: `Jena`,
         C: `Erfurt`,
-        D: `Gera`
+        D: `Gera`,
       },
-      correctAnswer: "C"
+      correctAnswer: 'C',
     },
     {
       id: 2,
@@ -1713,9 +1713,9 @@ export const stateSpecificQuestions = {
         A: `Erfurt`,
         B: `Weimar`,
         C: `Jena`,
-        D: `Eisenach`
+        D: `Eisenach`,
       },
-      correctAnswer: "B"
+      correctAnswer: 'B',
     },
     {
       id: 3,
@@ -1724,9 +1724,9 @@ export const stateSpecificQuestions = {
         A: `Heinrich Heine`,
         B: `Friedrich Schiller`,
         C: `Johann Wolfgang von Goethe`,
-        D: `beide B und C :: both B and C`
+        D: `beide B und C :: both B and C`,
       },
-      correctAnswer: "D"
+      correctAnswer: 'D',
     },
     {
       id: 4,
@@ -1735,9 +1735,9 @@ export const stateSpecificQuestions = {
         A: `der Harz :: the Harz`,
         B: `der Thüringer Wald :: the Thuringian Forest`,
         C: `das Erzgebirge :: the Ore Mountains`,
-        D: `der Schwarzwald :: the Black Forest`
+        D: `der Schwarzwald :: the Black Forest`,
       },
-      correctAnswer: "B"
+      correctAnswer: 'B',
     },
     {
       id: 5,
@@ -1746,9 +1746,9 @@ export const stateSpecificQuestions = {
         A: `Wartburg`,
         B: `Neuschwanstein`,
         C: `Hohenzollern`,
-        D: `Sanssouci`
+        D: `Sanssouci`,
       },
-      correctAnswer: "A"
+      correctAnswer: 'A',
     },
     {
       id: 6,
@@ -1757,9 +1757,9 @@ export const stateSpecificQuestions = {
         A: `Erfurt`,
         B: `Weimar`,
         C: `Eisenach`,
-        D: `Jena`
+        D: `Jena`,
       },
-      correctAnswer: "C"
+      correctAnswer: 'C',
     },
     {
       id: 7,
@@ -1768,9 +1768,9 @@ export const stateSpecificQuestions = {
         A: `Bauhaus-Universität`,
         B: `Friedrich-Schiller-Universität`,
         C: `Universität Erfurt`,
-        D: `Technische Universität Ilmenau`
+        D: `Technische Universität Ilmenau`,
       },
-      correctAnswer: "B"
+      correctAnswer: 'B',
     },
     {
       id: 8,
@@ -1779,9 +1779,9 @@ export const stateSpecificQuestions = {
         A: `ein Getränk :: a drink`,
         B: `eine Wurst :: a sausage`,
         C: `ein Kuchen :: a cake`,
-        D: `ein Käse :: a cheese`
+        D: `ein Käse :: a cheese`,
       },
-      correctAnswer: "B"
+      correctAnswer: 'B',
     },
     {
       id: 9,
@@ -1790,9 +1790,9 @@ export const stateSpecificQuestions = {
         A: `Dachau`,
         B: `Bergen-Belsen`,
         C: `Buchenwald`,
-        D: `Sachsenhausen`
+        D: `Sachsenhausen`,
       },
-      correctAnswer: "C"
+      correctAnswer: 'C',
     },
     {
       id: 10,
@@ -1801,15 +1801,15 @@ export const stateSpecificQuestions = {
         A: `1989`,
         B: `1990`,
         C: `1991`,
-        D: `1992`
+        D: `1992`,
       },
-      correctAnswer: "B"
-    }
-  ]
-};
+      correctAnswer: 'B',
+    },
+  ],
+}
 
 // Export for use in applications
-export default stateSpecificQuestions;
+export default stateSpecificQuestions
 
 // Example usage:
 // const bavarianQuestions = stateSpecificQuestions["Bayern"];

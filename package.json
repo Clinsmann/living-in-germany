@@ -6,7 +6,11 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json,md}\"",
+    "format:check": "prettier --check \"**/*.{ts,tsx,js,jsx,json,md}\"",
+    "lint:fix": "eslint --fix \"**/*.{ts,tsx,js,jsx}\"",
+    "check": "npm run format:check && npm run lint"
   },
   "dependencies": {
     "lucide-react": "^0.514.0",
@@ -25,6 +29,9 @@
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "15.3.3",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.1.3",
+    "prettier": "^3.2.5",
     "tailwindcss": "^4",
     "typescript": "^5"
   }
