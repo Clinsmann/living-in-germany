@@ -1,6 +1,5 @@
 import Image from "next/image";
 import flag from "../../app/german-flag.svg";
-import { Settings } from "lucide-react";
 
 export default function Header({
     toggleSettings,
@@ -8,20 +7,14 @@ export default function Header({
     toggleSettings: () => void
 }) {
     return (
-        <header className="mb-8 flex flex-col items-center gap-4">
-            <div className="flex flex-row items-center gap-4 justify-between w-full">
-                <div className="rounded-md overflow-hidden shadow-md">
-                    <Image src={flag} alt="deutschland flag" width={50} />
-                </div>
-
-                <button className="text-gray-900 p-4 rounded-md dark:bg-gray-800 bg-gray-200 dark:text-white shadow-md" onClick={toggleSettings}>
-                    <Settings className="size-5" />
-                </button>
+        <header className="mb-10 gap-4 text-center flex flex-col items-center">
+            <div className="rounded-md overflow-hidden shadow-md">
+                <Image src={flag} alt="deutschland flag" width={50} />
             </div>
 
-            <h1 className="text-md font-bold text-gray-900 dark:text-white mb-1">
+            <h1 className="text-xl font-bold text-gray-900 dark:text-white my-0">
                 Einbürgerungstest Deutsch
             </h1>
-            <p className="text-gray-600 dark:text-gray-400 text-sm">Master your citizenship test preparation</p>
+            <p className="text-gray-600 dark:text-gray-400 text-sm -my-2">Master your citizenship test preparation</p>
         </header>)
 }

@@ -4,32 +4,16 @@ import { useCallback } from "react"
 import { MessageSquare, RotateCcw, Moon, Sun, Home, X } from "lucide-react"
 import { useTheme } from "next-themes"
 import { useLocalStorage } from "@/hooks/useLocalStorage"
+import germanStates from "@/lib/states"
+import { Screen } from "@/app/page"
+import { SimpleLabel } from "./SimpleLabel"
 
 interface SidebarProps {
     open: boolean
     onOpenChange: (open: boolean) => void
     onFeedbackOpen: () => void
-    onScreenChange: (screen: "dashboard" | "study" | "bookmarked" | "failed") => void
+    onScreenChange: (screen: Screen) => void
 }
-
-const germanStates = [
-    "Baden-Württemberg",
-    "Bayern",
-    "Berlin",
-    "Brandenburg",
-    "Bremen",
-    "Hamburg",
-    "Hessen",
-    "Mecklenburg-Vorpommern",
-    "Niedersachsen",
-    "Nordrhein-Westfalen",
-    "Rheinland-Pfalz",
-    "Saarland",
-    "Sachsen",
-    "Sachsen-Anhalt",
-    "Schleswig-Holstein",
-    "Thüringen",
-] as const
 
 export function Sidebar({ open, onOpenChange, onFeedbackOpen, onScreenChange }: SidebarProps) {
     const { theme, setTheme } = useTheme()
@@ -100,7 +84,7 @@ export function Sidebar({ open, onOpenChange, onFeedbackOpen, onScreenChange }: 
                             <h3 className="text-sm font-medium mb-3 text-gray-700 dark:text-gray-300">Navigation & Actions</h3>
                             <nav className="space-y-2">
                                 <button
-                                    onClick={() => onScreenChange("dashboard")}
+                                    onClick={() => onScreenChange(Screen.DASHBOARD)}
                                     className="w-full flex items-center gap-3 px-3 py-2.5 text-left hover:bg-gray-100 dark:hover:bg-gray-700 active:bg-gray-200 dark:active:bg-gray-600 rounded-lg transition-all duration-200 ease-out hover:translate-x-1 text-gray-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
                                 >
                                     <Home className="size-4 flex-shrink-0" />
@@ -146,9 +130,7 @@ export function Sidebar({ open, onOpenChange, onFeedbackOpen, onScreenChange }: 
                                     </option>
                                 ))}
                             </select>
-                            <p className="text-xs text-gray-500 dark:text-gray-400 mt-2">
-                                Includes 10 additional state-specific questions
-                            </p>
+                            <SimpleLabel label="Includes 10 additional state-specific questions" />
                         </section>
 
                         {/* Theme Toggle with staggered animation */}
