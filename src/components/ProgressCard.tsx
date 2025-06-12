@@ -1,10 +1,8 @@
-import { BarChart3 } from "lucide-react"
 import { SimpleLabel, SimpleTitle } from "./SimpleLabel"
 
 export const ProgressCard = ({ stats, totalQuestions, progressPercentage }: { stats: { answered: number, correct: number, incorrect: number, bookmarked: number }, totalQuestions: number, progressPercentage: number }) => {
-    return <section className="bg-white dark:bg-gray-800 rounded-xl shadow-lg mb-6 p-6 border border-gray-100 dark:border-gray-700 transition-colors duration-200">
+    return <section className="relative bg-white dark:bg-gray-800 rounded-xl shadow-lg mb-6 p-6 border border-gray-100 dark:border-gray-700 transition-colors duration-200">
         <div className="flex items-center gap-2 mb-4">
-            <BarChart3 className="size-5 text-blue-600 dark:text-blue-400" />
             <h2 className="text-lg font-semibold text-gray-900 dark:text-white">Your Progress</h2>
         </div>
 
