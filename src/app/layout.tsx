@@ -11,10 +11,10 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: "Living in Germany Test Prep",
+  title: "Einbürgerungstest Deutsch",
   description: "Master your German citizenship test with our comprehensive preparation app",
-  keywords: "Germany, citizenship test, Einbürgerungstest, German test preparation",
-  authors: [{ name: "Germany Test Prep" }],
+  keywords: "Germany, citizenship test, Einbürgerungstest Deutsch, Deutsch test preparation, Deutsch lernen, Living in Germany, Leben in deutschland",
+  authors: [{ name: "Einbürgerungstest Deutsch" }],
   viewport: "width=device-width, initial-scale=1, maximum-scale=1",
   themeColor: [
     { media: "(prefers-color-scheme: light)", color: "#ffffff" },

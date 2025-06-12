@@ -1,11 +1,12 @@
 "use client"
 
 import { useState, useTransition } from "react"
-import { BookOpen, BookmarkCheck, AlertCircle, Play, BarChart3 } from "lucide-react"
+import { BookmarkCheck, AlertCircle, Play, BarChart3 } from "lucide-react"
 import { Sidebar } from "@/components/SidebarNavigation"
 import { QuestionScreen } from "@/components/QuestionScreen"
 import { FeedbackModal } from "@/components/FeedbackModal"
 import { useLocalStorage } from "@/hooks/useLocalStorage"
+import Header from "@/components/dashboard/Header"
 
 type Screen = "dashboard" | "study" | "bookmarked" | "failed"
 
@@ -28,7 +29,7 @@ export default function Home() {
     bookmarked: 0,
   })
 
-  const totalQuestions = 310 // 300 federal + 10 state questions
+  const totalQuestions = 310
   const progressPercentage = (stats.answered / totalQuestions) * 100
 
   const handleScreenChange = (screen: Screen) => {
@@ -73,15 +74,7 @@ export default function Home() {
 
       <main className="container mx-auto px-4 py-6 max-w-md">
         {/* Header */}
-        <header className="text-center mb-8">
-          <div className="size-16 bg-blue-600 rounded-2xl mx-auto mb-4 flex items-center justify-center shadow-lg">
-            <BookOpen className="size-8 text-white" />
-          </div>
-          <h1 className="text-2xl font-bold text-gray-900 dark:text-white mb-2 tracking-tight">
-            Living in Germany Test
-          </h1>
-          <p className="text-gray-600 dark:text-gray-400 text-sm">Master your citizenship test preparation</p>
-        </header>
+        <Header />
 
         {/* Progress Card */}
         <section className="bg-white dark:bg-gray-800 rounded-xl shadow-lg mb-6 p-6 border border-gray-100 dark:border-gray-700 transition-colors duration-200">
