@@ -1,0 +1,1816 @@
+export const stateSpecificQuestions = {
+  "Baden-Württemberg": [
+    {
+      id: 1,
+      question: `Welche Stadt ist die Landeshauptstadt von Baden-Württemberg? :: Which city is the state capital of Baden-Württemberg?`,
+      options: {
+        A: `Mannheim`,
+        B: `Stuttgart`,
+        C: `Karlsruhe`,
+        D: `Freiburg`
+      },
+      correctAnswer: "B"
+    },
+    {
+      id: 2,
+      question: `Welches Unternehmen hat seinen Hauptsitz in Stuttgart? :: Which company has its headquarters in Stuttgart?`,
+      options: {
+        A: `BMW`,
+        B: `Volkswagen`,
+        C: `Mercedes-Benz :: Mercedes-Benz`,
+        D: `Audi`
+      },
+      correctAnswer: "C"
+    },
+    {
+      id: 3,
+      question: `Wie heißt das berühmte Technikmuseum in Sinsheim? :: What is the famous technology museum in Sinsheim called?`,
+      options: {
+        A: `Technik Museum Sinsheim`,
+        B: `Mercedes-Benz Museum`,
+        C: `Porsche Museum`,
+        D: `Auto & Technik Museum`
+      },
+      correctAnswer: "A"
+    },
+    {
+      id: 4,
+      question: `Welcher Fluss fließt durch Stuttgart? :: Which river flows through Stuttgart?`,
+      options: {
+        A: `der Rhein :: the Rhine`,
+        B: `die Donau :: the Danube`,
+        C: `der Neckar :: the Neckar`,
+        D: `der Main :: the Main`
+      },
+      correctAnswer: "C"
+    },
+    {
+      id: 5,
+      question: `Welche Universität ist die älteste in Baden-Württemberg? :: Which university is the oldest in Baden-Württemberg?`,
+      options: {
+        A: `Universität Stuttgart`,
+        B: `Universität Heidelberg`,
+        C: `Universität Tübingen`,
+        D: `Universität Freiburg`
+      },
+      correctAnswer: "B"
+    },
+    {
+      id: 6,
+      question: `Was ist der Schwarzwald? :: What is the Black Forest?`,
+      options: {
+        A: `ein Gebirge :: a mountain range`,
+        B: `ein See :: a lake`,
+        C: `eine Stadt :: a city`,
+        D: `ein Fluss :: a river`
+      },
+      correctAnswer: "A"
+    },
+    {
+      id: 7,
+      question: `Welche Spezialität kommt aus dem Schwarzwald? :: Which specialty comes from the Black Forest?`,
+      options: {
+        A: `Weißwurst :: white sausage`,
+        B: `Schwarzwälder Kirschtorte :: Black Forest cake`,
+        C: `Sauerbraten :: sauerbraten`,
+        D: `Currywurst :: curry sausage`
+      },
+      correctAnswer: "B"
+    },
+    {
+      id: 8,
+      question: `Wie heißt das Parlament von Baden-Württemberg? :: What is the parliament of Baden-Württemberg called?`,
+      options: {
+        A: `Landtag :: State Parliament`,
+        B: `Bundesrat :: Federal Council`,
+        C: `Bundestag :: Federal Parliament`,
+        D: `Stadtrat :: City Council`
+      },
+      correctAnswer: "A"
+    },
+    {
+      id: 9,
+      question: `Welche Stadt ist bekannt für ihre Universität und das Heidelberger Schloss? :: Which city is known for its university and Heidelberg Castle?`,
+      options: {
+        A: `Mannheim`,
+        B: `Karlsruhe`,
+        C: `Heidelberg`,
+        D: `Ulm`
+      },
+      correctAnswer: "C"
+    },
+    {
+      id: 10,
+      question: `Wann entstand das Bundesland Baden-Württemberg? :: When was the federal state of Baden-Württemberg created?`,
+      options: {
+        A: `1949`,
+        B: `1952`,
+        C: `1945`,
+        D: `1956`
+      },
+      correctAnswer: "B"
+    }
+  ],
+
+  "Bayern": [
+    {
+      id: 1,
+      question: `Welche Stadt ist die Landeshauptstadt von Bayern? :: Which city is the state capital of Bavaria?`,
+      options: {
+        A: `Nürnberg :: Nuremberg`,
+        B: `Augsburg`,
+        C: `München :: Munich`,
+        D: `Regensburg`
+      },
+      correctAnswer: "C"
+    },
+    {
+      id: 2,
+      question: `Welches ist das berühmteste Volksfest in Bayern? :: Which is the most famous folk festival in Bavaria?`,
+      options: {
+        A: `Karneval :: Carnival`,
+        B: `Oktoberfest`,
+        C: `Weihnachtsmarkt :: Christmas market`,
+        D: `Osterfest :: Easter festival`
+      },
+      correctAnswer: "B"
+    },
+    {
+      id: 3,
+      question: `Wie heißt das bayerische Bier-Reinheitsgebot von 1516? :: What is the Bavarian beer purity law from 1516 called?`,
+      options: {
+        A: `Biergesetz :: Beer law`,
+        B: `Reinheitsgebot :: Purity law`,
+        C: `Bierordnung :: Beer order`,
+        D: `Braugesetz :: Brewing law`
+      },
+      correctAnswer: "B"
+    },
+    {
+      id: 4,
+      question: `Welcher Berg ist der höchste in Deutschland und liegt in Bayern? :: Which mountain is the highest in Germany and is located in Bavaria?`,
+      options: {
+        A: `Brocken`,
+        B: `Feldberg`,
+        C: `Zugspitze`,
+        D: `Watzmann`
+      },
+      correctAnswer: "C"
+    },
+    {
+      id: 5,
+      question: `Welche Farben hat die bayerische Flagge? :: What colors does the Bavarian flag have?`,
+      options: {
+        A: `rot-weiß :: red-white`,
+        B: `blau-weiß :: blue-white`,
+        C: `schwarz-rot-gold :: black-red-gold`,
+        D: `grün-weiß :: green-white`
+      },
+      correctAnswer: "B"
+    },
+    {
+      id: 6,
+      question: `Welches Schloss steht bei Füssen und war Vorbild für Disney-Schlösser? :: Which castle stands near Füssen and was a model for Disney castles?`,
+      options: {
+        A: `Schloss Nymphenburg`,
+        B: `Schloss Neuschwanstein`,
+        C: `Schloss Herrenchiemsee`,
+        D: `Schloss Linderhof`
+      },
+      correctAnswer: "B"
+    },
+    {
+      id: 7,
+      question: `Welcher Fluss fließt durch München? :: Which river flows through Munich?`,
+      options: {
+        A: `die Donau :: the Danube`,
+        B: `der Main :: the Main`,
+        C: `die Isar :: the Isar`,
+        D: `der Inn :: the Inn`
+      },
+      correctAnswer: "C"
+    },
+    {
+      id: 8,
+      question: `Wie nennt man die bayerische Staatskanzlei? :: What is the Bavarian state chancellery called?`,
+      options: {
+        A: `Bayerische Staatskanzlei`,
+        B: `Münchner Rathaus :: Munich City Hall`,
+        C: `Bayerisches Parlament :: Bavarian Parliament`,
+        D: `Residenz München :: Munich Residence`
+      },
+      correctAnswer: "A"
+    },
+    {
+      id: 9,
+      question: `Welche bayerische Spezialität ist eine Wurst? :: Which Bavarian specialty is a sausage?`,
+      options: {
+        A: `Currywurst :: curry sausage`,
+        B: `Weißwurst :: white sausage`,
+        C: `Bratwurst :: bratwurst`,
+        D: `Leberwurst :: liver sausage`
+      },
+      correctAnswer: "B"
+    },
+    {
+      id: 10,
+      question: `Welche Stadt war lange Zeit "heimliche Hauptstadt" des Heiligen Römischen Reiches? :: Which city was long the "unofficial capital" of the Holy Roman Empire?`,
+      options: {
+        A: `München :: Munich`,
+        B: `Augsburg`,
+        C: `Regensburg`,
+        D: `Nürnberg :: Nuremberg`
+      },
+      correctAnswer: "D"
+    }
+  ],
+
+  "Berlin": [
+    {
+      id: 1,
+      question: `Welcher Status hat Berlin? :: What status does Berlin have?`,
+      options: {
+        A: `Bundesland und Hauptstadt :: federal state and capital`,
+        B: `nur Hauptstadt :: only capital`,
+        C: `nur Stadtstaat :: only city-state`,
+        D: `Bezirk :: district`
+      },
+      correctAnswer: "A"
+    },
+    {
+      id: 2,
+      question: `Wie viele Bezirke hat Berlin? :: How many districts does Berlin have?`,
+      options: {
+        A: `10`,
+        B: `12`,
+        C: `14`,
+        D: `16`
+      },
+      correctAnswer: "B"
+    },
+    {
+      id: 3,
+      question: `Welches ist das berühmteste Wahrzeichen Berlins? :: Which is the most famous landmark of Berlin?`,
+      options: {
+        A: `Reichstag :: Reichstag`,
+        B: `Brandenburger Tor :: Brandenburg Gate`,
+        C: `Fernsehturm :: TV Tower`,
+        D: `Siegessäule :: Victory Column`
+      },
+      correctAnswer: "B"
+    },
+    {
+      id: 4,
+      question: `An welchem Fluss liegt Berlin? :: On which river is Berlin located?`,
+      options: {
+        A: `an der Elbe :: on the Elbe`,
+        B: `an der Oder :: on the Oder`,
+        C: `an der Spree :: on the Spree`,
+        D: `am Rhein :: on the Rhine`
+      },
+      correctAnswer: "C"
+    },
+    {
+      id: 5,
+      question: `Wie heißt die berühmte Straße mit vielen Geschäften in Berlin? :: What is the famous street with many shops in Berlin called?`,
+      options: {
+        A: `Unter den Linden`,
+        B: `Kurfürstendamm`,
+        C: `Friedrichstraße`,
+        D: `Potsdamer Platz`
+      },
+      correctAnswer: "B"
+    },
+    {
+      id: 6,
+      question: `Welches Museum befindet sich auf der Museumsinsel? :: Which museum is located on Museum Island?`,
+      options: {
+        A: `Deutsches Technikmuseum :: German Technology Museum`,
+        B: `Pergamonmuseum`,
+        C: `Museum für Naturkunde :: Natural History Museum`,
+        D: `Hamburger Bahnhof`
+      },
+      correctAnswer: "B"
+    },
+    {
+      id: 7,
+      question: `Wie hieß die Berliner Mauer auf Deutsch? :: What was the Berlin Wall called in German?`,
+      options: {
+        A: `Die Mauer :: The Wall`,
+        B: `Berliner Mauer :: Berlin Wall`,
+        C: `Eiserner Vorhang :: Iron Curtain`,
+        D: `Grenzwall :: Border Wall`
+      },
+      correctAnswer: "B"
+    },
+    {
+      id: 8,
+      question: `Welcher Platz war das Zentrum von Ost-Berlin? :: Which square was the center of East Berlin?`,
+      options: {
+        A: `Potsdamer Platz`,
+        B: `Breitscheidplatz`,
+        C: `Alexanderplatz`,
+        D: `Pariser Platz`
+      },
+      correctAnswer: "C"
+    },
+    {
+      id: 9,
+      question: `Welches ist das Berliner Wappentier? :: Which is Berlin's heraldic animal?`,
+      options: {
+        A: `der Adler :: the eagle`,
+        B: `der Löwe :: the lion`,
+        C: `der Bär :: the bear`,
+        D: `der Wolf :: the wolf`
+      },
+      correctAnswer: "C"
+    },
+    {
+      id: 10,
+      question: `Wann fiel die Berliner Mauer? :: When did the Berlin Wall fall?`,
+      options: {
+        A: `9. November 1989`,
+        B: `3. Oktober 1990`,
+        C: `17. Juni 1953`,
+        D: `13. August 1961`
+      },
+      correctAnswer: "A"
+    }
+  ],
+
+  "Brandenburg": [
+    {
+      id: 1,
+      question: `Welche Stadt ist die Landeshauptstadt von Brandenburg? :: Which city is the state capital of Brandenburg?`,
+      options: {
+        A: `Cottbus`,
+        B: `Frankfurt (Oder)`,
+        C: `Potsdam`,
+        D: `Brandenburg an der Havel`
+      },
+      correctAnswer: "C"
+    },
+    {
+      id: 2,
+      question: `Welches berühmte Schloss steht in Potsdam? :: Which famous palace stands in Potsdam?`,
+      options: {
+        A: `Schloss Neuschwanstein`,
+        B: `Schloss Sanssouci`,
+        C: `Schloss Nymphenburg`,
+        D: `Schloss Charlottenburg`
+      },
+      correctAnswer: "B"
+    },
+    {
+      id: 3,
+      question: `Welcher preußische König ließ Schloss Sanssouci erbauen? :: Which Prussian king had Sanssouci Palace built?`,
+      options: {
+        A: `Friedrich Wilhelm I.`,
+        B: `Friedrich der Große :: Frederick the Great`,
+        C: `Friedrich Wilhelm III.`,
+        D: `Wilhelm II.`
+      },
+      correctAnswer: "B"
+    },
+    {
+      id: 4,
+      question: `Welches Gebiet in Brandenburg ist bekannt für seine Gurken? :: Which area in Brandenburg is known for its pickles?`,
+      options: {
+        A: `der Spreewald`,
+        B: `die Uckermark`,
+        C: `die Prignitz`,
+        D: `das Havelland`
+      },
+      correctAnswer: "A"
+    },
+    {
+      id: 5,
+      question: `Welche Stadt liegt an der Grenze zu Polen? :: Which city is located on the border with Poland?`,
+      options: {
+        A: `Cottbus`,
+        B: `Eberswalde`,
+        C: `Frankfurt (Oder)`,
+        D: `Schwedt`
+      },
+      correctAnswer: "C"
+    },
+    {
+      id: 6,
+      question: `Welcher Fluss fließt durch Brandenburg? :: Which river flows through Brandenburg?`,
+      options: {
+        A: `die Oder :: the Oder`,
+        B: `die Elbe :: the Elbe`,
+        C: `der Rhein :: the Rhine`,
+        D: `die Weser :: the Weser`
+      },
+      correctAnswer: "A"
+    },
+    {
+      id: 7,
+      question: `Was ist die Märkische Schweiz? :: What is the Märkische Schweiz?`,
+      options: {
+        A: `ein Gebirge :: a mountain range`,
+        B: `eine hügelige Landschaft :: a hilly landscape`,
+        C: `ein See :: a lake`,
+        D: `eine Stadt :: a city`
+      },
+      correctAnswer: "B"
+    },
+    {
+      id: 8,
+      question: `Welches Verkehrsmittel ist typisch für den Spreewald? :: Which means of transport is typical for the Spreewald?`,
+      options: {
+        A: `Fahrrad :: bicycle`,
+        B: `Kahn :: punt boat`,
+        C: `Auto :: car`,
+        D: `Zug :: train`
+      },
+      correctAnswer: "B"
+    },
+    {
+      id: 9,
+      question: `Welche Konfession war in Brandenburg traditionell stark? :: Which denomination was traditionally strong in Brandenburg?`,
+      options: {
+        A: `katholisch :: Catholic`,
+        B: `evangelisch :: Protestant`,
+        C: `orthodox :: Orthodox`,
+        D: `jüdisch :: Jewish`
+      },
+      correctAnswer: "B"
+    },
+    {
+      id: 10,
+      question: `Wann wurde Brandenburg nach der Wiedervereinigung neu gegründet? :: When was Brandenburg newly founded after reunification?`,
+      options: {
+        A: `1989`,
+        B: `1990`,
+        C: `1991`,
+        D: `1992`
+      },
+      correctAnswer: "B"
+    }
+  ],
+
+  "Bremen": [
+    {
+      id: 1,
+      question: `Welchen Status hat Bremen? :: What status does Bremen have?`,
+      options: {
+        A: `Stadtstaat :: city-state`,
+        B: `normale Stadt :: normal city`,
+        C: `Bezirk :: district`,
+        D: `Gemeinde :: municipality`
+      },
+      correctAnswer: "A"
+    },
+    {
+      id: 2,
+      question: `Aus wie vielen Städten besteht das Bundesland Bremen? :: How many cities does the federal state of Bremen consist of?`,
+      options: {
+        A: `einer :: one`,
+        B: `zwei :: two`,
+        C: `drei :: three`,
+        D: `vier :: four`
+      },
+      correctAnswer: "B"
+    },
+    {
+      id: 3,
+      question: `Wie heißt die zweite Stadt im Bundesland Bremen? :: What is the second city in the federal state of Bremen called?`,
+      options: {
+        A: `Oldenburg`,
+        B: `Delmenhorst`,
+        C: `Bremerhaven`,
+        D: `Wilhelmshaven`
+      },
+      correctAnswer: "C"
+    },
+    {
+      id: 4,
+      question: `Welcher Fluss fließt durch Bremen? :: Which river flows through Bremen?`,
+      options: {
+        A: `die Elbe :: the Elbe`,
+        B: `die Weser :: the Weser`,
+        C: `der Rhein :: the Rhine`,
+        D: `die Ems :: the Ems`
+      },
+      correctAnswer: "B"
+    },
+    {
+      id: 5,
+      question: `Was sind die "Bremer Stadtmusikanten"? :: What are the "Bremen Town Musicians"?`,
+      options: {
+        A: `eine Rockband :: a rock band`,
+        B: `ein Märchen :: a fairy tale`,
+        C: `ein Orchester :: an orchestra`,
+        D: `eine Oper :: an opera`
+      },
+      correctAnswer: "B"
+    },
+    {
+      id: 6,
+      question: `Welche Tiere sind die Bremer Stadtmusikanten? :: Which animals are the Bremen Town Musicians?`,
+      options: {
+        A: `Hund, Katze, Hahn, Esel :: dog, cat, rooster, donkey`,
+        B: `Pferd, Kuh, Schwein, Schaf :: horse, cow, pig, sheep`,
+        C: `Löwe, Bär, Wolf, Fuchs :: lion, bear, wolf, fox`,
+        D: `Eule, Rabe, Taube, Spatz :: owl, raven, dove, sparrow`
+      },
+      correctAnswer: "A"
+    },
+    {
+      id: 7,
+      question: `Wo steht das Denkmal der Bremer Stadtmusikanten? :: Where is the monument of the Bremen Town Musicians?`,
+      options: {
+        A: `am Hauptbahnhof :: at the main station`,
+        B: `am Rathaus :: at the town hall`,
+        C: `am Marktplatz :: at the market square`,
+        D: `an der Weser :: at the Weser`
+      },
+      correctAnswer: "B"
+    },
+    {
+      id: 8,
+      question: `Was ist die "Böttcherstraße"? :: What is the "Böttcherstraße"?`,
+      options: {
+        A: `eine Einkaufsstraße :: a shopping street`,
+        B: `eine historische Straße :: a historic street`,
+        C: `eine Kunststraße :: an art street`,
+        D: `alle Antworten sind richtig :: all answers are correct`
+      },
+      correctAnswer: "D"
+    },
+    {
+      id: 9,
+      question: `Welches Getränk ist typisch für Bremen? :: Which drink is typical for Bremen?`,
+      options: {
+        A: `Kölsch`,
+        B: `Beck's Bier :: Beck's beer`,
+        C: `Weißbier :: wheat beer`,
+        D: `Flensburger`
+      },
+      correctAnswer: "B"
+    },
+    {
+      id: 10,
+      question: `Wann wurde Bremen Mitglied der Hanse? :: When did Bremen become a member of the Hanseatic League?`,
+      options: {
+        A: `im 11. Jahrhundert :: in the 11th century`,
+        B: `im 13. Jahrhundert :: in the 13th century`,
+        C: `im 15. Jahrhundert :: in the 15th century`,
+        D: `im 17. Jahrhundert :: in the 17th century`
+      },
+      correctAnswer: "B"
+    }
+  ],
+
+  "Hamburg": [
+    {
+      id: 1,
+      question: `Welchen Status hat Hamburg? :: What status does Hamburg have?`,
+      options: {
+        A: `Stadtstaat :: city-state`,
+        B: `normale Stadt :: normal city`,
+        C: `Hauptstadt :: capital`,
+        D: `Kreisstadt :: county town`
+      },
+      correctAnswer: "A"
+    },
+    {
+      id: 2,
+      question: `Wie wird Hamburg auch genannt? :: What is Hamburg also called?`,
+      options: {
+        A: `das Tor zur Welt :: the gateway to the world`,
+        B: `die weiße Stadt :: the white city`,
+        C: `die goldene Stadt :: the golden city`,
+        D: `die grüne Stadt :: the green city`
+      },
+      correctAnswer: "A"
+    },
+    {
+      id: 3,
+      question: `Welcher Fluss fließt durch Hamburg? :: Which river flows through Hamburg?`,
+      options: {
+        A: `der Rhein :: the Rhine`,
+        B: `die Weser :: the Weser`,
+        C: `die Elbe :: the Elbe`,
+        D: `die Oder :: the Oder`
+      },
+      correctAnswer: "C"
+    },
+    {
+      id: 4,
+      question: `Wie heißt der berühmte Stadtteil von Hamburg mit Nachtleben? :: What is Hamburg's famous district with nightlife called?`,
+      options: {
+        A: `St. Pauli`,
+        B: `Altona`,
+        C: `Eimsbüttel`,
+        D: `Harburg`
+      },
+      correctAnswer: "A"
+    },
+    {
+      id: 5,
+      question: `Wie heißt die berühmte Straße in St. Pauli? :: What is the famous street in St. Pauli called?`,
+      options: {
+        A: `Königsstraße :: King Street`,
+        B: `Reeperbahn`,
+        C: `Mönckebergstraße`,
+        D: `Jungfernstieg`
+      },
+      correctAnswer: "B"
+    },
+    {
+      id: 6,
+      question: `Was ist die Speicherstadt? :: What is the Speicherstadt?`,
+      options: {
+        A: `ein Einkaufszentrum :: a shopping center`,
+        B: `ein historisches Lagerhausviertel :: a historic warehouse district`,
+        C: `ein Wohngebiet :: a residential area`,
+        D: `ein Industriegebiet :: an industrial area`
+      },
+      correctAnswer: "B"
+    },
+    {
+      id: 7,
+      question: `Welches ist Hamburgs berühmteste Kirche? :: Which is Hamburg's most famous church?`,
+      options: {
+        A: `St. Petri`,
+        B: `St. Katharinen`,
+        C: `St. Michaelis (Michel)`,
+        D: `St. Jacobi`
+      },
+      correctAnswer: "C"
+    },
+    {
+      id: 8,
+      question: `Was ist der Hamburger Hafen? :: What is the Port of Hamburg?`,
+      options: {
+        A: `der größte Seehafen Deutschlands :: Germany's largest seaport`,
+        B: `ein kleiner Fischerhafen :: a small fishing port`,
+        C: `nur ein Yachthafen :: only a yacht harbor`,
+        D: `ein historischer Hafen :: a historic port`
+      },
+      correctAnswer: "A"
+    },
+    {
+      id: 9,
+      question: `Welche Farben hat die Hamburger Flagge? :: What colors does the Hamburg flag have?`,
+      options: {
+        A: `blau-weiß :: blue-white`,
+        B: `rot-weiß :: red-white`,
+        C: `schwarz-rot-gold :: black-red-gold`,
+        D: `grün-weiß :: green-white`
+      },
+      correctAnswer: "B"
+    },
+    {
+      id: 10,
+      question: `Was bedeutet "Moin" in Hamburg? :: What does "Moin" mean in Hamburg?`,
+      options: {
+        A: `Guten Morgen :: Good morning`,
+        B: `Hallo :: Hello`,
+        C: `Auf Wiedersehen :: Goodbye`,
+        D: `Entschuldigung :: Excuse me`
+      },
+      correctAnswer: "B"
+    }
+  ],
+
+  "Hessen": [
+    {
+      id: 1,
+      question: `Welche Stadt ist die Landeshauptstadt von Hessen? :: Which city is the state capital of Hesse?`,
+      options: {
+        A: `Frankfurt am Main`,
+        B: `Kassel`,
+        C: `Wiesbaden`,
+        D: `Darmstadt`
+      },
+      correctAnswer: "C"
+    },
+    {
+      id: 2,
+      question: `Welche Stadt ist das Finanzzentrum Deutschlands? :: Which city is Germany's financial center?`,
+      options: {
+        A: `Wiesbaden`,
+        B: `Frankfurt am Main`,
+        C: `Kassel`,
+        D: `Offenbach`
+      },
+      correctAnswer: "B"
+    },
+    {
+      id: 3,
+      question: `Welcher Fluss fließt durch Frankfurt am Main? :: Which river flows through Frankfurt am Main?`,
+      options: {
+        A: `der Rhein :: the Rhine`,
+        B: `die Weser :: the Weser`,
+        C: `der Main :: the Main`,
+        D: `die Lahn :: the Lahn`
+      },
+      correctAnswer: "C"
+    },
+    {
+      id: 4,
+      question: `Wo befindet sich die Europäische Zentralbank? :: Where is the European Central Bank located?`,
+      options: {
+        A: `in Wiesbaden :: in Wiesbaden`,
+        B: `in Frankfurt am Main :: in Frankfurt am Main`,
+        C: `in Kassel :: in Kassel`,
+        D: `in Darmstadt :: in Darmstadt`
+      },
+      correctAnswer: "B"
+    },
+    {
+      id: 5,
+      question: `Welches Gebirge liegt in Hessen? :: Which mountain range is located in Hesse?`,
+      options: {
+        A: `der Schwarzwald :: the Black Forest`,
+        B: `die Alpen :: the Alps`,
+        C: `der Taunus :: the Taunus`,
+        D: `das Erzgebirge :: the Ore Mountains`
+      },
+      correctAnswer: "C"
+    },
+    {
+      id: 6,
+      question: `Welche Brüder sammelten in Hessen Märchen? :: Which brothers collected fairy tales in Hesse?`,
+      options: {
+        A: `die Brüder Wright :: the Wright brothers`,
+        B: `die Brüder Grimm :: the Brothers Grimm`,
+        C: `die Brüder Mann :: the Mann brothers`,
+        D: `die Brüder Humboldt :: the Humboldt brothers`
+      },
+      correctAnswer: "B"
+    },
+    {
+      id: 7,
+      question: `In welcher hessischen Stadt lebten die Brüder Grimm? :: In which Hessian city did the Brothers Grimm live?`,
+      options: {
+        A: `Frankfurt :: Frankfurt`,
+        B: `Wiesbaden`,
+        C: `Kassel`,
+        D: `Marburg`
+      },
+      correctAnswer: "C"
+    },
+    {
+      id: 8,
+      question: `Was ist die Documenta? :: What is the Documenta?`,
+      options: {
+        A: `ein Museum :: a museum`,
+        B: `eine Kunstausstellung :: an art exhibition`,
+        C: `ein Musikfestival :: a music festival`,
+        D: `ein Theaterfestival :: a theater festival`
+      },
+      correctAnswer: "B"
+    },
+    {
+      id: 9,
+      question: `Welches ist ein typisch hessisches Getränk? :: Which is a typical Hessian drink?`,
+      options: {
+        A: `Kölsch`,
+        B: `Weißbier :: wheat beer`,
+        C: `Apfelwein :: apple wine`,
+        D: `Pilsner`
+      },
+      correctAnswer: "C"
+    },
+    {
+      id: 10,
+      question: `Welche Universität ist eine der ältesten in Deutschland und liegt in Hessen? :: Which university is one of the oldest in Germany and is located in Hesse?`,
+      options: {
+        A: `Universität Frankfurt`,
+        B: `Universität Gießen`,
+        C: `Universität Marburg`,
+        D: `Universität Kassel`
+      },
+      correctAnswer: "C"
+    }
+  ],
+
+  "Mecklenburg-Vorpommern": [
+    {
+      id: 1,
+      question: `Welche Stadt ist die Landeshauptstadt von Mecklenburg-Vorpommern? :: Which city is the state capital of Mecklenburg-Western Pomerania?`,
+      options: {
+        A: `Rostock`,
+        B: `Schwerin`,
+        C: `Stralsund`,
+        D: `Greifswald`
+      },
+      correctAnswer: "B"
+    },
+    {
+      id: 2,
+      question: `An welches Meer grenzt Mecklenburg-Vorpommern? :: Which sea does Mecklenburg-Western Pomerania border?`,
+      options: {
+        A: `Nordsee :: North Sea`,
+        B: `Ostsee :: Baltic Sea`,
+        C: `Mittelmeer :: Mediterranean Sea`,
+        D: `Schwarzes Meer :: Black Sea`
+      },
+      correctAnswer: "B"
+    },
+    {
+      id: 3,
+      question: `Welche Insel gehört zu Mecklenburg-Vorpommern? :: Which island belongs to Mecklenburg-Western Pomerania?`,
+      options: {
+        A: `Sylt`,
+        B: `Norderney`,
+        C: `Rügen`,
+        D: `Helgoland`
+      },
+      correctAnswer: "C"
+    },
+    {
+      id: 4,
+      question: `Was sind die Kreidefelsen? :: What are the chalk cliffs?`,
+      options: {
+        A: `weiße Felsen auf Rügen :: white cliffs on Rügen`,
+        B: `Berge :: mountains`,
+        C: `Seen :: lakes`,
+        D: `Wälder :: forests`
+      },
+      correctAnswer: "A"
+    },
+    {
+      id: 5,
+      question: `Welcher See ist der größte in Mecklenburg-Vorpommern? :: Which lake is the largest in Mecklenburg-Western Pomerania?`,
+      options: {
+        A: `Bodensee :: Lake Constance`,
+        B: `Chiemsee`,
+        C: `Müritz`,
+        D: `Starnberger See`
+      },
+      correctAnswer: "C"
+    },
+    {
+      id: 6,
+      question: `Wie nennt man die Seenlandschaft in Mecklenburg-Vorpommern? :: What is the lake landscape in Mecklenburg-Western Pomerania called?`,
+      options: {
+        A: `Mecklenburgische Schweiz :: Mecklenburg Switzerland`,
+        B: `Mecklenburgische Seenplatte :: Mecklenburg Lake District`,
+        C: `Vorpommersche Alpen :: Western Pomeranian Alps`,
+        D: `Ostseeplatte :: Baltic Plateau`
+      },
+      correctAnswer: "B"
+    },
+    {
+      id: 7,
+      question: `Welcher Maler ist mit Rügen verbunden? :: Which painter is associated with Rügen?`,
+      options: {
+        A: `Albrecht Dürer`,
+        B: `Caspar David Friedrich`,
+        C: `Max Liebermann`,
+        D: `Franz Marc`
+      },
+      correctAnswer: "B"
+    },
+    {
+      id: 8,
+      question: `Was ist Usedom? :: What is Usedom?`,
+      options: {
+        A: `eine Stadt :: a city`,
+        B: `eine Insel :: an island`,
+        C: `ein Berg :: a mountain`,
+        D: `ein Fluss :: a river`
+      },
+      correctAnswer: "B"
+    },
+    {
+      id: 9,
+      question: `Welche Stadt hat eine berühmte Universität und liegt am Meer? :: Which city has a famous university and is located by the sea?`,
+      options: {
+        A: `Schwerin`,
+        B: `Neubrandenburg`,
+        C: `Rostock`,
+        D: `Wismar`
+      },
+      correctAnswer: "C"
+    },
+    {
+      id: 10,
+      question: `Wann wurde Mecklenburg-Vorpommern nach der Wiedervereinigung neu gegründet? :: When was Mecklenburg-Western Pomerania newly founded after reunification?`,
+      options: {
+        A: `1989`,
+        B: `1990`,
+        C: `1991`,
+        D: `1992`
+      },
+      correctAnswer: "B"
+    }
+  ],
+
+  "Niedersachsen": [
+    {
+      id: 1,
+      question: `Welche Stadt ist die Landeshauptstadt von Niedersachsen? :: Which city is the state capital of Lower Saxony?`,
+      options: {
+        A: `Braunschweig`,
+        B: `Oldenburg`,
+        C: `Hannover`,
+        D: `Osnabrück`
+      },
+      correctAnswer: "C"
+    },
+    {
+      id: 2,
+      question: `Welche Automarke hat ihren Hauptsitz in Wolfsburg? :: Which car brand has its headquarters in Wolfsburg?`,
+      options: {
+        A: `BMW`,
+        B: `Mercedes-Benz`,
+        C: `Audi`,
+        D: `Volkswagen`
+      },
+      correctAnswer: "D"
+    },
+    {
+      id: 3,
+      question: `Welche Inselgruppe gehört zu Niedersachsen? :: Which island group belongs to Lower Saxony?`,
+      options: {
+        A: `Ostfriesische Inseln :: East Frisian Islands`,
+        B: `Halligen`,
+        C: `Boddeninseln :: Bodden Islands`,
+        D: `Nordfriesische Inseln :: North Frisian Islands`
+      },
+      correctAnswer: "A"
+    },
+    {
+      id: 4,
+      question: `Welcher Berg ist der höchste in Niedersachsen? :: Which mountain is the highest in Lower Saxony?`,
+      options: {
+        A: `Zugspitze`,
+        B: `Brocken`,
+        C: `Wurmberg`,
+        D: `Feldberg`
+      },
+      correctAnswer: "C"
+    },
+    {
+      id: 5,
+      question: `Welches Gebirge liegt teilweise in Niedersachsen? :: Which mountain range is partly located in Lower Saxony?`,
+      options: {
+        A: `die Alpen :: the Alps`,
+        B: `der Schwarzwald :: the Black Forest`,
+        C: `der Harz :: the Harz`,
+        D: `das Erzgebirge :: the Ore Mountains`
+      },
+      correctAnswer: "C"
+    },
+    {
+      id: 6,
+      question: `Welche Märchenfigur ist mit Hameln verbunden? :: Which fairy tale character is associated with Hameln?`,
+      options: {
+        A: `Aschenputtel :: Cinderella`,
+        B: `der Rattenfänger :: the Pied Piper`,
+        C: `Hänsel und Gretel :: Hansel and Gretel`,
+        D: `Rotkäppchen :: Little Red Riding Hood`
+      },
+      correctAnswer: "B"
+    },
+    {
+      id: 7,
+      question: `Welches Meer grenzt an Niedersachsen? :: Which sea borders Lower Saxony?`,
+      options: {
+        A: `Ostsee :: Baltic Sea`,
+        B: `Nordsee :: North Sea`,
+        C: `Mittelmeer :: Mediterranean Sea`,
+        D: `Schwarzes Meer :: Black Sea`
+      },
+      correctAnswer: "B"
+    },
+    {
+      id: 8,
+      question: `Was ist das Wattenmeer? :: What is the Wadden Sea?`,
+      options: {
+        A: `ein Gebirge :: a mountain range`,
+        B: `ein Nationalpark :: a national park`,
+        C: `eine Stadt :: a city`,
+        D: `ein Fluss :: a river`
+      },
+      correctAnswer: "B"
+    },
+    {
+      id: 9,
+      question: `Welche Sprache wird in Teilen Niedersachsens traditionell gesprochen? :: Which language is traditionally spoken in parts of Lower Saxony?`,
+      options: {
+        A: `Friesisch :: Frisian`,
+        B: `Dänisch :: Danish`,
+        C: `Niederländisch :: Dutch`,
+        D: `Plattdeutsch :: Low German`
+      },
+      correctAnswer: "D"
+    },
+    {
+      id: 10,
+      question: `Welche Stadt ist bekannt für ihre Universität und liegt in Niedersachsen? :: Which city is known for its university and is located in Lower Saxony?`,
+      options: {
+        A: `Münster`,
+        B: `Göttingen`,
+        C: `Marburg`,
+        D: `Heidelberg`
+      },
+      correctAnswer: "B"
+    }
+  ],
+
+  "Nordrhein-Westfalen": [
+    {
+      id: 1,
+      question: `Welche Stadt ist die Landeshauptstadt von Nordrhein-Westfalen? :: Which city is the state capital of North Rhine-Westphalia?`,
+      options: {
+        A: `Köln :: Cologne`,
+        B: `Essen`,
+        C: `Dortmund`,
+        D: `Düsseldorf`
+      },
+      correctAnswer: "D"
+    },
+    {
+      id: 2,
+      question: `Welche Stadt ist die größte in Nordrhein-Westfalen? :: Which city is the largest in North Rhine-Westphalia?`,
+      options: {
+        A: `Düsseldorf`,
+        B: `Dortmund`,
+        C: `Köln :: Cologne`,
+        D: `Essen`
+      },
+      correctAnswer: "C"
+    },
+    {
+      id: 3,
+      question: `Wie heißt das Industriegebiet in Nordrhein-Westfalen? :: What is the industrial area in North Rhine-Westphalia called?`,
+      options: {
+        A: `Saargebiet :: Saar region`,
+        B: `Ruhrgebiet :: Ruhr area`,
+        C: `Rheingebiet :: Rhine region`,
+        D: `Bergisches Land :: Bergisches Land`
+      },
+      correctAnswer: "B"
+    },
+    {
+      id: 4,
+      question: `Welcher Fluss ist der wichtigste in Nordrhein-Westfalen? :: Which river is the most important in North Rhine-Westphalia?`,
+      options: {
+        A: `die Weser :: the Weser`,
+        B: `die Elbe :: the Elbe`,
+        C: `der Rhein :: the Rhine`,
+        D: `die Donau :: the Danube`
+      },
+      correctAnswer: "C"
+    },
+    {
+      id: 5,
+      question: `Welches berühmte Gebäude steht in Köln? :: Which famous building stands in Cologne?`,
+      options: {
+        A: `Brandenburger Tor :: Brandenburg Gate`,
+        B: `Kölner Dom :: Cologne Cathedral`,
+        C: `Schloss Neuschwanstein`,
+        D: `Frauenkirche`
+      },
+      correctAnswer: "B"
+    },
+    {
+      id: 6,
+      question: `Welche Universität ist die größte in Deutschland und liegt in NRW? :: Which university is the largest in Germany and is located in NRW?`,
+      options: {
+        A: `Universität zu Köln :: University of Cologne`,
+        B: `FernUniversität Hagen :: Distance University of Hagen`,
+        C: `RWTH Aachen`,
+        D: `Universität Düsseldorf`
+      },
+      correctAnswer: "B"
+    },
+    {
+      id: 7,
+      question: `Welcher Fußballverein kommt aus Dortmund? :: Which football club comes from Dortmund?`,
+      options: {
+        A: `FC Bayern München :: FC Bayern Munich`,
+        B: `FC Schalke 04`,
+        C: `Borussia Dortmund (BVB)`,
+        D: `Bayer Leverkusen`
+      },
+      correctAnswer: "C"
+    },
+    {
+      id: 8,
+      question: `Was ist die Zeche Zollverein? :: What is the Zeche Zollverein?`,
+      options: {
+        A: `ein Einkaufszentrum :: a shopping center`,
+        B: `eine ehemalige Kohlemine :: a former coal mine`,
+        C: `ein Krankenhaus :: a hospital`,
+        D: `eine Universität :: a university`
+      },
+      correctAnswer: "B"
+    },
+    {
+      id: 9,
+      question: `Welches Bier kommt traditionell aus Köln? :: Which beer traditionally comes from Cologne?`,
+      options: {
+        A: `Pils`,
+        B: `Weißbier :: wheat beer`,
+        C: `Kölsch`,
+        D: `Alt`
+      },
+      correctAnswer: "C"
+    },
+    {
+      id: 10,
+      question: `Welche Stadt ist bekannt für Mode und Messen? :: Which city is known for fashion and trade fairs?`,
+      options: {
+        A: `Essen`,
+        B: `Dortmund`,
+        C: `Düsseldorf`,
+        D: `Wuppertal`
+      },
+      correctAnswer: "C"
+    }
+  ],
+
+  "Rheinland-Pfalz": [
+    {
+      id: 1,
+      question: `Welche Stadt ist die Landeshauptstadt von Rheinland-Pfalz? :: Which city is the state capital of Rhineland-Palatinate?`,
+      options: {
+        A: `Koblenz`,
+        B: `Mainz`,
+        C: `Trier`,
+        D: `Kaiserslautern`
+      },
+      correctAnswer: "B"
+    },
+    {
+      id: 2,
+      question: `Welcher Fluss fließt durch Mainz? :: Which river flows through Mainz?`,
+      options: {
+        A: `die Mosel :: the Moselle`,
+        B: `der Rhein :: the Rhine`,
+        C: `die Nahe :: the Nahe`,
+        D: `die Lahn :: the Lahn`
+      },
+      correctAnswer: "B"
+    },
+    {
+      id: 3,
+      question: `Wofür ist die Region um Rheinland-Pfalz besonders bekannt? :: What is the region around Rhineland-Palatinate particularly known for?`,
+      options: {
+        A: `Bierbrauen :: beer brewing`,
+        B: `Weinbau :: wine growing`,
+        C: `Käseherstellung :: cheese making`,
+        D: `Fischfang :: fishing`
+      },
+      correctAnswer: "B"
+    },
+    {
+      id: 4,
+      question: `Welche Stadt war die erste Hauptstadt der Bundesrepublik Deutschland? :: Which city was the first capital of the Federal Republic of Germany?`,
+      options: {
+        A: `Mainz`,
+        B: `Koblenz`,
+        C: `Bonn`,
+        D: `Trier`
+      },
+      correctAnswer: "C"
+    },
+    {
+      id: 5,
+      question: `Welche alte Römerstadt liegt in Rheinland-Pfalz? :: Which ancient Roman city is located in Rhineland-Palatinate?`,
+      options: {
+        A: `Mainz`,
+        B: `Koblenz`,
+        C: `Trier`,
+        D: `Worms`
+      },
+      correctAnswer: "C"
+    },
+    {
+      id: 6,
+      question: `Was ist die Loreley? :: What is the Loreley?`,
+      options: {
+        A: `eine Stadt :: a city`,
+        B: `ein Felsen am Rhein :: a rock on the Rhine`,
+        C: `eine Burg :: a castle`,
+        D: `ein Berg :: a mountain`
+      },
+      correctAnswer: "B"
+    },
+    {
+      id: 7,
+      question: `Welcher Erfinder lebte in Mainz? :: Which inventor lived in Mainz?`,
+      options: {
+        A: `Johannes Gutenberg`,
+        B: `Albert Einstein`,
+        C: `Konrad Zuse`,
+        D: `Rudolf Diesel`
+      },
+      correctAnswer: "A"
+    },
+    {
+      id: 8,
+      question: `Was erfand Johannes Gutenberg? :: What did Johannes Gutenberg invent?`,
+      options: {
+        A: `das Auto :: the car`,
+        B: `den Buchdruck :: printing`,
+        C: `das Telefon :: the telephone`,
+        D: `die Glühbirne :: the light bulb`
+      },
+      correctAnswer: "B"
+    },
+    {
+      id: 9,
+      question: `Welches Tal ist bekannt für seinen Weinbau? :: Which valley is known for its wine growing?`,
+      options: {
+        A: `Rheingau`,
+        B: `Moseltal :: Moselle Valley`,
+        C: `Nahetal :: Nahe Valley`,
+        D: `alle Antworten sind richtig :: all answers are correct`
+      },
+      correctAnswer: "D"
+    },
+    {
+      id: 10,
+      question: `Wo fließen Rhein und Mosel zusammen? :: Where do the Rhine and Moselle flow together?`,
+      options: {
+        A: `in Mainz :: in Mainz`,
+        B: `in Koblenz :: in Koblenz`,
+        C: `in Trier :: in Trier`,
+        D: `in Worms :: in Worms`
+      },
+      correctAnswer: "B"
+    }
+  ],
+
+  "Saarland": [
+    {
+      id: 1,
+      question: `Welche Stadt ist die Landeshauptstadt des Saarlandes? :: Which city is the state capital of Saarland?`,
+      options: {
+        A: `Neunkirchen`,
+        B: `Völklingen`,
+        C: `Saarbrücken`,
+        D: `Homburg`
+      },
+      correctAnswer: "C"
+    },
+    {
+      id: 2,
+      question: `An welches Land grenzt das Saarland? :: Which country does Saarland border?`,
+      options: {
+        A: `Belgien :: Belgium`,
+        B: `Frankreich :: France`,
+        C: `Luxemburg :: Luxembourg`,
+        D: `Niederlande :: Netherlands`
+      },
+      correctAnswer: "B"
+    },
+    {
+      id: 3,
+      question: `Welcher Fluss fließt durch das Saarland? :: Which river flows through Saarland?`,
+      options: {
+        A: `der Rhein :: the Rhine`,
+        B: `die Mosel :: the Moselle`,
+        C: `die Saar :: the Saar`,
+        D: `die Nahe :: the Nahe`
+      },
+      correctAnswer: "C"
+    },
+    {
+      id: 4,
+      question: `Wann wurde das Saarland Bundesland der Bundesrepublik Deutschland? :: When did Saarland become a federal state of the Federal Republic of Germany?`,
+      options: {
+        A: `1949`,
+        B: `1955`,
+        C: `1957`,
+        D: `1959`
+      },
+      correctAnswer: "C"
+    },
+    {
+      id: 5,
+      question: `Welche Industrie war früher besonders wichtig im Saarland? :: Which industry was particularly important in Saarland in the past?`,
+      options: {
+        A: `Textilindustrie :: textile industry`,
+        B: `Kohle- und Stahlindustrie :: coal and steel industry`,
+        C: `Chemieindustrie :: chemical industry`,
+        D: `Automobilindustrie :: automotive industry`
+      },
+      correctAnswer: "B"
+    },
+    {
+      id: 6,
+      question: `Welches UNESCO-Welterbe steht in Völklingen? :: Which UNESCO World Heritage site is in Völklingen?`,
+      options: {
+        A: `ein Schloss :: a castle`,
+        B: `eine Kirche :: a church`,
+        C: `eine Völklinger Hütte :: Völklingen Ironworks`,
+        D: `ein Kloster :: a monastery`
+      },
+      correctAnswer: "C"
+    },
+    {
+      id: 7,
+      question: `Welche Sprache spricht man traditionell im Saarland neben Deutsch? :: Which language is traditionally spoken in Saarland besides German?`,
+      options: {
+        A: `Französisch :: French`,
+        B: `Englisch :: English`,
+        C: `Italienisch :: Italian`,
+        D: `Niederländisch :: Dutch`
+      },
+      correctAnswer: "A"
+    },
+    {
+      id: 8,
+      question: `Wie groß ist das Saarland im Vergleich zu anderen Bundesländern? :: How large is Saarland compared to other federal states?`,
+      options: {
+        A: `das größte :: the largest`,
+        B: `das zweitgrößte :: the second largest`,
+        C: `das kleinste :: the smallest`,
+        D: `das zweitkleinste :: the second smallest`
+      },
+      correctAnswer: "C"
+    },
+    {
+      id: 9,
+      question: `Was ist "Halver Hahn" im Saarland? :: What is "Halver Hahn" in Saarland?`,
+      options: {
+        A: `ein Getränk :: a drink`,
+        B: `ein Gericht :: a dish`,
+        C: `ein Fest :: a festival`,
+        D: `ein Tanz :: a dance`
+      },
+      correctAnswer: "B"
+    },
+    {
+      id: 10,
+      question: `Welche Universität ist die größte im Saarland? :: Which university is the largest in Saarland?`,
+      options: {
+        A: `Universität des Saarlandes :: Saarland University`,
+        B: `HTW Saar`,
+        C: `Hochschule für Musik`,
+        D: `Technische Hochschule`
+      },
+      correctAnswer: "A"
+    }
+  ],
+
+  "Sachsen": [
+    {
+      id: 1,
+      question: `Welche Stadt ist die Landeshauptstadt von Sachsen? :: Which city is the state capital of Saxony?`,
+      options: {
+        A: `Leipzig`,
+        B: `Chemnitz`,
+        C: `Dresden`,
+        D: `Zwickau`
+      },
+      correctAnswer: "C"
+    },
+    {
+      id: 2,
+      question: `Welche Stadt wird "Stadt der Musik" genannt? :: Which city is called the "City of Music"?`,
+      options: {
+        A: `Dresden`,
+        B: `Leipzig`,
+        C: `Chemnitz`,
+        D: `Plauen`
+      },
+      correctAnswer: "B"
+    },
+    {
+      id: 3,
+      question: `Welcher Fluss fließt durch Dresden? :: Which river flows through Dresden?`,
+      options: {
+        A: `die Spree :: the Spree`,
+        B: `die Elbe :: the Elbe`,
+        C: `die Saale :: the Saale`,
+        D: `die Mulde :: the Mulde`
+      },
+      correctAnswer: "B"
+    },
+    {
+      id: 4,
+      question: `Wofür ist Meißen berühmt? :: What is Meissen famous for?`,
+      options: {
+        A: `Porzellan :: porcelain`,
+        B: `Bier :: beer`,
+        C: `Wein :: wine`,
+        D: `Käse :: cheese`
+      },
+      correctAnswer: "A"
+    },
+    {
+      id: 5,
+      question: `Welches berühmte Opernhaus steht in Dresden? :: Which famous opera house stands in Dresden?`,
+      options: {
+        A: `Staatsoper Berlin :: Berlin State Opera`,
+        B: `Semperoper`,
+        C: `Gewandhaus`,
+        D: `Alte Oper :: Old Opera`
+      },
+      correctAnswer: "B"
+    },
+    {
+      id: 6,
+      question: `In welcher sächsischen Stadt begannen 1989 die Montagsdemonstrationen? :: In which Saxon city did the Monday demonstrations begin in 1989?`,
+      options: {
+        A: `Dresden`,
+        B: `Chemnitz`,
+        C: `Leipzig`,
+        D: `Zwickau`
+      },
+      correctAnswer: "C"
+    },
+    {
+      id: 7,
+      question: `Welches Gebirge liegt an der Grenze zwischen Sachsen und Tschechien? :: Which mountain range lies on the border between Saxony and the Czech Republic?`,
+      options: {
+        A: `der Harz :: the Harz`,
+        B: `das Erzgebirge :: the Ore Mountains`,
+        C: `der Thüringer Wald :: the Thuringian Forest`,
+        D: `die Rhön :: the Rhön`
+      },
+      correctAnswer: "B"
+    },
+    {
+      id: 8,
+      question: `Was ist der Dresdner Stollen? :: What is the Dresden Stollen?`,
+      options: {
+        A: `ein Tunnel :: a tunnel`,
+        B: `ein Weihnachtsgebäck :: a Christmas pastry`,
+        C: `ein Bauwerk :: a building`,
+        D: `ein Fest :: a festival`
+      },
+      correctAnswer: "B"
+    },
+    {
+      id: 9,
+      question: `Welche Kirche in Dresden wurde nach dem Krieg wieder aufgebaut? :: Which church in Dresden was rebuilt after the war?`,
+      options: {
+        A: `Thomaskirche :: St. Thomas Church`,
+        B: `Nikolaikirche :: St. Nicholas Church`,
+        C: `Frauenkirche :: Church of Our Lady`,
+        D: `Kreuzkirche :: Church of the Cross`
+      },
+      correctAnswer: "C"
+    },
+    {
+      id: 10,
+      question: `Welcher berühmte Komponist wirkte in Leipzig? :: Which famous composer worked in Leipzig?`,
+      options: {
+        A: `Wolfgang Amadeus Mozart`,
+        B: `Ludwig van Beethoven`,
+        C: `Johann Sebastian Bach`,
+        D: `Franz Schubert`
+      },
+      correctAnswer: "C"
+    }
+  ],
+
+  "Sachsen-Anhalt": [
+    {
+      id: 1,
+      question: `Welche Stadt ist die Landeshauptstadt von Sachsen-Anhalt? :: Which city is the state capital of Saxony-Anhalt?`,
+      options: {
+        A: `Halle (Saale)`,
+        B: `Magdeburg`,
+        C: `Dessau`,
+        D: `Wittenberg`
+      },
+      correctAnswer: "B"
+    },
+    {
+      id: 2,
+      question: `Welcher Fluss fließt durch Magdeburg? :: Which river flows through Magdeburg?`,
+      options: {
+        A: `die Saale :: the Saale`,
+        B: `die Elbe :: the Elbe`,
+        C: `die Mulde :: the Mulde`,
+        D: `die Unstrut :: the Unstrut`
+      },
+      correctAnswer: "B"
+    },
+    {
+      id: 3,
+      question: `In welcher Stadt schlug Martin Luther 1517 seine Thesen an? :: In which city did Martin Luther post his theses in 1517?`,
+      options: {
+        A: `Magdeburg`,
+        B: `Halle`,
+        C: `Wittenberg`,
+        D: `Eisleben`
+      },
+      correctAnswer: "C"
+    },
+    {
+      id: 4,
+      question: `Wo wurde Martin Luther geboren? :: Where was Martin Luther born?`,
+      options: {
+        A: `Wittenberg`,
+        B: `Eisleben`,
+        C: `Halle`,
+        D: `Magdeburg`
+      },
+      correctAnswer: "B"
+    },
+    {
+      id: 5,
+      question: `Welche Hochschule liegt in Dessau und ist berühmt für Design? :: Which college is located in Dessau and is famous for design?`,
+      options: {
+        A: `Bauhaus`,
+        B: `Kunsthochschule :: Art College`,
+        C: `Designschule :: Design School`,
+        D: `Architekturhochschule :: Architecture College`
+      },
+      correctAnswer: "A"
+    },
+    {
+      id: 6,
+      question: `Welches Gebirge liegt teilweise in Sachsen-Anhalt? :: Which mountain range is partly located in Saxony-Anhalt?`,
+      options: {
+        A: `die Alpen :: the Alps`,
+        B: `der Schwarzwald :: the Black Forest`,
+        C: `der Harz :: the Harz`,
+        D: `das Erzgebirge :: the Ore Mountains`
+      },
+      correctAnswer: "C"
+    },
+    {
+      id: 7,
+      question: `Welcher Berg ist der höchste im Harz? :: Which mountain is the highest in the Harz?`,
+      options: {
+        A: `Wurmberg`,
+        B: `Brocken`,
+        C: `Acker`,
+        D: `Ramberg`
+      },
+      correctAnswer: "B"
+    },
+    {
+      id: 8,
+      question: `Was ist die Straße der Romanik? :: What is the Romanesque Road?`,
+      options: {
+        A: `eine Autobahn :: a highway`,
+        B: `eine Touristenroute :: a tourist route`,
+        C: `eine Handelsstraße :: a trade route`,
+        D: `eine Pilgerstraße :: a pilgrimage route`
+      },
+      correctAnswer: "B"
+    },
+    {
+      id: 9,
+      question: `Welche Universität ist die älteste in Sachsen-Anhalt? :: Which university is the oldest in Saxony-Anhalt?`,
+      options: {
+        A: `Universität Magdeburg`,
+        B: `Martin-Luther-Universität Halle-Wittenberg`,
+        C: `Hochschule Anhalt`,
+        D: `Hochschule Magdeburg-Stendal`
+      },
+      correctAnswer: "B"
+    },
+    {
+      id: 10,
+      question: `Welches UNESCO-Welterbe liegt in Quedlinburg? :: Which UNESCO World Heritage site is in Quedlinburg?`,
+      options: {
+        A: `die Altstadt :: the old town`,
+        B: `das Schloss :: the castle`,
+        C: `die Kirche :: the church`,
+        D: `das Rathaus :: the town hall`
+      },
+      correctAnswer: "A"
+    }
+  ],
+
+  "Schleswig-Holstein": [
+    {
+      id: 1,
+      question: `Welche Stadt ist die Landeshauptstadt von Schleswig-Holstein? :: Which city is the state capital of Schleswig-Holstein?`,
+      options: {
+        A: `Lübeck`,
+        B: `Flensburg`,
+        C: `Kiel`,
+        D: `Neumünster`
+      },
+      correctAnswer: "C"
+    },
+    {
+      id: 2,
+      question: `Zwischen welchen Meeren liegt Schleswig-Holstein? :: Between which seas is Schleswig-Holstein located?`,
+      options: {
+        A: `Nord- und Ostsee :: North and Baltic Sea`,
+        B: `Nord- und Mittelmeer :: North and Mediterranean Sea`,
+        C: `Ost- und Mittelmeer :: Baltic and Mediterranean Sea`,
+        D: `Nord- und Schwarzes Meer :: North and Black Sea`
+      },
+      correctAnswer: "A"
+    },
+    {
+      id: 3,
+      question: `Welcher Kanal verbindet Nord- und Ostsee? :: Which canal connects the North and Baltic Sea?`,
+      options: {
+        A: `Mittellandkanal :: Mittelland Canal`,
+        B: `Nord-Ostsee-Kanal :: Kiel Canal`,
+        C: `Dortmund-Ems-Kanal :: Dortmund-Ems Canal`,
+        D: `Elbe-Seitenkanal :: Elbe Lateral Canal`
+      },
+      correctAnswer: "B"
+    },
+    {
+      id: 4,
+      question: `Welche Insel gehört zu Schleswig-Holstein? :: Which island belongs to Schleswig-Holstein?`,
+      options: {
+        A: `Rügen`,
+        B: `Usedom`,
+        C: `Sylt`,
+        D: `Borkum`
+      },
+      correctAnswer: "C"
+    },
+    {
+      id: 5,
+      question: `An welches Land grenzt Schleswig-Holstein? :: Which country does Schleswig-Holstein border?`,
+      options: {
+        A: `Niederlande :: Netherlands`,
+        B: `Belgien :: Belgium`,
+        C: `Polen :: Poland`,
+        D: `Dänemark :: Denmark`
+      },
+      correctAnswer: "D"
+    },
+    {
+      id: 6,
+      question: `Welche Stadt ist bekannt für ihr Holstentor? :: Which city is known for its Holsten Gate?`,
+      options: {
+        A: `Kiel`,
+        B: `Lübeck`,
+        C: `Flensburg`,
+        D: `Schleswig`
+      },
+      correctAnswer: "B"
+    },
+    {
+      id: 7,
+      question: `Was ist das Wattenmeer? :: What is the Wadden Sea?`,
+      options: {
+        A: `ein Nationalpark :: a national park`,
+        B: `ein Gebirge :: a mountain range`,
+        C: `eine Stadt :: a city`,
+        D: `ein Fluss :: a river`
+      },
+      correctAnswer: "A"
+    },
+    {
+      id: 8,
+      question: `Welche Sprache wird traditionell in Nordfriesland gesprochen? :: Which language is traditionally spoken in North Frisia?`,
+      options: {
+        A: `Dänisch :: Danish`,
+        B: `Friesisch :: Frisian`,
+        C: `Plattdeutsch :: Low German`,
+        D: `alle Antworten sind richtig :: all answers are correct`
+      },
+      correctAnswer: "D"
+    },
+    {
+      id: 9,
+      question: `Was ist "Labskaus"? :: What is "Labskaus"?`,
+      options: {
+        A: `ein Fisch :: a fish`,
+        B: `ein Gericht :: a dish`,
+        C: `ein Getränk :: a drink`,
+        D: `ein Fest :: a festival`
+      },
+      correctAnswer: "B"
+    },
+    {
+      id: 10,
+      question: `Welche Universität liegt in Kiel? :: Which university is located in Kiel?`,
+      options: {
+        A: `Christian-Albrechts-Universität`,
+        B: `Universität Hamburg`,
+        C: `Universität Lübeck`,
+        D: `Fachhochschule Kiel`
+      },
+      correctAnswer: "A"
+    }
+  ],
+
+  "Thüringen": [
+    {
+      id: 1,
+      question: `Welche Stadt ist die Landeshauptstadt von Thüringen? :: Which city is the state capital of Thuringia?`,
+      options: {
+        A: `Weimar`,
+        B: `Jena`,
+        C: `Erfurt`,
+        D: `Gera`
+      },
+      correctAnswer: "C"
+    },
+    {
+      id: 2,
+      question: `Welche Stadt ist bekannt als "Stadt der deutschen Klassik"? :: Which city is known as the "City of German Classicism"?`,
+      options: {
+        A: `Erfurt`,
+        B: `Weimar`,
+        C: `Jena`,
+        D: `Eisenach`
+      },
+      correctAnswer: "B"
+    },
+    {
+      id: 3,
+      question: `Welcher berühmte Dichter lebte in Weimar? :: Which famous poet lived in Weimar?`,
+      options: {
+        A: `Heinrich Heine`,
+        B: `Friedrich Schiller`,
+        C: `Johann Wolfgang von Goethe`,
+        D: `beide B und C :: both B and C`
+      },
+      correctAnswer: "D"
+    },
+    {
+      id: 4,
+      question: `Welches Gebirge liegt in Thüringen? :: Which mountain range is located in Thuringia?`,
+      options: {
+        A: `der Harz :: the Harz`,
+        B: `der Thüringer Wald :: the Thuringian Forest`,
+        C: `das Erzgebirge :: the Ore Mountains`,
+        D: `der Schwarzwald :: the Black Forest`
+      },
+      correctAnswer: "B"
+    },
+    {
+      id: 5,
+      question: `Auf welcher Burg übersetzte Martin Luther die Bibel? :: On which castle did Martin Luther translate the Bible?`,
+      options: {
+        A: `Wartburg`,
+        B: `Neuschwanstein`,
+        C: `Hohenzollern`,
+        D: `Sanssouci`
+      },
+      correctAnswer: "A"
+    },
+    {
+      id: 6,
+      question: `In welcher Stadt steht die Wartburg? :: In which city is the Wartburg located?`,
+      options: {
+        A: `Erfurt`,
+        B: `Weimar`,
+        C: `Eisenach`,
+        D: `Jena`
+      },
+      correctAnswer: "C"
+    },
+    {
+      id: 7,
+      question: `Welche Universität liegt in Jena? :: Which university is located in Jena?`,
+      options: {
+        A: `Bauhaus-Universität`,
+        B: `Friedrich-Schiller-Universität`,
+        C: `Universität Erfurt`,
+        D: `Technische Universität Ilmenau`
+      },
+      correctAnswer: "B"
+    },
+    {
+      id: 8,
+      question: `Was ist eine Thüringer Rostbratwurst? :: What is a Thuringian Rostbratwurst?`,
+      options: {
+        A: `ein Getränk :: a drink`,
+        B: `eine Wurst :: a sausage`,
+        C: `ein Kuchen :: a cake`,
+        D: `ein Käse :: a cheese`
+      },
+      correctAnswer: "B"
+    },
+    {
+      id: 9,
+      question: `Welches Konzentrationslager lag bei Weimar? :: Which concentration camp was located near Weimar?`,
+      options: {
+        A: `Dachau`,
+        B: `Bergen-Belsen`,
+        C: `Buchenwald`,
+        D: `Sachsenhausen`
+      },
+      correctAnswer: "C"
+    },
+    {
+      id: 10,
+      question: `Wann wurde Thüringen nach der Wiedervereinigung neu gegründet? :: When was Thuringia newly founded after reunification?`,
+      options: {
+        A: `1989`,
+        B: `1990`,
+        C: `1991`,
+        D: `1992`
+      },
+      correctAnswer: "B"
+    }
+  ]
+};
+
+// Export for use in applications
+export default stateSpecificQuestions;
+
+// Example usage:
+// const bavarianQuestions = stateSpecificQuestions["Bayern"];
+// const randomQuestion = bavarianQuestions[Math.floor(Math.random() * bavarianQuestions.length)];

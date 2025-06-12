@@ -1,7 +1,7 @@
 "use client"
 
 import { useState, useTransition } from "react"
-import { BookmarkCheck, AlertCircle, Play, BarChart3 } from "lucide-react"
+import { Bookmark, AlertCircle, Play, BarChart3 } from "lucide-react"
 import { Sidebar } from "@/components/SidebarNavigation"
 import { QuestionScreen } from "@/components/QuestionScreen"
 import { FeedbackModal } from "@/components/FeedbackModal"
@@ -73,8 +73,7 @@ export default function Home() {
       />
 
       <main className="container mx-auto px-4 py-6 max-w-md">
-        {/* Header */}
-        <Header />
+        <Header toggleSettings={() => setSidebarOpen(true)} />
 
         {/* Progress Card */}
         <section className="bg-white dark:bg-gray-800 rounded-xl shadow-lg mb-6 p-6 border border-gray-100 dark:border-gray-700 transition-colors duration-200">
@@ -143,7 +142,7 @@ export default function Home() {
               disabled={isPending}
               className="group h-12 border-2 border-blue-200 dark:border-blue-800 hover:border-blue-300 dark:hover:border-blue-700 hover:bg-blue-50 dark:hover:bg-blue-900/20 active:bg-blue-100 dark:active:bg-blue-900/30 disabled:opacity-50 text-gray-900 dark:text-white rounded-xl transition-all duration-200 flex items-center justify-center gap-2 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 dark:focus:ring-offset-gray-900"
             >
-              <BookmarkCheck className="size-4 text-blue-600 dark:text-blue-400 group-hover:scale-110 transition-transform duration-200" />
+              <Bookmark className="size-4 text-blue-600 dark:text-blue-400 group-hover:scale-110 transition-transform duration-200" />
               <span className="text-sm font-medium">Bookmarked</span>
             </button>
 
@@ -157,14 +156,6 @@ export default function Home() {
             </button>
           </div>
         </section>
-
-        {/* Menu Button */}
-        <button
-          onClick={() => setSidebarOpen(true)}
-          className="w-full mt-6 py-3 text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-100 transition-colors duration-200 text-sm font-medium focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2 dark:focus:ring-offset-gray-900 rounded-lg"
-        >
-          Settings & More
-        </button>
       </main>
 
       <FeedbackModal open={feedbackOpen} onOpenChange={setFeedbackOpen} />
