@@ -1,29 +1,52 @@
 'use client'
 
-import { useState, useCallback, useMemo } from 'react'
-import {
-  Home,
-  Bookmark,
-  BookmarkCheck,
-  Flag,
-  Languages,
-  Check,
-  X,
-  ChevronRight,
-  ChevronLeft,
-} from 'lucide-react'
+import { useState, useCallback, useMemo, forwardRef } from 'react'
+import { Bookmark, BookmarkCheck, Flag, Languages, ChevronRight, ChevronLeft } from 'lucide-react'
 import { ReportModal } from '@/components/ReportModal'
 import { useLocalStorage } from '@/hooks/useLocalStorage'
 import { AdSpace } from './AdSpace'
+import { generalQuestions } from '@/lib/generalQuestions'
+import { stateSpecificQuestions } from '../lib/stateQuestions'
+import { twMerge } from 'tailwind-merge'
 
-interface Question {
-  id: number
-  question: string
-  questionEn: string
-  options: string[]
-  optionsEn: string[]
-  correct: number
+const QuestionButton = ({
+  onClick,
+  disabled,
+  children,
+}: {
+  onClick: () => void
+  disabled: boolean
+  children: React.ReactNode
+}) => {
+  return (
+    <button
+      onClick={onClick}
+      disabled={disabled}
+      className="flex items-center gap-2 px-5 py-3 text-sm font-medium text-gray-700 dark:text-white bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 rounded-lg transition-colors duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
+    >
+      {children}
+    </button>
+  )
 }
+
+const ButtonIcon = forwardRef<
+  HTMLButtonElement,
+  { children?: React.ReactNode; onClick?: () => void; className?: string; disabled?: boolean }
+>(({ children, onClick, className, disabled, ...props }, ref) => {
+  return (
+    <button
+      {...props}
+      ref={ref}
+      onClick={onClick}
+      className={twMerge(
+        `flex items-center p-2.5 transition-colors duration-200 disabled:opacity-50 disabled:cursor-not-allowed rounded-full active:bg-gray-200 dark:active:bg-gray-600`,
+        className
+      )}
+    >
+      {children}
+    </button>
+  )
+})
 
 interface QuestionScreenProps {
   mode: 'study' | 'bookmarked' | 'failed'
@@ -32,32 +55,34 @@ interface QuestionScreenProps {
   stats: any
 }
 
-// Mock questions data
-const mockQuestions: Question[] = [
-  {
-    id: 1,
-    question: 'Wann ist die Bundesrepublik Deutschland gegründet worden?',
-    questionEn: 'When was the Federal Republic of Germany founded?',
-    options: ['1947', '1948', '1949', '1950'],
-    optionsEn: ['1947', '1948', '1949', '1950'],
-    correct: 2,
-  },
-  {
-    id: 2,
-    question: 'Welche Farben hat die deutsche Flagge?',
-    questionEn: 'What colors does the German flag have?',
-    options: ['schwarz-rot-gold', 'rot-weiß-schwarz', 'schwarz-gelb-rot', 'grün-weiß-rot'],
-    optionsEn: ['black-red-gold', 'red-white-black', 'black-yellow-red', 'green-white-red'],
-    correct: 0,
-  },
-]
+const useGetQuestions = (mode: QuestionScreenProps['mode']) => {
+  const [selectedState] = useLocalStorage('selected-state', '')
+  const stateQuestions = stateSpecificQuestions[selectedState]
+
+  const bookmarkedQuestions = useLocalStorage<number[]>('bookmarked-questions', [])
+  const failedQuestions = useLocalStorage<number[]>('failed-questions', [])
+
+  // if (mode === 'bookmarked') {
+  //   return bookmarkedQuestions.map(id => generalQuestions.find(q => q.id === id) || stateQuestions.find(q => q.id === id))
+  // }
+
+  // if (mode === 'failed') {
+  //   return failedQuestions.map(id => generalQuestions.find(q => q.id === id) || stateQuestions.find(q => q.id === id))
+  // }
+
+  return [...generalQuestions, ...(stateQuestions || [])]
+}
 
 export function QuestionScreen({ mode, onMenuClick, onStatsUpdate, stats }: QuestionScreenProps) {
-  const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0)
-  const [selectedAnswer, setSelectedAnswer] = useState<number | null>(null)
+  const [currentQuestionIndex, setCurrentQuestionIndex] = useLocalStorage(
+    'current-question-index',
+    0
+  )
+  const [selectedAnswer, setSelectedAnswer] = useState<string | null>(null)
   const [showAnswer, setShowAnswer] = useState(false)
   const [showEnglish, setShowEnglish] = useState(false)
   const [reportOpen, setReportOpen] = useState(false)
+
   const [bookmarkedQuestions, setBookmarkedQuestions] = useLocalStorage<number[]>(
     'bookmarked-questions',
     []
@@ -67,19 +92,21 @@ export function QuestionScreen({ mode, onMenuClick, onStatsUpdate, stats }: Ques
     {}
   )
 
-  const currentQuestion = mockQuestions[currentQuestionIndex]
+  const questions = useGetQuestions(mode)
+
+  const totalQuestions = questions.length
+  const currentQuestion = questions[currentQuestionIndex as number]
   const isBookmarked = bookmarkedQuestions.includes(currentQuestion.id)
-  const totalQuestions = mockQuestions.length
   const progressPercentage = ((currentQuestionIndex + 1) / totalQuestions) * 100
 
   const handleAnswerSelect = useCallback(
-    (answerIndex: number) => {
+    (answerKey: string) => {
       if (showAnswer) return
 
-      setSelectedAnswer(answerIndex)
+      setSelectedAnswer(answerKey)
       setShowAnswer(true)
 
-      const isCorrect = answerIndex === currentQuestion.correct
+      const isCorrect = answerKey === currentQuestion.correctAnswer
       const wasAnswered = answeredQuestions[currentQuestion.id]
 
       // Update stats
@@ -98,7 +125,7 @@ export function QuestionScreen({ mode, onMenuClick, onStatsUpdate, stats }: Ques
     },
     [
       showAnswer,
-      currentQuestion.correct,
+      currentQuestion.correctAnswer,
       currentQuestion.id,
       answeredQuestions,
       stats,
@@ -146,37 +173,50 @@ export function QuestionScreen({ mode, onMenuClick, onStatsUpdate, stats }: Ques
     }
   }, [mode])
 
+  const getQuestionText = useMemo(() => {
+    const [german, english] = currentQuestion.question.split(' :: ')
+    return {
+      german,
+      english,
+    }
+  }, [currentQuestion.question])
+
   return (
     <>
-      {/* Header */}
-      <header className="bg-white dark:bg-gray-800 border-b border-gray-200 dark:border-gray-700 sticky top-0 z-10 transition-colors duration-200">
+      <header className="bg-white dark:bg-gray-800 sticky top-0 z-10 transition-colors duration-200">
         <div className="container mx-auto px-4 py-4 max-w-md">
           <div className="flex items-center justify-between mb-3">
-            <button
-              onClick={onMenuClick}
-              className="p-2 hover:bg-gray-100 dark:hover:bg-gray-700 active:bg-gray-200 dark:active:bg-gray-600 rounded-lg transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500"
-              aria-label="Open menu"
-            >
-              <Home className="size-5 text-gray-600 dark:text-gray-400" />
-            </button>
-
-            <span className="px-3 py-1.5 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 text-xs font-medium rounded-full">
-              {screenTitle}
-            </span>
+            <div className="flex items-center gap-2">
+              <button
+                onClick={onMenuClick}
+                className="p-1 hover:bg-gray-100 dark:hover:bg-gray-700 active:bg-gray-200 dark:active:bg-gray-600 rounded-lg transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                aria-label="Open menu"
+              >
+                <ChevronLeft className="size-6 text-gray-600 dark:text-gray-400" />
+              </button>
+              <span className="text-sm font-medium text-gray-700 dark:text-gray-300">
+                {screenTitle}
+              </span>
+            </div>
 
             <div className="flex gap-1">
-              <button
+              <ButtonIcon
                 onClick={() => setShowEnglish(!showEnglish)}
-                className={`p-2 hover:bg-gray-100 dark:hover:bg-gray-700 active:bg-gray-200 dark:active:bg-gray-600 rounded-lg transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500 ${showEnglish ? 'bg-blue-50 dark:bg-blue-900/20' : ''
-                  }`}
-                aria-label="Toggle English translation"
+                className={showEnglish ? 'bg-blue-50 dark:bg-gray-700/50' : ''}
                 aria-pressed={showEnglish}
+                aria-label="Toggle English translation"
               >
-                <Languages className="size-4 text-blue-600 dark:text-blue-400" />
-              </button>
-              <button
+                <Languages
+                  className={twMerge(
+                    'size-4 text-blue-600',
+                    showEnglish ? 'dark:text-blue-400' : 'dark:text-gray-500'
+                  )}
+                />
+              </ButtonIcon>
+
+              <ButtonIcon
                 onClick={handleBookmark}
-                className="p-2 hover:bg-gray-100 dark:hover:bg-gray-700 active:bg-gray-200 dark:active:bg-gray-600 rounded-lg transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-yellow-500"
+                className={twMerge(isBookmarked ? 'bg-yellow-50 dark:bg-yellow-900/20' : '')}
                 aria-label={isBookmarked ? 'Remove bookmark' : 'Add bookmark'}
                 aria-pressed={isBookmarked}
               >
@@ -185,14 +225,16 @@ export function QuestionScreen({ mode, onMenuClick, onStatsUpdate, stats }: Ques
                 ) : (
                   <Bookmark className="size-4 text-gray-400 dark:text-gray-500" />
                 )}
-              </button>
-              <button
+              </ButtonIcon>
+
+              <ButtonIcon
                 onClick={() => setReportOpen(true)}
-                className="p-2 hover:bg-gray-100 dark:hover:bg-gray-700 active:bg-gray-200 dark:active:bg-gray-600 rounded-lg transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-red-500"
                 aria-label="Report question issue"
+                className="hover:text-red-600 dark:hover:text-red-400 hover:bg-red-50 dark:hover:bg-red-900/20"
+                aria-pressed={reportOpen}
               >
-                <Flag className="size-4 text-gray-400 hover:text-red-600 dark:text-gray-500 dark:hover:text-red-400 transition-colors duration-200" />
-              </button>
+                <Flag className="size-4 text-gray-400 hover:text-red-600 dark:text-gray-500 dark:hover:text-red-400" />
+              </ButtonIcon>
             </div>
           </div>
 
@@ -200,120 +242,120 @@ export function QuestionScreen({ mode, onMenuClick, onStatsUpdate, stats }: Ques
             <span className="tabular-nums">
               Question {currentQuestionIndex + 1} of {totalQuestions}
             </span>
+            <span className="tabular-nums">{Math.round(progressPercentage)}%</span>
           </div>
 
-          <div className="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-1 overflow-hidden">
+          <div className="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-1.5">
             <div
-              className="bg-gradient-to-r from-blue-500 to-blue-600 h-1 rounded-full transition-all duration-500 ease-out"
+              className="bg-blue-600 dark:bg-blue-500 h-1.5 rounded-full transition-all duration-300"
               style={{ width: `${progressPercentage}%` }}
             />
           </div>
         </div>
       </header>
 
-      {/* Question Content */}
       <main className="container mx-auto px-4 py-6 max-w-md">
-        <article className="bg-white dark:bg-gray-800 rounded-xl shadow-md mb-6 p-5 border border-gray-100 dark:border-gray-700 transition-colors duration-200">
-          <div className="mb-4">
-            <h1 className="text-base font-medium text-gray-900 dark:text-white leading-relaxed">
-              {currentQuestion.question}
-            </h1>
+        <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-lg p-5 mb-4">
+          <h4 className="text-md font-medium text-gray-900 dark:text-white mb-6">
+            {getQuestionText.german}
             {showEnglish && (
-              <p className="text-sm text-gray-600 dark:text-gray-400 mt-3 italic leading-relaxed">
-                {currentQuestion.questionEn}
-              </p>
+              <span className="text-gray-500 dark:text-gray-400 text-sm">
+                {' '}
+                {getQuestionText.english}
+              </span>
             )}
-          </div>
+          </h4>
 
-          <div className="space-y-3" role="radiogroup" aria-label="Answer options">
-            {currentQuestion.options.map((option, index) => {
-              const isSelected = selectedAnswer === index
-              const isCorrect = index === currentQuestion.correct
-              const showResult = showAnswer && (isSelected || isCorrect)
+          <div className="space-y-3">
+            {Object.entries(currentQuestion.options).map(([key, option]) => {
+              const isSelected = selectedAnswer === key
+              const isCorrect = key === currentQuestion.correctAnswer
+              const showCorrect = showAnswer && isCorrect
+              const showIncorrect = showAnswer && isSelected && !isCorrect
 
-              let buttonClass =
-                'w-full p-3 text-left border rounded-lg transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500 '
-
-              if (showAnswer) {
-                if (isCorrect) {
-                  buttonClass +=
-                    'border-green-500 bg-green-50 dark:bg-green-900/20 text-green-800 dark:text-green-200'
-                } else if (isSelected && !isCorrect) {
-                  buttonClass +=
-                    'border-red-500 bg-red-50 dark:bg-red-900/20 text-red-800 dark:text-red-200'
-                } else {
-                  buttonClass +=
-                    'border-gray-200 dark:border-gray-600 text-gray-600 dark:text-gray-400'
-                }
-              } else {
-                buttonClass +=
-                  'border-gray-200 dark:border-gray-600 hover:border-blue-300 hover:bg-blue-50 dark:hover:border-blue-500 dark:hover:bg-blue-900/20 text-gray-900 dark:text-white active:bg-blue-100 dark:active:bg-blue-900/30'
-              }
-
+              const [german, english] = option.split(' :: ')
               return (
                 <button
-                  key={index}
-                  onClick={() => handleAnswerSelect(index)}
-                  className={buttonClass}
+                  key={key}
+                  onClick={() => handleAnswerSelect(key)}
                   disabled={showAnswer}
-                  role="radio"
-                  aria-checked={isSelected}
-                  aria-label={`Option ${String.fromCharCode(65 + index)}: ${option}`}
+                  className={`w-full px-3 py-3 text-left rounded-xl border transition-all duration-200 ${
+                    showAnswer
+                      ? showCorrect
+                        ? 'bg-green-50 dark:bg-green-900/20 border-green-200 dark:border-green-800'
+                        : showIncorrect
+                          ? 'bg-red-50 dark:bg-red-900/20 border-red-200 dark:border-red-800'
+                          : 'bg-gray-50 dark:bg-gray-700/50 border-gray-200 dark:border-gray-600'
+                      : isSelected
+                        ? 'bg-blue-50 dark:bg-blue-900/20 border-blue-200 dark:border-blue-800'
+                        : 'bg-white dark:bg-gray-800 border-gray-200 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-700/50'
+                  }`}
                 >
-                  <div className="flex items-center justify-between w-full">
-                    <div className="flex items-center gap-3">
-                      <div className="size-6 rounded border border-gray-300 dark:border-gray-500 flex items-center justify-center text-xs font-medium flex-shrink-0">
-                        {String.fromCharCode(65 + index)}
-                      </div>
-                      <div className="min-w-0">
-                        <div className="font-medium break-words">{option}</div>
-                        {showEnglish && (
-                          <div className="text-sm opacity-70 mt-1 break-words">
-                            {currentQuestion.optionsEn[index]}
-                          </div>
-                        )}
-                      </div>
-                    </div>
-                    {showResult && (
-                      <div className="ml-2 flex-shrink-0">
-                        {isCorrect ? (
-                          <Check className="size-5 text-green-600 dark:text-green-400" />
-                        ) : isSelected ? (
-                          <X className="size-5 text-red-600 dark:text-red-400" />
-                        ) : null}
-                      </div>
-                    )}
+                  <div className="flex items-start gap-3">
+                    <span
+                      className={`flex-shrink-0 w-6 h-6 flex items-center justify-center rounded-full text-sm font-light ${
+                        showAnswer
+                          ? showCorrect
+                            ? 'bg-green-100 dark:bg-green-800 text-green-800 dark:text-green-100'
+                            : showIncorrect
+                              ? 'bg-red-100 dark:bg-red-800 text-red-800 dark:text-red-100'
+                              : 'bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300'
+                          : isSelected
+                            ? 'bg-blue-100 dark:bg-blue-800 text-blue-800 dark:text-blue-100'
+                            : 'bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300'
+                      }`}
+                    >
+                      {key}
+                    </span>
+                    <span
+                      className={`text-sm ${
+                        showAnswer
+                          ? showCorrect
+                            ? 'text-green-800 dark:text-green-100'
+                            : showIncorrect
+                              ? 'text-red-800 dark:text-red-100'
+                              : 'text-gray-600 dark:text-gray-300'
+                          : isSelected
+                            ? 'text-blue-800 dark:text-blue-100'
+                            : 'text-gray-600 dark:text-gray-300'
+                      }`}
+                    >
+                      {german}
+                      {showEnglish && (
+                        <span className="text-gray-500 dark:text-gray-400 text-sm"> {english}</span>
+                      )}
+                    </span>
                   </div>
                 </button>
               )
             })}
           </div>
+        </div>
 
-          <nav className="flex gap-3 mt-6">
-            <button
-              onClick={handlePrevious}
-              disabled={currentQuestionIndex === 0}
-              className="flex-1 px-4 py-2.5 border-2 border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700 active:bg-gray-100 dark:active:bg-gray-600 disabled:opacity-50 disabled:cursor-not-allowed transition-colors duration-200 flex items-center justify-center gap-2 focus:outline-none focus:ring-2 focus:ring-gray-500"
-            >
-              <ChevronLeft className="size-4" />
-              <span className="font-medium">Previous</span>
-            </button>
-            <button
-              onClick={handleNext}
-              disabled={currentQuestionIndex === totalQuestions - 1}
-              className="flex-1 px-4 py-2.5 bg-blue-600 hover:bg-blue-700 active:bg-blue-800 text-white rounded-lg disabled:opacity-50 disabled:cursor-not-allowed transition-colors duration-200 flex items-center justify-center gap-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
-            >
-              <span className="font-medium">Next</span>
-              <ChevronRight className="size-4" />
-            </button>
-          </nav>
-        </article>
+        <div className="flex justify-between items-center mb-6">
+          <QuestionButton onClick={handlePrevious} disabled={currentQuestionIndex === 0}>
+            <ChevronLeft className="size-4" />
+            Previous
+          </QuestionButton>
 
+          <QuestionButton
+            onClick={handleNext}
+            disabled={currentQuestionIndex === totalQuestions - 1}
+          >
+            Next
+            <ChevronRight className="size-4" />
+          </QuestionButton>
+        </div>
 
         <AdSpace />
       </main>
 
-      <ReportModal open={reportOpen} onOpenChange={setReportOpen} questionId={currentQuestion.id} />
+      <ReportModal
+        open={reportOpen}
+        onOpenChange={setReportOpen}
+        questionId={currentQuestion.id}
+        questionString={currentQuestion.question}
+      />
     </>
   )
 }

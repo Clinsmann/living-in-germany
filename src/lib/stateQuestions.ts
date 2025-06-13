@@ -1,4 +1,6 @@
-export const stateSpecificQuestions = {
+import { Question } from './clients'
+
+export const stateSpecificQuestions: Record<string, Question[]> = {
   'Baden-Württemberg': [
     {
       id: 1,

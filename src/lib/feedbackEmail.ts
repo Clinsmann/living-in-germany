@@ -1,16 +1,19 @@
-import { Question } from './clients'
-
 export const getFeedbackEmailHtml = (message: string) => {
   return `
     <p>Feedback: ${message}</p>
   `
 }
 
-export const getQuestionEmailHtml = (question: Question, comment: string) => {
+export const getQuestionEmailHtml = (
+  question: {
+    questionNumber: number
+    questionString: string
+  },
+  comment: string
+) => {
   return `
-    <p>Question: ${question.question}</p>
-    <p>Options: ${question.options}</p>
-    <p>Correct Answer: ${question.correctAnswer}</p>
+    <p>Question Number: ${question.questionNumber}</p>
+    <p>Question: ${question.questionString}</p>
     <p>Comment: ${comment}</p>
   `
 }

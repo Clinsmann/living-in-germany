@@ -27,7 +27,10 @@ interface Stats {
 
 export default function Home() {
   const [mounted, setMounted] = useState(false)
-  const [currentScreen, setCurrentScreen] = useState<Screen>(Screen.DASHBOARD)
+  const [currentScreen, setCurrentScreen] = useLocalStorage<Screen>(
+    'current-screen',
+    Screen.DASHBOARD
+  )
   const [sidebarOpen, setSidebarOpen] = useState(false)
   const [feedbackOpen, setFeedbackOpen] = useState(false)
   const [isPending, startTransition] = useTransition()

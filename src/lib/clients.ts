@@ -34,10 +34,22 @@ export const sendFeedbackEmail = async (message: string) =>
     html: getFeedbackEmailHtml(message),
   })
 
-export const sendQuestionEmail = async (question: Question, comment: string) =>
+export const sendQuestionEmail = async (
+  question: {
+    questionNumber: number
+    questionString: string
+  },
+  comment: string
+) =>
   resend.emails.send({
     from: 'onboarding@resend.dev',
     to: 'ibeanuhillary@gmail.com',
-    subject: 'A new question was added',
-    html: getQuestionEmailHtml(question, comment),
+    subject: 'A new question was reported',
+    html: getQuestionEmailHtml(
+      {
+        questionNumber: question.questionNumber,
+        questionString: question.questionString,
+      },
+      comment
+    ),
   })

@@ -71,7 +71,7 @@ export function FeedbackModal({ open, onOpenChange }: FeedbackModalProps) {
               <MessageSquare className="size-5 text-blue-600 dark:text-blue-400" />
               <h2
                 id="feedback-title"
-                className="text-lg font-semibold text-gray-900 dark:text-white"
+                className="text-md font-semibold text-gray-900 dark:text-white"
               >
                 Send Feedback
               </h2>
