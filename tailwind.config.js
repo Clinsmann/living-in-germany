@@ -9,6 +9,7 @@ module.exports = {
     '*.{js,ts,jsx,tsx,mdx}',
   ],
   prefix: '',
+
   theme: {
     container: {
       center: true,
@@ -18,6 +19,9 @@ module.exports = {
       },
     },
     extend: {
+      fontFamily: {
+        nunito: ['var(--font-nunito)', 'sans-serif'],
+      },
       colors: {
         border: 'hsl(var(--border))',
         input: 'hsl(var(--input))',

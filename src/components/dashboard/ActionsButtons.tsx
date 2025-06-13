@@ -3,9 +3,26 @@ import { twMerge } from 'tailwind-merge'
 import { Play, Settings } from 'lucide-react'
 import { Screen } from '@/app/page'
 
-const Button = ({ children, onClick, disabled, className }: { children: React.ReactNode, onClick: () => void, disabled?: boolean, className?: string }) => {
+const Button = ({
+  children,
+  onClick,
+  disabled,
+  className,
+}: {
+  children: React.ReactNode
+  onClick: () => void
+  disabled?: boolean
+  className?: string
+}) => {
   return (
-    <button onClick={onClick} disabled={disabled} className={twMerge(className, "h-12 border-1 dark:bg-gray-900 bg-gray-100 border-gray-300 dark:border-gray-800 hover:border-gray-300 dark:hover:border-gray-900 hover:bg-gray-50 dark:hover:bg-gray-800 active:bg-gray-100 dark:active:bg-gray-800 text-gray-700 dark:text-gray-300 hover:text-white dark:hover:text-white rounded-xl transition-all duration-200 flex items-center justify-center focus:outline-none focus:ring-1 focus:ring-gray-500 focus:ring-offset-1 dark:focus:ring-offset-gray-900 cursor-pointer")}>
+    <button
+      onClick={onClick}
+      disabled={disabled}
+      className={twMerge(
+        className,
+        'h-12 border-1 dark:bg-gray-900 bg-gray-100 border-gray-300 dark:border-gray-800 hover:border-gray-300 dark:hover:border-gray-900 hover:bg-gray-50 dark:hover:bg-gray-800 active:bg-gray-100 dark:active:bg-gray-800 text-gray-700 dark:text-gray-300 hover:text-white dark:hover:text-white rounded-xl transition-all duration-200 flex items-center justify-center focus:outline-none focus:ring-1 focus:ring-gray-500 focus:ring-offset-1 dark:focus:ring-offset-gray-900 cursor-pointer'
+      )}
+    >
       {children}
     </button>
   )
@@ -50,26 +67,17 @@ export const ActionsButtons = ({
       </button>
 
       <div className="grid grid-cols-2 gap-3">
-        <Button
-          onClick={onBookmarked}
-          disabled={isPending}
-        >
+        <Button onClick={onBookmarked} disabled={isPending}>
           <span className="text-sm font-medium">Bookmarked</span>
         </Button>
 
-        <Button
-          onClick={onReviewFailed}
-          disabled={isPending}
-        >
+        <Button onClick={onReviewFailed} disabled={isPending}>
           <span className="text-sm font-medium">Review Failed</span>
         </Button>
       </div>
 
       <div className="flex justify-end items-center">
-        <Button
-          className="px-4"
-          onClick={onOpenSettings}
-        >
+        <Button className="px-4" onClick={onOpenSettings}>
           <Settings className="size-5" />
         </Button>
       </div>

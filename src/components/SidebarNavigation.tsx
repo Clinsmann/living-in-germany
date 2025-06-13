@@ -17,7 +17,7 @@ interface SidebarProps {
 
 export function Sidebar({ open, onOpenChange, onFeedbackOpen, onScreenChange }: SidebarProps) {
   const { theme, setTheme } = useTheme()
-  const [selectedState, setSelectedState] = useLocalStorage('selected-state', 'Bayern')
+  const [selectedState, setSelectedState] = useLocalStorage('selected-state', '')
 
   const handleResetProgress = useCallback(() => {
     if (confirm('Are you sure you want to reset all progress? This cannot be undone.')) {
