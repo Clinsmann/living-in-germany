@@ -14,6 +14,7 @@ import {
 } from 'lucide-react'
 import { ReportModal } from '@/components/ReportModal'
 import { useLocalStorage } from '@/hooks/useLocalStorage'
+import { AdSpace } from './AdSpace'
 
 interface Question {
   id: number
@@ -146,7 +147,7 @@ export function QuestionScreen({ mode, onMenuClick, onStatsUpdate, stats }: Ques
   }, [mode])
 
   return (
-    <div className="min-h-screen bg-gray-50 dark:bg-gray-900 transition-colors duration-200">
+    <>
       {/* Header */}
       <header className="bg-white dark:bg-gray-800 border-b border-gray-200 dark:border-gray-700 sticky top-0 z-10 transition-colors duration-200">
         <div className="container mx-auto px-4 py-4 max-w-md">
@@ -166,9 +167,8 @@ export function QuestionScreen({ mode, onMenuClick, onStatsUpdate, stats }: Ques
             <div className="flex gap-1">
               <button
                 onClick={() => setShowEnglish(!showEnglish)}
-                className={`p-2 hover:bg-gray-100 dark:hover:bg-gray-700 active:bg-gray-200 dark:active:bg-gray-600 rounded-lg transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500 ${
-                  showEnglish ? 'bg-blue-50 dark:bg-blue-900/20' : ''
-                }`}
+                className={`p-2 hover:bg-gray-100 dark:hover:bg-gray-700 active:bg-gray-200 dark:active:bg-gray-600 rounded-lg transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500 ${showEnglish ? 'bg-blue-50 dark:bg-blue-900/20' : ''
+                  }`}
                 aria-label="Toggle English translation"
                 aria-pressed={showEnglish}
               >
@@ -309,14 +309,11 @@ export function QuestionScreen({ mode, onMenuClick, onStatsUpdate, stats }: Ques
           </nav>
         </article>
 
-        {/* Ad Banner */}
-        <aside className="bg-orange-50 dark:bg-orange-900/20 rounded-xl shadow-sm p-4 text-center border border-orange-100 dark:border-orange-800/30 transition-colors duration-200">
-          <div className="text-sm text-gray-600 dark:text-gray-400">Advertisement</div>
-          <div className="text-xs text-gray-500 dark:text-gray-500 mt-1">Banner ad space</div>
-        </aside>
+
+        <AdSpace />
       </main>
 
       <ReportModal open={reportOpen} onOpenChange={setReportOpen} questionId={currentQuestion.id} />
-    </div>
+    </>
   )
 }
