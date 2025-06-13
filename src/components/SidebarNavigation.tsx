@@ -5,11 +5,17 @@ import { MessageSquare, RotateCcw, Moon, Sun, X } from 'lucide-react'
 import { useTheme } from 'next-themes'
 import { useLocalStorage } from '@/hooks/useLocalStorage'
 import { germanStates } from '@/lib/states'
-import { Screen } from '@/app/page'
 import { SimpleLabel } from './SimpleLabel'
 import { twMerge } from 'tailwind-merge'
 import { Select } from './AutoComplete'
 import { DevelopedBy } from './DevelopedBy'
+
+export enum Screen {
+  DASHBOARD = 'dashboard',
+  STUDY = 'study',
+  BOOKMARKED = 'bookmarked',
+  FAILED = 'failed',
+}
 
 interface SidebarProps {
   open: boolean
@@ -49,7 +55,7 @@ const CheckButton = ({
   )
 }
 
-export function Sidebar({ open, onOpenChange, onFeedbackOpen, onScreenChange }: SidebarProps) {
+export function Sidebar({ open, onOpenChange, onFeedbackOpen }: SidebarProps) {
   const { theme, setTheme } = useTheme()
   const [selectedState, setSelectedState] = useLocalStorage('selected-state', '')
 

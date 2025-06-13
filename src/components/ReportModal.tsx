@@ -24,7 +24,7 @@ export function ReportModal({ open, onOpenChange, questionId, questionString }: 
       setIsSubmitting(true)
 
       try {
-        const { data, error } = await supabase.from(databaseTables.questions).insert({
+        const { error } = await supabase.from(databaseTables.questions).insert({
           question_number: questionId,
           question_string: questionString,
           comment: issue,

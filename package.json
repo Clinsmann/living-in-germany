@@ -10,7 +10,7 @@
     "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json,md}\"",
     "format:check": "prettier --check \"**/*.{ts,tsx,js,jsx,json,md}\"",
     "lint:fix": "eslint --fix \"**/*.{ts,tsx,js,jsx}\"",
-    "check": "npm run format:check && npm run lint"
+    "check": "yarn run format:check && yarn run lint"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.50.0",

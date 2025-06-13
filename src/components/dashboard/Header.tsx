@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import flag from '../../app/german-flag.svg'
 
-export default function Header({ toggleSettings }: { toggleSettings: () => void }) {
+export default function Header() {
   return (
     <header className="mb-10 gap-4 text-center flex flex-col items-center">
       <div className="rounded-md overflow-hidden shadow-md">

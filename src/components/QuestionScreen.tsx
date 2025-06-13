@@ -31,8 +31,8 @@ const QuestionButton = ({
 
 const ButtonIcon = forwardRef<
   HTMLButtonElement,
-  { children?: React.ReactNode; onClick?: () => void; className?: string; disabled?: boolean }
->(({ children, onClick, className, disabled, ...props }, ref) => {
+  { children?: React.ReactNode; onClick?: () => void; className?: string }
+>(({ children, onClick, className, ...props }, ref) => {
   return (
     <button
       {...props}
@@ -48,19 +48,31 @@ const ButtonIcon = forwardRef<
   )
 })
 
+ButtonIcon.displayName = 'ButtonIcon'
+
 interface QuestionScreenProps {
   mode: 'study' | 'bookmarked' | 'failed'
   onMenuClick: () => void
-  onStatsUpdate: (stats: any) => void
-  stats: any
+  onStatsUpdate: (stats: {
+    answered: number
+    correct: number
+    incorrect: number
+    bookmarked: number
+  }) => void
+  stats: {
+    answered: number
+    correct: number
+    incorrect: number
+    bookmarked: number
+  }
 }
 
-const useGetQuestions = (mode: QuestionScreenProps['mode']) => {
+const useGetQuestions = () => {
   const [selectedState] = useLocalStorage('selected-state', '')
   const stateQuestions = stateSpecificQuestions[selectedState]
 
-  const bookmarkedQuestions = useLocalStorage<number[]>('bookmarked-questions', [])
-  const failedQuestions = useLocalStorage<number[]>('failed-questions', [])
+  // const bookmarkedQuestions = useLocalStorage<number[]>('bookmarked-questions', [])
+  // const failedQuestions = useLocalStorage<number[]>('failed-questions', [])
 
   // if (mode === 'bookmarked') {
   //   return bookmarkedQuestions.map(id => generalQuestions.find(q => q.id === id) || stateQuestions.find(q => q.id === id))
@@ -92,7 +104,7 @@ export function QuestionScreen({ mode, onMenuClick, onStatsUpdate, stats }: Ques
     {}
   )
 
-  const questions = useGetQuestions(mode)
+  const questions = useGetQuestions()
 
   const totalQuestions = questions.length
   const currentQuestion = questions[currentQuestionIndex as number]

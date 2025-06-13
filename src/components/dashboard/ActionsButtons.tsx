@@ -1,7 +1,7 @@
 import { useCallback } from 'react'
 import { twMerge } from 'tailwind-merge'
 import { Play, Settings } from 'lucide-react'
-import { Screen } from '@/app/page'
+import { Screen } from '@/components/SidebarNavigation'
 
 export const PrimaryButton = ({
   type = 'button',
@@ -12,7 +12,7 @@ export const PrimaryButton = ({
 }: {
   type?: 'button' | 'submit' | 'reset'
   children: React.ReactNode
-  onClick?: any
+  onClick?: () => unknown
   disabled?: boolean
   className?: string
 }) => {
@@ -38,7 +38,7 @@ export const Button = ({
   className,
 }: {
   children: React.ReactNode
-  onClick?: any
+  onClick?: () => unknown
   disabled?: boolean
   className?: string
 }) => {

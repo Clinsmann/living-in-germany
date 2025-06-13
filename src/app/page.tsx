@@ -10,13 +10,7 @@ import { ProgressCard } from '../components/ProgressCard'
 import { AdSpace } from '@/components/AdSpace'
 import { ActionsButtons } from '@/components/dashboard/ActionsButtons'
 import { BackgroundPattern } from '@/components/BackgroundPattern'
-
-export enum Screen {
-  DASHBOARD = 'dashboard',
-  STUDY = 'study',
-  BOOKMARKED = 'bookmarked',
-  FAILED = 'failed',
-}
+import { Screen } from '@/components/SidebarNavigation'
 
 interface Stats {
   answered: number
@@ -101,7 +95,7 @@ export default function Home() {
       setFeedbackOpen={setFeedbackOpen}
     >
       <main className="container mx-auto px-4 py-6 max-w-md">
-        <Header toggleSettings={() => setSidebarOpen(true)} />
+        <Header />
         <ProgressCard
           stats={stats}
           totalQuestions={totalQuestions}
