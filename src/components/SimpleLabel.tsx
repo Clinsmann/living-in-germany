@@ -1,5 +1,9 @@
-export const SimpleLabel = ({ label }: { label: string }) => {
-  return <div className="text-xs text-gray-500 dark:text-gray-400">{label}</div>
+import { twMerge } from 'tailwind-merge'
+
+export const SimpleLabel = ({ label, className }: { label: string; className?: string }) => {
+  return (
+    <div className={twMerge('text-xs text-gray-500 dark:text-gray-400', className)}>{label}</div>
+  )
 }
 
 export const SimpleTitle = ({ title }: { title: string }) => {

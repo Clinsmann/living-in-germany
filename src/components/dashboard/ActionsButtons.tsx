@@ -20,7 +20,7 @@ const Button = ({
       disabled={disabled}
       className={twMerge(
         className,
-        'h-12 border-1 dark:bg-gray-900 bg-gray-100 border-gray-300 dark:border-gray-800 hover:border-gray-300 dark:hover:border-gray-900 hover:bg-gray-50 dark:hover:bg-gray-800 active:bg-gray-100 dark:active:bg-gray-800 text-gray-700 dark:text-gray-300 hover:text-white dark:hover:text-white rounded-xl transition-all duration-200 flex items-center justify-center focus:outline-none focus:ring-1 focus:ring-gray-500 focus:ring-offset-1 dark:focus:ring-offset-gray-900 cursor-pointer'
+        'h-12 border-1 dark:bg-gray-900 bg-gray-100 border-gray-300 dark:border-gray-800 hover:border-gray-300 dark:hover:border-gray-900 hover:bg-gray-50 dark:hover:bg-gray-800 active:bg-gray-100 dark:active:bg-gray-800 text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white hover:shadow-md dark:hover:shadow-none  hover:shadow-gray-200 dark:hover:shadow-gray-700 rounded-xl transition-all duration-200 flex items-center justify-center focus:outline-none focus:ring-1 focus:ring-gray-500 focus:ring-offset-1 dark:focus:ring-offset-gray-900 cursor-pointer'
       )}
     >
       {children}

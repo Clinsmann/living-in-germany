@@ -3,7 +3,6 @@ import type { Metadata } from 'next'
 import { Roboto } from 'next/font/google'
 import './globals.css'
 import { ThemeProvider } from '../components/ThemeProvider'
-import { twMerge } from 'tailwind-merge'
 
 const roboto = Roboto({
   subsets: ['latin'],
@@ -27,7 +26,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={twMerge(roboto.className, 'antialiased')}>
+      <body className={roboto.className + ' antialiased'}>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
