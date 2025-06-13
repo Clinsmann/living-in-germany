@@ -1,4 +1,4 @@
-import { SimpleLabel, SimpleTitle } from './SimpleLabel'
+import { SimpleLabel, SimpleTitle } from './SimpleLabel';
 
 export const ProgressCard = ({
   stats,
@@ -10,7 +10,7 @@ export const ProgressCard = ({
   progressPercentage: number
 }) => {
   return (
-    <section className="relative bg-white dark:bg-gray-800 rounded-xl shadow-lg mb-6 p-6 border border-gray-100 dark:border-gray-700 transition-colors duration-200">
+    <section className="relative bg-white dark:bg-gray-800 rounded-xl shadow-lg mb-6 p-6 border border-gray-100 dark:border-gray-800 transition-colors duration-200">
       <div className="flex items-center gap-2 mb-4">
         <h2 className="text-lg font-semibold text-gray-900 dark:text-white">Your Progress</h2>
       </div>
