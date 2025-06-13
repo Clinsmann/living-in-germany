@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import flag from '../../app/german-flag.svg'
+import flag from '../../../public/german-flag.svg'
 
 export default function Header() {
   return (
