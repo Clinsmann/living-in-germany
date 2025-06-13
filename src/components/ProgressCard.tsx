@@ -1,14 +1,16 @@
 import { SimpleLabel, SimpleTitle } from './SimpleLabel';
 
+interface ProgressCardProps {
+  stats: { answered: number; correct: number; incorrect: number; bookmarked: number }
+  totalQuestions: number
+  progressPercentage: number
+}
+
 export const ProgressCard = ({
   stats,
   totalQuestions,
   progressPercentage,
-}: {
-  stats: { answered: number; correct: number; incorrect: number; bookmarked: number }
-  totalQuestions: number
-  progressPercentage: number
-}) => {
+}: ProgressCardProps) => {
   return (
     <section className="relative bg-white dark:bg-gray-800 rounded-xl shadow-lg mb-6 p-6 border border-gray-100 dark:border-gray-800 transition-colors duration-200">
       <div className="flex items-center gap-2 mb-4">
