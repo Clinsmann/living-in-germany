@@ -1,11 +1,10 @@
 import Image from 'next/image'
-import flag from '../../../public/german-flag.svg'
 
 export default function Header() {
   return (
     <header className="mb-10 gap-4 text-center flex flex-col items-center">
       <div className="rounded-md overflow-hidden shadow-md">
-        <Image src={flag} alt="deutschland flag" width={50} />
+        <Image src="https://res.cloudinary.com/africhoral/image/upload/v1749849476/personal-website/german-flag.svg" alt="deutschland flag" width={50} height={50} />
       </div>
 
       <h1 className="text-xl font-bold text-gray-900 dark:text-white my-0">
