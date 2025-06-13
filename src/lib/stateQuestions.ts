@@ -1807,10 +1807,3 @@ export const stateSpecificQuestions = {
     },
   ],
 }
-
-// Export for use in applications
-export default stateSpecificQuestions
-
-// Example usage:
-// const bavarianQuestions = stateSpecificQuestions["Bayern"];
-// const randomQuestion = bavarianQuestions[Math.floor(Math.random() * bavarianQuestions.length)];

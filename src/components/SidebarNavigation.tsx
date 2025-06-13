@@ -4,11 +4,12 @@ import { useCallback } from 'react'
 import { MessageSquare, RotateCcw, Moon, Sun, X } from 'lucide-react'
 import { useTheme } from 'next-themes'
 import { useLocalStorage } from '@/hooks/useLocalStorage'
-import germanStates from '@/lib/states'
+import { germanStates } from '@/lib/states'
 import { Screen } from '@/app/page'
 import { SimpleLabel } from './SimpleLabel'
 import { twMerge } from 'tailwind-merge'
 import { Select } from './AutoComplete'
+import { DevelopedBy } from './DevelopedBy'
 
 interface SidebarProps {
   open: boolean
@@ -84,7 +85,7 @@ export function Sidebar({ open, onOpenChange, onFeedbackOpen, onScreenChange }: 
 
       <aside
         className={twMerge(
-          'fixed bottom-0 left-0 right-0 bg-white dark:bg-gray-800 z-50 shadow-2xl border-t border-gray-200 dark:border-gray-700 transform transition-all duration-300 ease-out rounded-t-2xl max-h-[85vh] pb-15',
+          'fixed bottom-0 left-0 right-0 bg-white dark:bg-gray-800 z-50 shadow-2xl transform transition-all duration-300 ease-out rounded-t-3xl max-h-[85vh] pb-10',
           open ? 'translate-y-0' : 'translate-y-full'
         )}
       >
@@ -96,7 +97,7 @@ export function Sidebar({ open, onOpenChange, onFeedbackOpen, onScreenChange }: 
           />
         </div>
 
-        <div className="px-6 pb-6 max-h-[calc(85vh-60px)] overflow-y-auto">
+        <div className="px-5 pb-6 max-h-[calc(85vh-60px)] overflow-y-auto">
           <header
             className={twMerge(
               'flex items-center justify-between mb-6 transform transition-all duration-300 ease-out',
@@ -116,7 +117,7 @@ export function Sidebar({ open, onOpenChange, onFeedbackOpen, onScreenChange }: 
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             <div
               className={twMerge(
-                'p-5 bg-gray-100 dark:bg-gray-900/50 rounded-2xl gap-2 flex-col z-10',
+                'p-5 bg-gray-100 dark:bg-gray-900/40 rounded-2xl gap-2 flex-col z-10 pb-6',
                 open ? 'translate-y-0 opacity-100' : 'translate-y-4 opacity-0'
               )}
             >
@@ -141,7 +142,7 @@ export function Sidebar({ open, onOpenChange, onFeedbackOpen, onScreenChange }: 
                 open ? 'translate-y-0 opacity-100' : 'translate-y-4 opacity-0'
               )}
             >
-              <div className="flex items-center justify-between py-5 px-5 bg-gray-200/60 dark:bg-gray-900/50 rounded-t-2xl">
+              <div className="flex items-center justify-between py-5 px-5 bg-gray-200/60 dark:bg-gray-900/40 rounded-t-2xl">
                 <label className="flex items-center gap-3">
                   {isChecked ? <Moon className="size-4" /> : <Sun className="size-4" />}
                   <span className="font-light text-gray-700 dark:text-gray-300">
@@ -152,7 +153,7 @@ export function Sidebar({ open, onOpenChange, onFeedbackOpen, onScreenChange }: 
               </div>
 
               <button
-                className="flex items-center gap-3 py-5 px-5 bg-gray-200/60 dark:bg-gray-900/50 hover:bg-gray-50 dark:hover:bg-gray-700/60 active:bg-gray-100 dark:active:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-500 cursor-pointer hover:shadow-sm"
+                className="flex items-center gap-3 py-5 px-5 bg-gray-200/60 dark:bg-gray-900/40 hover:bg-gray-50 dark:hover:bg-gray-900/50 active:bg-gray-100 dark:active:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-500 cursor-pointer hover:shadow-sm"
                 onClick={onFeedbackOpen}
               >
                 <MessageSquare className="size-4 flex-shrink-0" />
@@ -160,7 +161,7 @@ export function Sidebar({ open, onOpenChange, onFeedbackOpen, onScreenChange }: 
               </button>
 
               <button
-                className="flex items-center gap-3 py-5 px-5 bg-gray-200/60 dark:bg-gray-900/50 rounded-b-2xl text-red-600 dark:text-red-400 hover:bg-red-50 dark:hover:bg-red-900/10 active:bg-red-100 dark:active:bg-red-900/30 focus:outline-none focus:ring-2 focus:ring-red-500 cursor-pointer hover:shadow-sm"
+                className="flex items-center gap-3 py-5 px-5 bg-gray-200/60 dark:bg-gray-900/40 rounded-b-2xl text-red-600 dark:text-red-400 hover:bg-red-50 dark:hover:bg-red-900/10 active:bg-red-100 dark:active:bg-red-900/30 focus:outline-none focus:ring-2 focus:ring-red-500 cursor-pointer hover:shadow-sm"
                 onClick={handleResetProgress}
               >
                 <RotateCcw className="size-4 flex-shrink-0" />
@@ -169,6 +170,7 @@ export function Sidebar({ open, onOpenChange, onFeedbackOpen, onScreenChange }: 
             </section>
           </div>
         </div>
+        <DevelopedBy />
       </aside>
     </>
   )

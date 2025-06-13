@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useTransition, useMemo } from 'react'
+import { useState, useTransition, useMemo, useEffect, useCallback } from 'react'
 import { Sidebar } from '@/components/SidebarNavigation'
 import { QuestionScreen } from '@/components/QuestionScreen'
 import { FeedbackModal } from '@/components/FeedbackModal'
@@ -26,6 +26,7 @@ interface Stats {
 }
 
 export default function Home() {
+  const [mounted, setMounted] = useState(false)
   const [currentScreen, setCurrentScreen] = useState<Screen>(Screen.DASHBOARD)
   const [sidebarOpen, setSidebarOpen] = useState(false)
   const [feedbackOpen, setFeedbackOpen] = useState(false)
@@ -62,6 +63,17 @@ export default function Home() {
     )
   }, [sidebarOpen, setSidebarOpen, handleScreenChange, feedbackOpen])
 
+  const openDashboard = useCallback(() => {
+    setCurrentScreen(Screen.DASHBOARD)
+    setSidebarOpen(false)
+  }, [setCurrentScreen, setSidebarOpen])
+
+  useEffect(() => {
+    setMounted(true)
+  }, [])
+
+  if (!mounted) return null
+
   if (currentScreen !== Screen.DASHBOARD) {
     return (
       <PageWrapper
@@ -71,7 +83,7 @@ export default function Home() {
       >
         <QuestionScreen
           mode={currentScreen}
-          onMenuClick={() => setSidebarOpen(true)}
+          onMenuClick={openDashboard}
           onStatsUpdate={updateStats}
           stats={stats}
         />

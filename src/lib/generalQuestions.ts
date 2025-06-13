@@ -1,4 +1,4 @@
-const questions = [
+export const generalQuestions = [
   {
     id: 1,
     question: `In Deutschland dürfen Menschen offen etwas gegen die Regierung sagen, weil ... :: In Germany, people are allowed to openly say something against the government because ...`,

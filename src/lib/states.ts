@@ -1,4 +1,4 @@
-const germanStates = [
+export const germanStates = [
   'Baden-Württemberg',
   'Bayern',
   'Berlin',
@@ -16,5 +16,3 @@ const germanStates = [
   'Schleswig-Holstein',
   'Thüringen',
 ]
-
-export default germanStates
