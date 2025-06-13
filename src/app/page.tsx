@@ -7,10 +7,10 @@ import { FeedbackModal } from '@/components/FeedbackModal'
 import { useLocalStorage } from '@/hooks/useLocalStorage'
 import Header from '@/components/dashboard/Header'
 import { ProgressCard } from '../components/ProgressCard'
-import { AdSpace } from '@/components/AdSpace'
 import { ActionsButtons } from '@/components/dashboard/ActionsButtons'
 import { BackgroundPattern } from '@/components/BackgroundPattern'
 import { Screen } from '@/components/SidebarNavigation'
+import { DevelopedBy } from '../components/DevelopedBy'
 
 interface Stats {
   answered: number
@@ -84,6 +84,7 @@ export default function Home() {
           onStatsUpdate={updateStats}
           stats={stats}
         />
+        <DevelopedBy />
       </PageWrapper>
     )
   }
@@ -101,12 +102,13 @@ export default function Home() {
           totalQuestions={totalQuestions}
           progressPercentage={progressPercentage}
         />
-        <AdSpace />
+        {/* <AdSpace /> */}
         <ActionsButtons
           isPending={isPending}
           handleScreenChange={handleScreenChange}
           setSidebarOpen={setSidebarOpen}
         />
+        <DevelopedBy />
       </main>
     </PageWrapper>
   )
