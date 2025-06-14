@@ -1,6 +1,6 @@
 'use client'
 
-import { useCallback } from 'react'
+import { useCallback, useEffect } from 'react'
 import { MessageSquare, RotateCcw, Moon, Sun, X } from 'lucide-react'
 import { useTheme } from 'next-themes'
 import { useLocalStorage } from '@/hooks/useLocalStorage'
@@ -56,7 +56,7 @@ const CheckButton = ({
 }
 
 export function Sidebar({ open, onOpenChange, onFeedbackOpen }: SidebarProps) {
-  const { theme, setTheme } = useTheme()
+  const { theme, setTheme, systemTheme } = useTheme()
   const [selectedState, setSelectedState] = useLocalStorage('selected-state', '')
 
   const isChecked = theme === 'dark'
@@ -77,6 +77,12 @@ export function Sidebar({ open, onOpenChange, onFeedbackOpen }: SidebarProps) {
   const handleThemeToggle = useCallback(() => {
     setTheme(theme === 'dark' ? 'light' : 'dark')
   }, [theme, setTheme])
+
+  useEffect(() => {
+    if (!systemTheme) {
+      setTheme('light')
+    }
+  }, [systemTheme])
 
   return (
     <>
