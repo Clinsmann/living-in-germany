@@ -6,7 +6,7 @@ export const DevelopedBy = () => {
         href="https://www.ibeanuhillary.com"
         target="_blank"
         rel="noopener noreferrer"
-        className="text-gray-700 font-medium hover:text-gray-500 dark:text-gray-300 dark:hover:text-gray-500"
+        className="text-gray-700 font-medium hover:text-gray-500 dark:text-gray-300 dark:hover:text-gray-300 dark:hover:underline"
       >
         Ibeanu Hillary
       </a>
