@@ -68,11 +68,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         href="https://res.cloudinary.com/africhoral/image/upload/w_5,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1749849476/personal-website/german-flag.svg"
         type="image/svg+xml"
       />
-      <body className={roboto.className + ' antialiased'}>
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
-        />
+      <head>
+        {/* Google Analytics */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-DNN4VWCKNY"
           strategy="afterInteractive"
@@ -82,9 +79,18 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-            gtag('config', 'G-DNN4VWCKNY');
+            gtag('config', 'G-DNN4VWCKNY', {
+              page_title: document.title,
+              page_location: window.location.href,
+            });
           `}
         </Script>
+      </head>
+      <body className={roboto.className + ' antialiased'}>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+        />
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
