@@ -32,15 +32,15 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-DNN4VWCKNY"
           strategy="afterInteractive"
-        ></Script>
-        <Script id="ga-init" strategy="afterInteractive">
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
           {`
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'G-DNN4VWCKNY');`}
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-DNN4VWCKNY');
+          `}
         </Script>
-
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
