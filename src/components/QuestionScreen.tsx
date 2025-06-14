@@ -91,7 +91,10 @@ export function QuestionScreen({ mode, onMenuClick, onStatsUpdate, stats }: Ques
   const [reportOpen, setReportOpen] = useState(false)
   const [selectedAnswer, setSelectedAnswer] = useState<string | null>(null)
 
-  const [showEnglish, setShowEnglish] = useLocalStorage<boolean>(LocalStorageKeys.ShowEnglish, false)
+  const [showEnglish, setShowEnglish] = useLocalStorage<boolean>(
+    LocalStorageKeys.ShowEnglish,
+    false
+  )
   const [currentQuestionIndex, setCurrentQuestionIndex] = useLocalStorage(
     LocalStorageKeys.CurrentQuestionIndex,
     0
@@ -167,7 +170,6 @@ export function QuestionScreen({ mode, onMenuClick, onStatsUpdate, stats }: Ques
       const newAnsweredQuestions = { ...questionProgress }
       delete newAnsweredQuestions[previousQuestionId]
       setQuestionProgress(newAnsweredQuestions)
-
 
       if (questionProgress[previousQuestionId]) {
         onStatsUpdate({ ...stats, correct: stats.correct - 1, answered: stats.answered - 1 })
@@ -316,43 +318,46 @@ export function QuestionScreen({ mode, onMenuClick, onStatsUpdate, stats }: Ques
                     key={key}
                     onClick={() => handleAnswerSelect(key)}
                     disabled={showAnswer}
-                    className={`w-full px-3 py-3 text-left rounded-xl border transition-all duration-200 ${showAnswer
-                      ? showCorrect
-                        ? 'bg-green-50 dark:bg-green-900/20 border-green-200 dark:border-green-800'
-                        : showIncorrect
-                          ? 'bg-red-50 dark:bg-red-900/20 border-red-200 dark:border-red-800'
-                          : 'bg-gray-50 dark:bg-gray-700/50 border-gray-200 dark:border-gray-600'
-                      : isSelected
-                        ? 'bg-blue-50 dark:bg-blue-900/20 border-blue-200 dark:border-blue-800'
-                        : 'bg-white dark:bg-gray-800 border-gray-200 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-700/50'
-                      }`}
+                    className={`w-full px-3 py-3 text-left rounded-xl border transition-all duration-200 ${
+                      showAnswer
+                        ? showCorrect
+                          ? 'bg-green-50 dark:bg-green-900/20 border-green-200 dark:border-green-800'
+                          : showIncorrect
+                            ? 'bg-red-50 dark:bg-red-900/20 border-red-200 dark:border-red-800'
+                            : 'bg-gray-50 dark:bg-gray-700/50 border-gray-200 dark:border-gray-600'
+                        : isSelected
+                          ? 'bg-blue-50 dark:bg-blue-900/20 border-blue-200 dark:border-blue-800'
+                          : 'bg-white dark:bg-gray-800 border-gray-200 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-700/50'
+                    }`}
                   >
                     <div className="flex items-start gap-3">
                       <span
-                        className={`flex-shrink-0 w-6 h-6 flex items-center justify-center rounded-full text-sm font-light ${showAnswer
-                          ? showCorrect
-                            ? 'bg-green-100 dark:bg-green-800 text-green-800 dark:text-green-100'
-                            : showIncorrect
-                              ? 'bg-red-100 dark:bg-red-800 text-red-800 dark:text-red-100'
+                        className={`flex-shrink-0 w-6 h-6 flex items-center justify-center rounded-full text-sm font-light ${
+                          showAnswer
+                            ? showCorrect
+                              ? 'bg-green-100 dark:bg-green-800 text-green-800 dark:text-green-100'
+                              : showIncorrect
+                                ? 'bg-red-100 dark:bg-red-800 text-red-800 dark:text-red-100'
+                                : 'bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300'
+                            : isSelected
+                              ? 'bg-blue-100 dark:bg-blue-800 text-blue-800 dark:text-blue-100'
                               : 'bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300'
-                          : isSelected
-                            ? 'bg-blue-100 dark:bg-blue-800 text-blue-800 dark:text-blue-100'
-                            : 'bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300'
-                          }`}
+                        }`}
                       >
                         {key}
                       </span>
                       <span
-                        className={`text-sm ${showAnswer
-                          ? showCorrect
-                            ? 'text-green-800 dark:text-green-100'
-                            : showIncorrect
-                              ? 'text-red-800 dark:text-red-100'
+                        className={`text-sm ${
+                          showAnswer
+                            ? showCorrect
+                              ? 'text-green-800 dark:text-green-100'
+                              : showIncorrect
+                                ? 'text-red-800 dark:text-red-100'
+                                : 'text-gray-600 dark:text-gray-300'
+                            : isSelected
+                              ? 'text-blue-800 dark:text-blue-100'
                               : 'text-gray-600 dark:text-gray-300'
-                          : isSelected
-                            ? 'text-blue-800 dark:text-blue-100'
-                            : 'text-gray-600 dark:text-gray-300'
-                          }`}
+                        }`}
                       >
                         {german}
                         {showEnglish && (

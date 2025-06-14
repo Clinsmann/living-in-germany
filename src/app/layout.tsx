@@ -30,7 +30,11 @@ export const metadata: Metadata = {
     description: 'Master your German citizenship test with our comprehensive preparation app',
     url: 'https://lebenind.ibeanuhillary.com',
     siteName: 'Einbürgerungstest Deutsch',
-    images: [{ url: 'https://res.cloudinary.com/africhoral/image/upload/v1749849476/personal-website/german-flag.svg' }],
+    images: [
+      {
+        url: 'https://res.cloudinary.com/africhoral/image/upload/v1749849476/personal-website/german-flag.svg',
+      },
+    ],
   },
   icons: {
     icon: 'https://res.cloudinary.com/africhoral/image/upload/v1749849476/personal-website/german-flag.svg',
@@ -49,8 +53,7 @@ const structuredData = {
     name: 'Ibeanu Hillary',
     url: 'https://ibeanuhillary.com',
   },
-  publisher: {
-  },
+  publisher: {},
   image: {
     '@type': 'ImageObject',
     url: 'https://res.cloudinary.com/africhoral/image/upload/v1749849476/personal-website/german-flag.svg',
@@ -60,9 +63,16 @@ const structuredData = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <link rel="icon" href="https://res.cloudinary.com/africhoral/image/upload/w_5,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1749849476/personal-website/german-flag.svg" type="image/svg+xml" />
+      <link
+        rel="icon"
+        href="https://res.cloudinary.com/africhoral/image/upload/w_5,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1749849476/personal-website/german-flag.svg"
+        type="image/svg+xml"
+      />
       <body className={roboto.className + ' antialiased'}>
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+        />
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-DNN4VWCKNY"
           strategy="afterInteractive"

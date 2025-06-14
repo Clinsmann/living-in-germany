@@ -34,10 +34,11 @@ export function ReportModal({ open, onOpenChange, questionId, questionString }: 
           throw error
         }
 
-        await sendQuestionEmail(
-          { questionNumber: questionId, questionString: questionString },
-          issue
-        )
+        await sendQuestionEmail({
+          questionNumber: questionId,
+          questionString: questionString,
+          comment: issue,
+        })
 
         setIssue('')
         onOpenChange(false)
