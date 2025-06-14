@@ -290,7 +290,8 @@ export function QuestionScreen({ mode, onMenuClick, onStatsUpdate, stats }: Ques
                   key={key}
                   onClick={() => handleAnswerSelect(key)}
                   disabled={showAnswer}
-                  className={`w-full px-3 py-3 text-left rounded-xl border transition-all duration-200 ${showAnswer
+                  className={`w-full px-3 py-3 text-left rounded-xl border transition-all duration-200 ${
+                    showAnswer
                       ? showCorrect
                         ? 'bg-green-50 dark:bg-green-900/20 border-green-200 dark:border-green-800'
                         : showIncorrect
@@ -299,11 +300,12 @@ export function QuestionScreen({ mode, onMenuClick, onStatsUpdate, stats }: Ques
                       : isSelected
                         ? 'bg-blue-50 dark:bg-blue-900/20 border-blue-200 dark:border-blue-800'
                         : 'bg-white dark:bg-gray-800 border-gray-200 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-700/50'
-                    }`}
+                  }`}
                 >
                   <div className="flex items-start gap-3">
                     <span
-                      className={`flex-shrink-0 w-6 h-6 flex items-center justify-center rounded-full text-sm font-light ${showAnswer
+                      className={`flex-shrink-0 w-6 h-6 flex items-center justify-center rounded-full text-sm font-light ${
+                        showAnswer
                           ? showCorrect
                             ? 'bg-green-100 dark:bg-green-800 text-green-800 dark:text-green-100'
                             : showIncorrect
@@ -312,12 +314,13 @@ export function QuestionScreen({ mode, onMenuClick, onStatsUpdate, stats }: Ques
                           : isSelected
                             ? 'bg-blue-100 dark:bg-blue-800 text-blue-800 dark:text-blue-100'
                             : 'bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300'
-                        }`}
+                      }`}
                     >
                       {key}
                     </span>
                     <span
-                      className={`text-sm ${showAnswer
+                      className={`text-sm ${
+                        showAnswer
                           ? showCorrect
                             ? 'text-green-800 dark:text-green-100'
                             : showIncorrect
@@ -326,7 +329,7 @@ export function QuestionScreen({ mode, onMenuClick, onStatsUpdate, stats }: Ques
                           : isSelected
                             ? 'text-blue-800 dark:text-blue-100'
                             : 'text-gray-600 dark:text-gray-300'
-                        }`}
+                      }`}
                     >
                       {german}
                       {showEnglish && (
