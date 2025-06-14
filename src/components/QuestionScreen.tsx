@@ -1,87 +1,89 @@
 'use client'
 
-import { useState, useCallback, useMemo, forwardRef } from 'react'
+import { useState, useCallback, useMemo, useEffect } from 'react'
 import { Bookmark, BookmarkCheck, Flag, Languages, ChevronRight, ChevronLeft } from 'lucide-react'
 import { ReportModal } from '@/components/ReportModal'
 import { useLocalStorage } from '@/hooks/useLocalStorage'
 import { generalQuestions } from '@/lib/generalQuestions'
 import { stateSpecificQuestions } from '../lib/stateQuestions'
 import { twMerge } from 'tailwind-merge'
+import { GermanyTestStats, LocalStorageKeys, Question, QuestionMode } from '@/lib/clients'
 
 const QuestionButton = ({
-  onClick,
-  disabled,
   children,
-}: {
-  onClick: () => void
-  disabled: boolean
-  children: React.ReactNode
-}) => {
-  return (
-    <button
-      onClick={onClick}
-      disabled={disabled}
-      className="flex items-center gap-2 px-5 py-3 text-sm font-medium text-gray-700 dark:text-white bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 rounded-lg transition-colors duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
-    >
-      {children}
-    </button>
-  )
-}
+  className,
+  ...props
+}: React.ButtonHTMLAttributes<HTMLButtonElement>) => (
+  <button
+    {...props}
+    className={twMerge(
+      'flex items-center gap-2 px-5 py-3 text-sm font-medium text-gray-700 dark:text-gray-300 bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 rounded-lg transition-colors duration-200 disabled:opacity-50 disabled:cursor-not-allowed',
+      className
+    )}
+  >
+    {children}
+  </button>
+)
 
-const ButtonIcon = forwardRef<
-  HTMLButtonElement,
-  { children?: React.ReactNode; onClick?: () => void; className?: string }
->(({ children, onClick, className, ...props }, ref) => {
-  return (
-    <button
-      {...props}
-      ref={ref}
-      onClick={onClick}
-      className={twMerge(
-        `flex items-center p-2.5 transition-colors duration-200 disabled:opacity-50 disabled:cursor-not-allowed rounded-full active:bg-gray-200 dark:active:bg-gray-600`,
-        className
-      )}
-    >
-      {children}
-    </button>
-  )
-})
+const ButtonIcon = ({
+  children,
+  className,
+  ...props
+}: React.ButtonHTMLAttributes<HTMLButtonElement>) => (
+  <button
+    {...props}
+    className={twMerge(
+      `flex items-center p-2.5 transition-colors duration-200 disabled:opacity-50 disabled:cursor-not-allowed rounded-full active:bg-gray-200 dark:active:bg-gray-600`,
+      className
+    )}
+  >
+    {children}
+  </button>
+)
 
 ButtonIcon.displayName = 'ButtonIcon'
 
+type Mode = 'study' | 'bookmarked' | 'failed'
+
 interface QuestionScreenProps {
-  mode: 'study' | 'bookmarked' | 'failed'
+  mode: Mode
   onMenuClick: () => void
-  onStatsUpdate: (stats: {
-    answered: number
-    correct: number
-    incorrect: number
-    bookmarked: number
-  }) => void
-  stats: {
-    answered: number
-    correct: number
-    incorrect: number
-    bookmarked: number
-  }
+  onStatsUpdate: (stats: GermanyTestStats) => void
+  stats: GermanyTestStats
 }
 
-const useGetQuestions = () => {
-  const [selectedState] = useLocalStorage('selected-state', '')
-  const stateQuestions = stateSpecificQuestions[selectedState]
+const useGetQuestions = (mode: Mode): Question[] => {
+  const [selectedState] = useLocalStorage<string>(LocalStorageKeys.SelectedState, '')
+  const [failedQuestions] = useLocalStorage<number[]>(LocalStorageKeys.FailedQuestions, [])
+  const [bookmarkedQuestions] = useLocalStorage<number[]>(LocalStorageKeys.BookmarkedQuestions, [])
 
-  // const bookmarkedQuestions = useLocalStorage<number[]>('bookmarked-questions', [])
-  // const failedQuestions = useLocalStorage<number[]>('failed-questions', [])
+  const allQuestions = useMemo(() => {
+    return [...generalQuestions, ...(selectedState ? stateSpecificQuestions[selectedState] : [])]
+  }, [selectedState, generalQuestions, stateSpecificQuestions])
 
-  // if (mode === 'bookmarked') {
-  //   return bookmarkedQuestions.map(id => generalQuestions.find(q => q.id === id) || stateQuestions.find(q => q.id === id))
-  // }
+  if (mode === QuestionMode.Failed) {
+    const fetchedFailedQuestions: Question[] = []
+    generalQuestions.forEach(question => {
+      if (failedQuestions.includes(question.id)) {
+        fetchedFailedQuestions.push(question)
+      }
+    })
 
-  // if (mode === 'failed') {
-  //   return failedQuestions.map(id => generalQuestions.find(q => q.id === id) || stateQuestions.find(q => q.id === id))
-  // }
+    return fetchedFailedQuestions
+  }
 
-  return [...generalQuestions, ...(stateQuestions || [])]
+  if (mode === QuestionMode.Bookmarked) {
+    const fetchedBookmarkedQuestions: Question[] = []
+    generalQuestions.forEach(question => {
+      if (bookmarkedQuestions.includes(question.id)) {
+        fetchedBookmarkedQuestions.push(question)
+      }
+    })
+
+    return fetchedBookmarkedQuestions
+  }
+
+  return allQuestions
 }
 
 export function QuestionScreen({ mode, onMenuClick, onStatsUpdate, stats }: QuestionScreenProps) {
@@ -89,24 +91,28 @@ export function QuestionScreen({ mode, onMenuClick, onStatsUpdate, stats }: Ques
   const [reportOpen, setReportOpen] = useState(false)
   const [selectedAnswer, setSelectedAnswer] = useState<string | null>(null)
 
-  const [showEnglish, setShowEnglish] = useLocalStorage<boolean>('show-english', false)
+  const [showEnglish, setShowEnglish] = useLocalStorage<boolean>(LocalStorageKeys.ShowEnglish, false)
   const [currentQuestionIndex, setCurrentQuestionIndex] = useLocalStorage(
-    'current-question-index',
+    LocalStorageKeys.CurrentQuestionIndex,
     0
   )
   const [bookmarkedQuestions, setBookmarkedQuestions] = useLocalStorage<number[]>(
-    'bookmarked-questions',
+    LocalStorageKeys.BookmarkedQuestions,
     []
   )
-  const [answeredQuestions, setAnsweredQuestions] = useLocalStorage<Record<number, boolean>>(
-    'question-progress',
+  const [questionProgress, setQuestionProgress] = useLocalStorage<Record<number, boolean>>(
+    LocalStorageKeys.QuestionProgress,
     {}
   )
+  const [failedQuestions, setFailedQuestions] = useLocalStorage<number[]>(
+    LocalStorageKeys.FailedQuestions,
+    []
+  )
 
-  const questions = useGetQuestions()
+  const questions = useGetQuestions(mode)
   const totalQuestions = questions.length
-  const currentQuestion = questions[currentQuestionIndex as number]
-  const isBookmarked = bookmarkedQuestions.includes(currentQuestion.id)
+  const currentQuestion = questions[currentQuestionIndex as number] || null
+  const isBookmarked = bookmarkedQuestions.includes(currentQuestion?.id)
   const progressPercentage = ((currentQuestionIndex + 1) / totalQuestions) * 100
 
   const handleAnswerSelect = useCallback(
@@ -116,8 +122,8 @@ export function QuestionScreen({ mode, onMenuClick, onStatsUpdate, stats }: Ques
       setSelectedAnswer(answerKey)
       setShowAnswer(true)
 
-      const isCorrect = answerKey === currentQuestion.correctAnswer
-      const wasAnswered = answeredQuestions[currentQuestion.id]
+      const isCorrect = answerKey === currentQuestion?.correctAnswer
+      const wasAnswered = questionProgress[currentQuestion?.id]
 
       // Update stats
       const newStats = { ...stats }
@@ -125,26 +131,51 @@ export function QuestionScreen({ mode, onMenuClick, onStatsUpdate, stats }: Ques
         newStats.answered += 1
       }
       if (isCorrect) {
-        newStats.correct += wasAnswered && !answeredQuestions[currentQuestion.id] ? 0 : 1
+        newStats.correct += wasAnswered && !questionProgress[currentQuestion?.id] ? 0 : 1
       } else {
-        newStats.incorrect += wasAnswered && answeredQuestions[currentQuestion.id] ? 0 : 1
+        newStats.incorrect += wasAnswered && questionProgress[currentQuestion?.id] ? 0 : 1
+        if (!failedQuestions.includes(currentQuestion?.id)) {
+          setFailedQuestions(prev => [...prev, currentQuestion?.id])
+        }
       }
 
       onStatsUpdate(newStats)
-      setAnsweredQuestions(prev => ({ ...prev, [currentQuestion.id]: isCorrect }))
+      setQuestionProgress(prev => ({ ...prev, [currentQuestion?.id]: isCorrect }))
     },
     [
       showAnswer,
-      currentQuestion.correctAnswer,
-      currentQuestion.id,
-      answeredQuestions,
+      currentQuestion?.correctAnswer,
+      currentQuestion?.id,
+      questionProgress,
       stats,
       onStatsUpdate,
-      setAnsweredQuestions,
+      setQuestionProgress,
     ]
   )
 
+  useEffect(() => {
+    if (mode !== QuestionMode.Study) {
+      setCurrentQuestionIndex(0)
+    }
+  }, [mode])
+
   const handlePrevious = useCallback(() => {
+    const previousQuestionId = currentQuestion?.id - 1
+    if (questionProgress.hasOwnProperty(previousQuestionId)) {
+      setCurrentQuestionIndex(prev => prev - 1)
+
+      const newAnsweredQuestions = { ...questionProgress }
+      delete newAnsweredQuestions[previousQuestionId]
+      setQuestionProgress(newAnsweredQuestions)
+
+
+      if (questionProgress[previousQuestionId]) {
+        onStatsUpdate({ ...stats, correct: stats.correct - 1, answered: stats.answered - 1 })
+      } else {
+        onStatsUpdate({ ...stats, incorrect: stats.incorrect - 1, answered: stats.answered - 1 })
+      }
+    }
+
     if (currentQuestionIndex > 0) {
       setCurrentQuestionIndex(prev => prev - 1)
       setSelectedAnswer(null)
@@ -162,19 +193,19 @@ export function QuestionScreen({ mode, onMenuClick, onStatsUpdate, stats }: Ques
 
   const handleBookmark = useCallback(() => {
     if (isBookmarked) {
-      setBookmarkedQuestions(prev => prev.filter(id => id !== currentQuestion.id))
+      setBookmarkedQuestions(prev => prev.filter(id => id !== currentQuestion?.id))
       onStatsUpdate({ ...stats, bookmarked: stats.bookmarked - 1 })
     } else {
-      setBookmarkedQuestions(prev => [...prev, currentQuestion.id])
+      setBookmarkedQuestions(prev => [...prev, currentQuestion?.id])
       onStatsUpdate({ ...stats, bookmarked: stats.bookmarked + 1 })
     }
-  }, [isBookmarked, setBookmarkedQuestions, currentQuestion.id, onStatsUpdate, stats])
+  }, [isBookmarked, setBookmarkedQuestions, currentQuestion?.id, onStatsUpdate, stats])
 
   const screenTitle = useMemo(() => {
     switch (mode) {
-      case 'bookmarked':
+      case QuestionMode.Bookmarked:
         return 'Bookmarked Questions'
-      case 'failed':
+      case QuestionMode.Failed:
         return 'Review Failed Questions'
       default:
         return 'Study Mode'
@@ -182,12 +213,9 @@ export function QuestionScreen({ mode, onMenuClick, onStatsUpdate, stats }: Ques
   }, [mode])
 
   const getQuestionText = useMemo(() => {
-    const [german, english] = currentQuestion.question.split(' :: ')
-    return {
-      german,
-      english,
-    }
-  }, [currentQuestion.question])
+    const [german, english] = currentQuestion ? currentQuestion.question.split(' :: ') : ['', '']
+    return { german, english }
+  }, [currentQuestion?.question])
 
   return (
     <>
@@ -211,8 +239,8 @@ export function QuestionScreen({ mode, onMenuClick, onStatsUpdate, stats }: Ques
               <ButtonIcon
                 onClick={() => setShowEnglish(!showEnglish)}
                 className={showEnglish ? 'bg-blue-50 dark:bg-gray-700/50' : ''}
-                aria-pressed={showEnglish}
                 aria-label="Toggle English translation"
+                aria-pressed={showEnglish}
               >
                 <Languages
                   className={twMerge(
@@ -275,65 +303,69 @@ export function QuestionScreen({ mode, onMenuClick, onStatsUpdate, stats }: Ques
           </h4>
 
           <div className="space-y-3">
-            {Object.entries(currentQuestion.options).map(([key, option]) => {
-              const isSelected = selectedAnswer === key
-              const isCorrect = key === currentQuestion.correctAnswer
-              const showCorrect = showAnswer && isCorrect
-              const showIncorrect = showAnswer && isSelected && !isCorrect
+            {currentQuestion &&
+              Object.entries(currentQuestion?.options).map(([key, option]) => {
+                const isSelected = selectedAnswer === key
+                const isCorrect = key === currentQuestion?.correctAnswer
+                const showCorrect = showAnswer && isCorrect
+                const showIncorrect = showAnswer && isSelected && !isCorrect
 
-              const [german, english] = option.split(' :: ')
-              return (
-                <button
-                  key={key}
-                  onClick={() => handleAnswerSelect(key)}
-                  disabled={showAnswer}
-                  className={`w-full px-3 py-3 text-left rounded-xl border transition-all duration-200 ${showAnswer
-                    ? showCorrect
-                      ? 'bg-green-50 dark:bg-green-900/20 border-green-200 dark:border-green-800'
-                      : showIncorrect
-                        ? 'bg-red-50 dark:bg-red-900/20 border-red-200 dark:border-red-800'
-                        : 'bg-gray-50 dark:bg-gray-700/50 border-gray-200 dark:border-gray-600'
-                    : isSelected
-                      ? 'bg-blue-50 dark:bg-blue-900/20 border-blue-200 dark:border-blue-800'
-                      : 'bg-white dark:bg-gray-800 border-gray-200 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-700/50'
-                    }`}
-                >
-                  <div className="flex items-start gap-3">
-                    <span
-                      className={`flex-shrink-0 w-6 h-6 flex items-center justify-center rounded-full text-sm font-light ${showAnswer
-                        ? showCorrect
-                          ? 'bg-green-100 dark:bg-green-800 text-green-800 dark:text-green-100'
-                          : showIncorrect
-                            ? 'bg-red-100 dark:bg-red-800 text-red-800 dark:text-red-100'
+                const [german, english] = option.split(' :: ')
+                return (
+                  <button
+                    key={key}
+                    onClick={() => handleAnswerSelect(key)}
+                    disabled={showAnswer}
+                    className={`w-full px-3 py-3 text-left rounded-xl border transition-all duration-200 ${showAnswer
+                      ? showCorrect
+                        ? 'bg-green-50 dark:bg-green-900/20 border-green-200 dark:border-green-800'
+                        : showIncorrect
+                          ? 'bg-red-50 dark:bg-red-900/20 border-red-200 dark:border-red-800'
+                          : 'bg-gray-50 dark:bg-gray-700/50 border-gray-200 dark:border-gray-600'
+                      : isSelected
+                        ? 'bg-blue-50 dark:bg-blue-900/20 border-blue-200 dark:border-blue-800'
+                        : 'bg-white dark:bg-gray-800 border-gray-200 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-700/50'
+                      }`}
+                  >
+                    <div className="flex items-start gap-3">
+                      <span
+                        className={`flex-shrink-0 w-6 h-6 flex items-center justify-center rounded-full text-sm font-light ${showAnswer
+                          ? showCorrect
+                            ? 'bg-green-100 dark:bg-green-800 text-green-800 dark:text-green-100'
+                            : showIncorrect
+                              ? 'bg-red-100 dark:bg-red-800 text-red-800 dark:text-red-100'
+                              : 'bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300'
+                          : isSelected
+                            ? 'bg-blue-100 dark:bg-blue-800 text-blue-800 dark:text-blue-100'
                             : 'bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300'
-                        : isSelected
-                          ? 'bg-blue-100 dark:bg-blue-800 text-blue-800 dark:text-blue-100'
-                          : 'bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300'
-                        }`}
-                    >
-                      {key}
-                    </span>
-                    <span
-                      className={`text-sm ${showAnswer
-                        ? showCorrect
-                          ? 'text-green-800 dark:text-green-100'
-                          : showIncorrect
-                            ? 'text-red-800 dark:text-red-100'
+                          }`}
+                      >
+                        {key}
+                      </span>
+                      <span
+                        className={`text-sm ${showAnswer
+                          ? showCorrect
+                            ? 'text-green-800 dark:text-green-100'
+                            : showIncorrect
+                              ? 'text-red-800 dark:text-red-100'
+                              : 'text-gray-600 dark:text-gray-300'
+                          : isSelected
+                            ? 'text-blue-800 dark:text-blue-100'
                             : 'text-gray-600 dark:text-gray-300'
-                        : isSelected
-                          ? 'text-blue-800 dark:text-blue-100'
-                          : 'text-gray-600 dark:text-gray-300'
-                        }`}
-                    >
-                      {german}
-                      {showEnglish && (
-                        <span className="text-gray-500 dark:text-gray-400 text-sm"> {english}</span>
-                      )}
-                    </span>
-                  </div>
-                </button>
-              )
-            })}
+                          }`}
+                      >
+                        {german}
+                        {showEnglish && (
+                          <span className="text-gray-500 dark:text-gray-400 text-sm">
+                            {' '}
+                            {english}
+                          </span>
+                        )}
+                      </span>
+                    </div>
+                  </button>
+                )
+              })}
           </div>
         </div>
 
@@ -346,20 +378,20 @@ export function QuestionScreen({ mode, onMenuClick, onStatsUpdate, stats }: Ques
           <QuestionButton
             onClick={handleNext}
             disabled={currentQuestionIndex === totalQuestions - 1}
+            className="bg-blue-500 text-white hover:bg-blue-600 dark:bg-blue-600 dark:hover:bg-blue-700 px-9"
           >
             Next
             <ChevronRight className="size-4" />
           </QuestionButton>
         </div>
-
         {/* <AdSpace /> */}
       </main>
 
       <ReportModal
         open={reportOpen}
         onOpenChange={setReportOpen}
-        questionId={currentQuestion.id}
-        questionString={currentQuestion.question}
+        questionId={currentQuestion?.id}
+        questionString={currentQuestion?.question}
       />
     </>
   )

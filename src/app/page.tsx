@@ -11,24 +11,18 @@ import { ActionsButtons } from '@/components/dashboard/ActionsButtons'
 import { BackgroundPattern } from '@/components/BackgroundPattern'
 import { Screen } from '@/components/SidebarNavigation'
 import { DevelopedBy } from '../components/DevelopedBy'
-
-interface Stats {
-  answered: number
-  correct: number
-  incorrect: number
-  bookmarked: number
-}
+import { GermanyTestStats, LocalStorageKeys } from '@/lib/clients'
 
 export default function Home() {
   const [mounted, setMounted] = useState(false)
   const [currentScreen, setCurrentScreen] = useLocalStorage<Screen>(
-    'current-screen',
+    LocalStorageKeys.CurrentScreen,
     Screen.DASHBOARD
   )
   const [sidebarOpen, setSidebarOpen] = useState(false)
   const [feedbackOpen, setFeedbackOpen] = useState(false)
   const [isPending, startTransition] = useTransition()
-  const [stats, setStats] = useLocalStorage<Stats>('germany-test-stats', {
+  const [stats, setStats] = useLocalStorage<GermanyTestStats>(LocalStorageKeys.GermanyTestStats, {
     answered: 0,
     correct: 0,
     incorrect: 0,
@@ -45,7 +39,7 @@ export default function Home() {
     })
   }
 
-  const updateStats = (newStats: Partial<Stats>) => {
+  const updateStats = (newStats: Partial<GermanyTestStats>) => {
     setStats(prev => ({ ...prev, ...newStats }))
   }
 
