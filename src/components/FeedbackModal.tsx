@@ -3,8 +3,10 @@
 import type React from 'react'
 import { useState, useCallback } from 'react'
 import { MessageSquare, X } from 'lucide-react'
-import { databaseTables, sendFeedbackEmail, supabase } from '@/lib/clients'
+import { supabase } from '@/lib/clients'
+import { databaseTables } from '@/lib/clients'
 import { PrimaryButton } from './dashboard/ActionsButtons'
+import { sendFeedbackEmail } from '../lib/feedbackEmail'
 
 interface FeedbackModalProps {
   open: boolean

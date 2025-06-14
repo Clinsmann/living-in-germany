@@ -3,7 +3,9 @@
 import type React from 'react'
 import { useState, useCallback } from 'react'
 import { Flag, Send, X } from 'lucide-react'
-import { databaseTables, sendQuestionEmail, supabase } from '@/lib/clients'
+import { supabase } from '@/lib/clients'
+import { databaseTables } from '@/lib/clients'
+import { sendQuestionEmail } from '../lib/feedbackEmail'
 
 interface ReportModalProps {
   open: boolean
