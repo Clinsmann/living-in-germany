@@ -15,5 +15,5 @@ jobs:
       - name: Deploy to Dokku
         uses: dokku/github-action@master
         with:
-          git_remote_url: 'ssh://dokku@${{ secrets.DOKKU_HOST }}:22/livings-in-germany'
+          git_remote_url: 'ssh://dokku@${{ secrets.DOKKU_HOST }}:22/living-in-germany'
           ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
